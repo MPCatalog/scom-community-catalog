@@ -1,0 +1,12 @@
+{
+  "ManagementPackSystemName": "Aquilaweb.Support.PendingReboot",
+  "ManagementPackDisplayName": "Aquilaweb Support - Pending Reboots,
+  "URL": "https://gallery.technet.microsoft.com/SCOM-Pending-Reboot-b0f14d86",
+  "Version": "1.0.0.4",
+  "Author": "David Allen",
+  "IsFree": true,
+  "Tags": [
+    "Reboot",
+    "Windows Server"
+  ]
+}

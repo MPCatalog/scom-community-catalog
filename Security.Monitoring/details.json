@@ -1,0 +1,12 @@
+{
+  "ManagementPackSystemName": "Security.Monitoring",
+  "ManagementPackDisplayName": "Security Monitoring",
+  "URL": "https://gallery.technet.microsoft.com/Security-Management-Pack-fee2c134",
+  "Version": "1.0.0.0",
+  "Author": "Nathan Gau",
+  "IsFree": true,
+  "Tags": [
+    "Security",
+	  "Active Directory"
+	]
+}

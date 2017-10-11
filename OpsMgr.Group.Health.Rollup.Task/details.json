@@ -1,0 +1,12 @@
+{
+  "ManagementPackSystemName": "OpsMgr.Group.Health.Rollup.Task",
+  "ManagementPackDisplayName": "OpsMgr Group Health Rollup Configuration Task Management Pack",
+  "URL": "https://blog.tyang.org/2015/07/28/opsmgr-group-health-rollup-configuration-task-management-pack/",
+  "Version": "1.0.0.0",
+  "Author": "Tao Yang",
+  "IsFree": true,
+  "Tags": [
+    "Monitoring Task",
+    "MVP"
+  ]
+}

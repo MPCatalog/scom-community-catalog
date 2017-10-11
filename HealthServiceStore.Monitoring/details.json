@@ -1,0 +1,12 @@
+{
+	"ManagementPackSystemName": "HealthServiceStore.Monitoring",
+	"ManagementPackDisplayName": "Health Service Store Monitoring",
+	"URL": "https://blogs.technet.microsoft.com/jimmyharper/2015/09/02/management-pack-to-monitor-and-reduce-health-service-store-size/",
+	"Version": "1.0.0.13",
+	"Author": "Jimmy Harper",
+	"IsFree": true,
+	"Tags": [
+		"Essential",
+		"Maintenance"
+	]
+}

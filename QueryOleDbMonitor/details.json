@@ -1,0 +1,12 @@
+{
+  "ManagementPackSystemName": "QueryOleDbMonitor",
+  "ManagementPackDisplayName": "QueryOleDbMonitor",
+  "URL": "https://github.com/UretzkyZvi/Monitor-Applications-Using-SQL-Queries",
+  "Version": "1.1.0.0",
+  "Author": "Zvi Uretzky",
+  "IsFree": true,
+  "Tags": [
+    "SQL",
+	  "Extension"
+	]
+}

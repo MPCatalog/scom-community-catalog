@@ -1,0 +1,14 @@
+{
+  "ManagementPackSystemName": "Community.PowershellMonitoring",
+  "ManagementPackDisplayName": "PowerShell Monitoring Management Pack",
+  "URL": "https://download.squaredup.com/management-packs/powershell-monitoring-management-pack/",
+  "Version": "1.1.1.0",
+  "Author": "Squared Up Ltd.",
+  "IsFree": true,
+  "Tags": [
+    "PowerShell",
+    "Templates",
+    "Authoring",
+    "Essential"
+  ]
+}

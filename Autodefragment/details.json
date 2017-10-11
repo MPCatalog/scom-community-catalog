@@ -1,0 +1,12 @@
+{
+  "ManagementPackSystemName": "Autodefragment",
+  "ManagementPackDisplayName": "Autodefragment",
+  "URL": "http://blogs.catapultsystems.com/cfuller/archive/2013/10/24/automated-defragmentation-using-opsmgr-for-windows-2003-2008-and-2012-scom-sysctr-winserv-powershell/",
+  "Version": "6.0.0.1",
+  "Author": "Cameron Fuller",
+  "IsFree": true,
+  "Tags": [
+    "MVP",
+    "PowerShell"
+  ]
+}
