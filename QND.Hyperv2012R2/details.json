@@ -1,0 +1,13 @@
+{
+  "ManagementPackSystemName": "QND.Hyperv2012R2",
+  "ManagementPackDisplayName": "QND Hyper-V 2012 R2 VM Monitoring",
+  "URL": "https://github.com/QuaeNocentDocent/HypervMP",
+  "Version": "1.1.0.72",
+  "Author": "Daniele Grandini",
+  "IsFree": true,
+  "Tags": [
+    "MVP",
+    "Hyper-V",
+	"Open Source"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "ManagementPackSystemName": "QND.Network.Kemp",
+  "ManagementPackDisplayName": "QND Kemp LoadMaster monitoring (community MP)",
+  "URL": "https://github.com/QuaeNocentDocent/SCOMSNMP-MP",
+  "Version": "2.0.1.1",
+  "Author": "Daniele Grandini",
+  "IsFree": true,
+  "Tags": [
+    "MVP",
+    "SNMP",
+	"Open Source"
+  ]
+}

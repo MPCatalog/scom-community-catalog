@@ -1,0 +1,8 @@
+{
+  "ManagementPackSystemName": "ConfigMgr.2012.Client.Monitoring",
+  "ManagementPackDisplayName": "ConfigMgr 2012 (R2) Client Management Pack",
+  "URL": "http://blog.tyang.org/2014/10/04/updated-configmgr-2012-r2-client-management-pack-version-1-2-0-0/",
+  "Version": "1.2.0.0",
+  "Author": "Tao Yang",
+  "IsFree": true
+}

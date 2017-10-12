@@ -1,0 +1,13 @@
+{
+  "ManagementPackSystemName": "Community.DataOnDemand.Unix",
+  "ManagementPackDisplayName": "Data on Demand - Unix (Community)",
+  "URL": "https://download.squaredup.com/management-packs/data-on-demand-unix-community/",
+  "Version": "1.2.4.0",
+  "Author": "Squared Up Ltd.",
+  "IsFree": true,
+  "Tags": [
+    "Agent Task",
+	"Unix/Linux",
+	"Discovery"
+	]
+}

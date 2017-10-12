@@ -1,0 +1,12 @@
+{
+  "ManagementPackSystemName": "SystemCenterCentral.Utilities.Certificates",
+  "ManagementPackDisplayName": "PKI Certificate Validation V2",
+  "URL": "http://www.systemcentercentral.com/pack-catalog/pki-certificate-verification-mp/",
+  "Version": "1.2.1.3",
+  "Author": "Raphael Burri",
+  "IsFree": true,
+  "Tags": [
+    "PKI",
+    "Certificates"
+  ]
+}

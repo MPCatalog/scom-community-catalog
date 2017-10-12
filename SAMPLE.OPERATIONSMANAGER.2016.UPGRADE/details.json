@@ -1,0 +1,12 @@
+{
+  "ManagementPackSystemName": "SAMPLE.OPERATIONSMANAGER.2016.UPGRADE",
+  "ManagementPackDisplayName": "SC Operations Manager Upgrade Helper MP (2012 R2 --> 2016)",
+  "URL": "https://gallery.technet.microsoft.com/Sample-Management-Pack-fd15caa7",
+  "Version": "1.0.2.38",
+  "Author": "Wei H Lim",
+  "IsFree": true,
+  "Tags": [
+    "Upgrade",
+    "2016"
+  ]
+}

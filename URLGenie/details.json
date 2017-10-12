@@ -1,0 +1,13 @@
+{
+  "ManagementPackSystemName": "URLGenie",
+  "ManagementPackDisplayName": "URLGenie",
+  "URL": "https://gallery.technet.microsoft.com/scriptcenter/URLGenie-Management-Pack-771bf58c",
+  "Version": "2017.3.16.1330",
+  "Author": "Tyson Paul",
+  "IsFree": true,
+  "Tags": [
+    "URL",
+    "Web",
+    "Availability"
+  ]
+}

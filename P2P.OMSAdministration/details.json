@@ -1,0 +1,13 @@
+{
+  "ManagementPackSystemName": "P2P.OMSAdministration",
+  "ManagementPackDisplayName": "OMS Administration Management Pack Suite",
+  "URL": "https://github.com/P2P-Nathan/OMS-Administration-Packs",
+  "Version": "1.0.0.0",
+  "Author": "Nathan Foreman",
+  "IsFree": true,
+  "Tags": [
+    "OMS",
+	"UI Controls",
+	"GitHub"
+	]
+}
