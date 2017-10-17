@@ -15,7 +15,7 @@ The MP monitors Kemp LoadMaster devices trough SNMP v2
 -   Monitors memory and processor usage
 -   Squaredup Dashboard view
 
-Beware of the dependencies: QND SNMP Library <https://qndsnmp.codeplex.com/> QND Managed Modules Library <https://scommm.codeplex.com/>   Tested environment:
+Beware of the dependencies: QND SNMP Library??<https://qndsnmp.codeplex.com/>??QND Managed Modules Library??<https://scommm.codeplex.com/>???? Tested environment:
 
 -   Tested with Kemp LoadMaster devices with version 7.1-16 and higher
 -   Tested with Kemp Virtual LoadMaster devices
