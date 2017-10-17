@@ -15,13 +15,13 @@ There are two rules included in this management pack. "Reset Disk Fragmentation 
 
 There are two groups included in this management pack: "Drives to AutoDefragment" and "Drives to disable fragmentation monitoring". The two group approach provides a way that the OpsMgr administrator can approach any of the common disk defragmentation requirements that I have run into:
 
-1) I don't want to know if this drive is fragmented: Add the drive to the "Drives to disable fragmentation monitoring" group.
+1)??I don't want to know if this drive is fragmented: Add the drive to the "Drives to disable fragmentation monitoring" group.
 
-2) I want to know the drive is fragmented but don't want to autodefragment the drive. Add the drive to the exclusions section of the "Drives to AutoDefragment" group.
+2)??I want to know the drive is fragmented but don't want to autodefragment the drive.??Add the drive to the exclusions section of the "Drives to AutoDefragment" group.
 
 [![image](http://blogs.catapultsystems.com/wp-content/uploads/attachments/cfuller/media/windowslivewriter/d5e228a95431_c284/image_thumb_2.png "image")](http://blogs.catapultsystems.com/wp-content/uploads/attachments/cfuller/media/windowslivewriter/d5e228a95431_c284/image_6.png)
 
 *Overrides*:
 
 There are six overrides included in this management pack. There is one for each of the operating system management packs (2003, 2008, 2012), so these are actually two sets of three overrides. The first three overrides disable monitoring of fragmentation for any members of the "Drives to disable fragmentation monitoring" group. The second three overrides enable the built-in recovery in Operations Manager to defragment a drive.\
- [![image](http://blogs.catapultsystems.com/wp-content/uploads/attachments/cfuller/media/windowslivewriter/d5e228a95431_c284/image_thumb_4.png "image")](http://blogs.catapultsystems.com/wp-content/uploads/attachments/cfuller/media/windowslivewriter/d5e228a95431_c284/image_10.png)
+??[![image](http://blogs.catapultsystems.com/wp-content/uploads/attachments/cfuller/media/windowslivewriter/d5e228a95431_c284/image_thumb_4.png "image")](http://blogs.catapultsystems.com/wp-content/uploads/attachments/cfuller/media/windowslivewriter/d5e228a95431_c284/image_10.png)

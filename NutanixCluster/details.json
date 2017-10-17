@@ -1,0 +1,15 @@
+{
+    "ManagementPackSystemName":  "NutanixCluster",
+    "ManagementPackDisplayName":  "Nutanix Cluster Management Pack",
+    "URL":  "http://www.netwatch.me/2015/07/08/nutanix-scom-management-pack-monitor-your-nutanix-infrastructure/",
+    "Version":  "1.2.0.0",
+    "Author":  "Nutanix",
+    "Description":  null,
+    "IsFree":  true,
+    "Tags":  [
+                 "Infrastructure",
+                 "Cluster",
+                 "Hardware",
+                 "SNMP"
+             ]
+}

@@ -1,0 +1,13 @@
+{
+    "ManagementPackSystemName":  "SCOM.Task.Collection.SCOMfaq",
+    "ManagementPackDisplayName":  "SCOM Task Collection MP",
+    "URL":  "https://stefanroth.net/2013/03/07/scom-2012-update-scom-task-collection-mp/",
+    "Version":  "1.2.0.0",
+    "Author":  "Stefan Roth",
+    "Description":  "A collection of helpful SCOM task",
+    "IsFree":  true,
+    "Tags":  [
+                 "Tasks",
+                 "Administration"
+             ]
+}

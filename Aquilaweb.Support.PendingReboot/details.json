@@ -5,8 +5,10 @@
   "Version": "1.0.0.4",
   "Author": "David Allen",
   "IsFree": true,
+  "Description": "Simple monitoring for servers which have a pending reboot",
   "Tags": [
     "Reboot",
-    "Windows Server"
+    "Windows Server",
+	"Patching"
   ]
 }

@@ -1,0 +1,12 @@
+{
+    "ManagementPackSystemName":  "OpsMgr.HealthSync.Library",
+    "ManagementPackDisplayName":  "OpsMgr Health Sync Library MP",
+    "URL":  "http://www.tyconsulting.com.au/portfolio/opsmgr-health-state-synchronization-mp/",
+    "Version":  "1.0.0.0",
+    "Author":  "Tao Yang",
+    "Description":  "The OpsMgr Health Synchronization Library management pack is designed to provide a workaround to this limitation. This management pack provides a template that enables OpsMgr users to create monitoring objects named \"Health State Watcher\" hosted by All Management Servers Resource Pool.",
+    "IsFree":  true,
+    "Tags":  [
+                 "Administration"
+             ]
+}
