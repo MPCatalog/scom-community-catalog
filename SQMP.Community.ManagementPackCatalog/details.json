@@ -2,7 +2,7 @@
   "ManagementPackSystemName": "Community.ManagementPackCatalog",
   "ManagementPackDisplayName": "Community Management Pack Catalog",
   "URL": "https://github.com/squaredup/scom-community-catalog-ui/wiki",
-  "Version": "1.0.0.14",
+  "Version": "1.0.2.0",
   "Author": "Squared Up Ltd.",
   "IsFree": true,
   "Tags": [
