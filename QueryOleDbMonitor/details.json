@@ -8,6 +8,8 @@
   "Description": "Adds templates to simplify creating new SQL monitoring queries",
   "Tags": [
     "SQL",
-	  "Extension"
+	  "Extension",
+	  "Authoring",
+	  "Templates"
 	]
 }

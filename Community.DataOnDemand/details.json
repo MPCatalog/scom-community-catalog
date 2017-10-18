@@ -4,10 +4,10 @@
   "URL": "https://download.squaredup.com/management-packs/data-on-demand-community/",
   "Version": "1.2.4.0",
   "Author": "Squared Up Ltd.",
-  "CommercialAuthor": true,
   "IsFree": true,
   "Tags": [
     "Agent Task",
-	"Discovery"
+	"Discovery",
+	"Open Source"
 	]
 }

@@ -5,7 +5,7 @@
     "Version":  "7.0.0.1913",
     "Author":  "Veeam",
     "Description":  "Veeam Hyper-V Virtualization Monitoring",
-    "IsFree":  true,
+    "IsFree":  false,
     "Tags":  [
                  "Virtualization",
                  "Hyper-V",

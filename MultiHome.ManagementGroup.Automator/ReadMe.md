@@ -1,4 +1,5 @@
-# MultiHome.ManagementGroup.Automator
+## MultiHome.ManagementGroup.Automator
+
 A simple Management Pack to help add and remove Management Groups to/from agents.
 
 Hello, just fulfilling a quick ask with this one. With SCOM 2012 we were given the ability to manage agent Management Group configuration using the Agent Config Manager Object or AgentConfigManager.MgmtSvcCfg. It can be leveraged in VBS or PowerShell to Add, Remove, and List SCOM management groups configured on the agent. This isn?t groundbreaking news and the methods are well documented, and plenty of community examples exists already.
