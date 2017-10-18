@@ -1,12 +1,12 @@
 {
-  "ManagementPackSystemName": "SQMP.Community.ManagementPackCatalog",
+  "ManagementPackSystemName": "Community.ManagementPackCatalog",
   "ManagementPackDisplayName": "Community Management Pack Catalog",
-  "URL": "http://www.SquaredUp.com/ManagementPacks",
-  "Version": "1.6.4.3",
+  "URL": "https://github.com/squaredup/scom-community-catalog-ui/wiki",
+  "Version": "1.0.0.14",
   "Author": "Squared Up Ltd.",
-  "IsFree": false,
+  "IsFree": true,
   "Tags": [
-    "Free",
-    "Essential"
+    "Essential",
+	"Open Source"
   ]
 }

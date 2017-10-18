@@ -5,7 +5,7 @@
     "Version":  "7.0.0.1913",
     "Author":  "Veeam",
     "Description":  "Virtualization monitoring for VMware",
-    "IsFree":  true,
+    "IsFree":  false,
     "Tags":  [
                  "VMware",
                  "virtualization",

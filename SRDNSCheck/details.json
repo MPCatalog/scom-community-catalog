@@ -4,7 +4,7 @@
     "URL":  "https://stefanroth.net/2014/06/12/scom-2012-check-dns-servers-and-dns-records-ip-mp/",
     "Version":  "1.0.0.0",
     "Author":  "Stefan Roth",
-    "Description":  "Monitoring for DNS server name resolution",
+    "Description":  "Simple monitoring for DNS resources",
     "IsFree":  true,
     "Tags":  [
                  "VSAE",
