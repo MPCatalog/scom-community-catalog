@@ -1,4 +1,4 @@
-The Management Pack contains:
+The Health Service Store Monitoring MP contails the following:
 
 -   A Monitor to check the size of the Health Service database file
     -   Monitor name is "Health Service Store File Size Check"
@@ -10,9 +10,9 @@ The Management Pack contains:
     -   Rule name is "Collection: Health Service Database File Size"
     -   Targeted at the "Agent" class
     -   Collected performance counter is
-        -   Object:??Health Service Database
-        -   Counter:??File Size
-        -   Instance:??<Path to health service store file>
+        -   Object: Health Service Database
+        -   Counter: File Size
+        -   Instance: <Path to health service store file>
 -   A Task to manually do an offline defrag of the Health Service database file
     -   Task name is "Health Service Database Offline Defrag"
     -   Targeted at the "Agent" class
@@ -23,7 +23,7 @@ Details of the workflows
 
 -   The Monitor runs a PowerShell script that gets the Health Service State directory from the registry, then checks the size of the HealthServiceStore.edb file and compares against the defined threshold. The script returns a Property Bag to SCOM with the file path, size, threshold, and status (above/below threshold).
 -   The Collection Rule uses the same script as the Monitor, and just uses the file size property and maps it to performance counter data.
--   The offline defrag Task and Recovery use a VBScript based on Matt Taylor's??[task to restart SCOM Health Service](https://blogs.technet.microsoft.com/b/scom_atlas/archive/2015/05/21/task-to-restart-scom-health-service.aspx)script...all I did is modify it to run the offline defrag before restarting the service.
+-   The offline defrag Task and Recovery use a VBScript based on Matt Taylor's [task to restart SCOM Health Service](https://blogs.technet.microsoft.com/b/scom_atlas/archive/2015/05/21/task-to-restart-scom-health-service.aspx)script...all I did is modify it to run the offline defrag before restarting the service.
 
 Screen shots from the Management Pack
 

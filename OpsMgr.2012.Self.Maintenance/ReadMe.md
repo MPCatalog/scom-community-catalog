@@ -1,6 +1,6 @@
 ### Introduction
 
-I can't believe it has been 1 year and 3 month since the OpsMgr Self Maintenance MP was lastly updated. This is partially because over the last year or so, I have been spending a lot of time developing the OpsMgr PowerShell / SMA module OpsMgrExtended and am stilling working on the??[Automating OpsMgr blog series](http://blog.tyang.org/tag/automating-opsmgr/).?? But I think one of the main reasons is that I did not get too many new ideas for the next release. I have decided to start working on version 2.5 of the Self Maintenance MP few weeks ago, when I realised I have collected enough resources for a new release. So, after few weeks of development and testing, I'm pleased to announce the version 2.5 is ready for the general public.
+I can't believe it has been 1 year and 3 month since the OpsMgr Self Maintenance MP was lastly updated. This is partially because over the last year or so, I have been spending a lot of time developing the OpsMgr PowerShell / SMA module OpsMgrExtended and am stilling working on the [Automating OpsMgr blog series](http://blog.tyang.org/tag/automating-opsmgr/).  But I think one of the main reasons is that I did not get too many new ideas for the next release. I have decided to start working on version 2.5 of the Self Maintenance MP few weeks ago, when I realised I have collected enough resources for a new release. So, after few weeks of development and testing, I'm pleased to announce the version 2.5 is ready for the general public.
 
 ### What's new in version 2.5?
 

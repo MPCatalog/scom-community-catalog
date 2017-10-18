@@ -5,5 +5,3 @@ Version 1.2.0.0 has introduced a new feature that can monitor assigned DCM Compl
 By default, the discovery for DCM Baselines is disabled. It needs to be enabled on manually via overrides before DCM baselines can be monitored individually.
 
 [![image](http://blog.tyang.org/wp-content/uploads/2014/10/image_thumb.png "image")](http://blog.tyang.org/wp-content/uploads/2014/10/image.png)
-
-There are several groups can be used for overriding the DCM Baseline discovery:
