@@ -1,0 +1,17 @@
+{
+  "ManagementPackSystemName": "QND.OMS.LogAnalytics",
+  "ManagementPackDisplayName": "QND - OMS Log Analytics",
+  "URL": "https://github.com/QuaeNocentDocent/OMS-ManagementPack",
+  "Version": "2.0.0.50",
+  "Author": "Daniele Grandini",
+  "IsFree": true,
+  "Description": "A monitoring OpsMgr management pack to remotely check OMS performance and availability. Management Pack bundle includes MP for multiple OMS based solutions",
+  "Tags": [
+    "MVP",
+    "OMS",
+    "Log Analytics",
+    "Azure Automation",
+    "Azure Backup",
+	  "Open Source"
+  ]
+}

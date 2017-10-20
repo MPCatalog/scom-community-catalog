@@ -1,0 +1,13 @@
+{
+  "ManagementPackSystemName": "ABC.F5.BIGIP",
+  "ManagementPackDisplayName": "ABC F5 BIGIP ",
+  "URL": "https://github.com/Juanito99/F5_BIGIP_OpsMgr",
+  "Version": "1.0.0.40",
+  "Author": "Ruben Zimmerman",
+  "IsFree": true,
+  "Tags": [
+    "F5",
+    "BigIP",
+    "Network"
+	]
+}
