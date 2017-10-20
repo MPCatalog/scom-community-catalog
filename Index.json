@@ -27,6 +27,12 @@
     "ManagementPackSystemName": "HealthServiceStore.Monitoring"
   },
   {
+    "ManagementPackSystemName": "ABC.F5.BIGIP"
+  },
+  {
+    "ManagementPackSystemName": "ABC.Network.SolarWinds.NPM"
+  },
+  {
     "ManagementPackSystemName": "Microsoft.SystemCenter.Internal.Addendum"
   },
   {
