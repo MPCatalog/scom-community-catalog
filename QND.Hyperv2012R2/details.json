@@ -5,6 +5,7 @@
   "Version": "1.1.0.72",
   "Author": "Daniele Grandini",
   "IsFree": true,
+  "Description": "A community-backed Hyper-V Operations Manager MP",
   "Tags": [
     "MVP",
     "Hyper-V",

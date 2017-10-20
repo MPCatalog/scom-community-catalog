@@ -5,8 +5,11 @@
   "Version": "1.1.0.0",
   "Author": "Zvi Uretzky",
   "IsFree": true,
+  "Description": "Adds templates to simplify creating new SQL monitoring queries",
   "Tags": [
     "SQL",
-	  "Extension"
+	  "Extension",
+	  "Authoring",
+	  "Templates"
 	]
 }

@@ -1,0 +1,14 @@
+{
+    "ManagementPackSystemName":  "WindowsAzurePack.ManagementPack.Monitoring",
+    "ManagementPackDisplayName":  "Windows Azure Pack (WAP) V2",
+    "URL":  "http://www.systemcentercentral.com/windows-azure-pack-scom-management-pack-v2/",
+    "Version":  "2.0.0.0",
+    "Author":  "Oskar Landman",
+    "Description":  "This Management pack is written to monitor the health of your windows azure pack environment. It will provide you an overview on the health as well as detailed information.",
+    "IsFree":  true,
+    "Tags":  [
+                 "WAP",
+				 "Azure",
+				 "Cloud"
+             ]
+}

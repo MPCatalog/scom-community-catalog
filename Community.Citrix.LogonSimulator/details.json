@@ -5,9 +5,10 @@
   "Version": "1.0.0.0",
   "Author": "Squared Up Ltd.",
   "IsFree": true,
+  "Description": "Perform Citrix based user simulation to quickly locate issues in your environment",
   "Tags": [
     "User Simulator",
 	"Citrix",
-	"GitHub"
+	"Open Source"
 	]
 }

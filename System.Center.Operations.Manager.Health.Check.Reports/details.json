@@ -1,0 +1,13 @@
+{
+    "ManagementPackSystemName":  "System.Center.Operations.Manager.Health.Check.Reports",
+    "ManagementPackDisplayName":  "System Center Operations Manager Health Check Reports",
+    "URL":  "https://gallery.technet.microsoft.com/SCOM-Health-Check-Reports-c32e8f93",
+    "Version":  "3.0.1.5",
+    "Author":  "Oskar Landman",
+    "Description":  "This management pack bundle is an update to the famous SCC Health Check reports posted back in 2010.",
+    "IsFree":  true,
+    "Tags":  [
+                 "Reports",
+                 "Maintained"
+             ]
+}

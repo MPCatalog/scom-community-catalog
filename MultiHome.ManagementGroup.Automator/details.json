@@ -1,0 +1,14 @@
+{
+    "ManagementPackSystemName":  "MultiHome.ManagementGroup.Automator",
+    "ManagementPackDisplayName":  "Multi Home Management Group Automator",
+    "URL":  "https://github.com/cchamp-msft/MultiHome.ManagementGroup.Automator",
+    "Version":  "1.0.0.0",
+    "Author":  "cchamp-msft",
+    "Description":  "A simple Management Pack to help add and remove Management Groups to/from agents.",
+    "IsFree":  true,
+    "Tags":  [
+                 "Open Source",
+                 "Administration",
+                 "Tasks"
+             ]
+}

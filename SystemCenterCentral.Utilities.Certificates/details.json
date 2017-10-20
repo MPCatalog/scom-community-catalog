@@ -5,8 +5,10 @@
   "Version": "1.2.1.3",
   "Author": "Raphael Burri",
   "IsFree": true,
+  "Description": "Monitors certificates locally on your Windows machines",
   "Tags": [
     "PKI",
-    "Certificates"
+    "Certificates",
+	"Security"
   ]
 }

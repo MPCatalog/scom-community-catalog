@@ -1,0 +1,14 @@
+{
+    "ManagementPackSystemName":  "NiCE.LogFile.Library",
+    "ManagementPackDisplayName":  "NiCE Log File Monitoring MP",
+    "URL":  "http://www.nice.de/log-file-monitoring-scom-nice-logfile-mp/",
+    "Version":  "1.0.30.0",
+    "Author":  "NiCE",
+    "Description":  "The NiCE Log File MP supercharges the log file analytic capabilities for your Windows servers monitored by SCOM.",
+    "IsFree":  true,
+    "Tags":  [
+                 "File",
+                 "Logs",
+                 "Authoring"
+             ]
+}

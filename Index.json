@@ -102,6 +102,9 @@
     "ManagementPackSystemName": "URLGenie"
   },
   {
+    "ManagementPackSystemName": "UptimeRobot.ManagementPack"
+  },
+  {
     "ManagementPackSystemName": "Veeam.Report.Library"
   },
   {
