@@ -74,7 +74,7 @@ foreach($IndexItem in $MPIndex)
     }
 
 # Sort the index for human readability and export
-$MPIndex | sort -Property ManagementPackSystemName -Unique | ConvertTo-Json |Out-File Index.json -Force
+$MPIndex | sort -Property ManagementPackSystemName -Unique | ConvertTo-Json |Out-File Index.json -Encoding ascii -Force
 
 Write-Host "Looking at all of the details.json files, if we found any values that are not in Index.Json they are below"
 # Look at all the detail files to see if they are in the index
