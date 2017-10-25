@@ -2,7 +2,7 @@
     "ManagementPackSystemName":  "Veeam.Virt.Extensions.VMware.Library",
     "ManagementPackDisplayName":  "Veeam VMware Monitoring MP",
     "URL":  "https://go.veeam.com/mp-50-free.html",
-    "Version":  "7.0.0.1913",
+    "Version":  "8.0.0.2372",
     "Author":  "Veeam",
     "Description":  "Virtualization monitoring for VMware",
     "IsFree":  false,
