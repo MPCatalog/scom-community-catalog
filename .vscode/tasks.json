@@ -1,0 +1,90 @@
+// A task runner that invokes Pester to run all Pester tests under the
+// current workspace folder.
+
+// NOTE: This Test task runner requires an updated version of Pester (>=3.4.0)
+// in order for the problemMatcher to find failed test information (message, line, file).
+// If you don't have that version, you can update Pester from the PowerShell Gallery
+// with this command:
+//
+// PS C:\> Update-Module Pester
+//
+// If that gives an error like:
+// "Module 'Pester' was not installed by using Install-Module, so it cannot be updated."
+// then execute:
+//
+// PS C:\> Install-Module Pester -Scope CurrentUser -Force
+//
+
+// Available variables which can be used inside of strings.
+//${workspaceRoot} the path of the folder opened in VS Code
+//${workspaceRootFolderName} the name of the folder opened in VS Code without any slashes (/)
+//${file} the current opened file
+//${relativeFile} the current opened file relative to workspaceRoot
+//${fileBasename} the current opened file's basename
+//${fileBasenameNoExtension} the current opened file's basename without the extension
+//${fileDirname} the current opened file's dirname
+//${fileExtname} the current opened file's extension
+//${cwd} the task runner's current working directory on startup
+//${lineNumber} the current selected line number in the active file
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "presentation": {
+        "echo": false,
+        "reveal": "silent",
+        "focus": false,
+        "panel": "dedicated"
+    },
+    // Start PowerShell    
+    "tasks": [
+        {
+            "taskName": "Add management pack",
+            "type": "process",
+            "command": "powershell.exe",
+            "args": [
+                "-NoProfile",
+                "-ExecutionPolicy",
+                "Bypass",
+                "${workspaceFolder}/JsonHelper.ps1"
+            ],
+            "group": "none",
+            "problemMatcher": [],
+            "presentation": {
+                "echo": false,
+                "reveal": "always",
+                "focus": true,
+                "panel": "shared"
+            }
+        },
+        {
+            "taskName": "Test Current file",
+            "type": "process",
+            "problemMatcher": "$pester",
+            "command": "powershell.exe",
+            "args": [
+                "-NoProfile",
+                "-ExecutionPolicy",
+                "Bypass",
+                "Invoke-Pester -PesterOption @{IncludeVSCodeMarker=$true} -TestName 'index.json','${fileDirname}'"
+            ],
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            }
+        },
+        {
+            "taskName": "Test repository",
+            "type": "process",
+            "problemMatcher": "$pester",
+            "command": "powershell.exe",
+            "args": [
+                "-NoProfile",
+                "-ExecutionPolicy",
+                "Bypass",
+                "Invoke-Pester -PesterOption @{IncludeVSCodeMarker=$true};"
+            ],
+            "group": "test"
+        }
+    ]
+}
