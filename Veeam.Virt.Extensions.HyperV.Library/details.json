@@ -2,7 +2,7 @@
     "ManagementPackSystemName":  "Veeam.Virt.Extensions.HyperV.Library",
     "ManagementPackDisplayName":  "Veeam Hyper-V Monitoring",
     "URL":  "https://go.veeam.com/mp-50-free.html",
-    "Version":  "7.0.0.1913",
+    "Version":  "8.0.0.2391",
     "Author":  "Veeam",
     "Description":  "Veeam Hyper-V Virtualization Monitoring",
     "IsFree":  false,

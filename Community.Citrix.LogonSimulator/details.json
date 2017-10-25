@@ -2,7 +2,7 @@
   "ManagementPackSystemName": "Community.Citrix.LogonSimulator",
   "ManagementPackDisplayName": "Citrix Logon Simulator (Community)",
   "URL": "https://download.squaredup.com/management-packs/citrix-logon-simulator-community/",
-  "Version": "1.0.0.0",
+  "Version": "1.0.1.121",
   "Author": "Squared Up Ltd.",
   "IsFree": true,
   "Description": "Perform Citrix based user simulation to quickly locate issues in your environment",
