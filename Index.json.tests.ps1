@@ -45,7 +45,7 @@ Describe "Index.json" -Tag $location {
         It 'Is alphabetically sorted' {
             $sortedJson = $json | Sort-Object -Property ManagementPackSystemName
             for ($i = 0; $i -lt $json.Count; $i++) {                
-                $json[$i].ManagementPackSystemName | Should Be $sortedJson[$i]
+                $json[$i].ManagementPackSystemName | Should Be $sortedJson[$i].ManagementPackSystemName
             }
         }
     }
