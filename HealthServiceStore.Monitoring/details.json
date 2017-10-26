@@ -5,7 +5,7 @@
 	"Version": "1.0.0.13",
 	"Author": "Jimmy Harper",
 	"IsFree": true,
-	"Description": "A Management Pack to monitor, collect, and reduce the size of the Health Service store file."
+	"Description": "A Management Pack to monitor, collect, and reduce the size of the Health Service store file.",
 	"Tags": [
 		"Essential",
 		"Maintenance",
