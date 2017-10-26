@@ -4,6 +4,8 @@
 	"recommendations": [
 		// Extension identifier format: ${publisher}.${name}. Example: vscode.csharp
 		"ms-vscode.powershell",
-		"DavidAnson.vscode-markdownlint"
+		"DavidAnson.vscode-markdownlint",
+		"eamodio.gitlens",
+		"donjayamanne.githistory"
 	]
 }
