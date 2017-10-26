@@ -33,11 +33,14 @@ foreach ($packFile in $packFiles) {
 
             It "Has a details.json" {
                 $packFile.FullName | Should Exist
+                $packFile.Name | Should BeExactly "details.json"
             }
 
             It "Has a Readme.md" {
                 $readme = $packFile.FullName -replace $packFileName, 'README.md'
                 $readme | Should Exist
+                # Get-ChildItem is used as Get-Item returns the same case it is passed.
+                (Get-ChildItem -Path $packFile.DirectoryName -Filter "readme.md").Name  | Should BeExactly "ReadMe.md"
             }
         }
 
