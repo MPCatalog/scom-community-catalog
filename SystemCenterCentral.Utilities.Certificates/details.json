@@ -2,7 +2,7 @@
   "ManagementPackSystemName": "SystemCenterCentral.Utilities.Certificates",
   "ManagementPackDisplayName": "PKI Certificate Validation V2",
   "URL": "http://www.systemcentercentral.com/pack-catalog/pki-certificate-verification-mp/",
-  "Version": "1.2.1.3",
+  "Version": "1.3.0.0",
   "Author": "Raphael Burri",
   "IsFree": true,
   "Description": "Monitors certificates locally on your Windows machines",

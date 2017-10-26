@@ -2,7 +2,7 @@
   "ManagementPackSystemName": "Security.Monitoring",
   "ManagementPackDisplayName": "Security Monitoring",
   "URL": "https://gallery.technet.microsoft.com/Security-Management-Pack-fee2c134",
-  "Version": "1.0.0.0",
+  "Version": "1.0.3.5",
   "Author": "Nathan Gau",
   "Description": "The goal is to provide a real time notification to events that are worthy of investigation.  This MP covers a wide range of events ranging from process creation, to special group logon, to service creation, scheduled task creation, and windows event collector monitors for a tier 2 environment.",
   "IsFree": true,

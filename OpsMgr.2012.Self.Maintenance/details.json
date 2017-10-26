@@ -2,7 +2,7 @@
   "ManagementPackSystemName": "OpsMgr.2012.Self.Maintenance",
   "ManagementPackDisplayName": "OpsMgr Self Maintenance Management Pack",
   "URL": "https://blog.tyang.org/2015/09/16/opsmgr-self-maintenance-management-pack-2-5-0-0/",
-  "Version": "2.5.0.0",
+  "Version": "2.5.0.1",
   "Author": "Tao Yang",
   "IsFree": true,
   "Tags": [
