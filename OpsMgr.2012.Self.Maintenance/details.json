@@ -5,6 +5,7 @@
   "Version": "2.5.0.1",
   "Author": "Tao Yang",
   "IsFree": true,
+  "Description": "A collection of monitors, rules, and tasks to help maintain your SCOM Management Group.",
   "Tags": [
     "Maintained",
 	"Essential",

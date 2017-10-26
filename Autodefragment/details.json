@@ -5,6 +5,7 @@
   "Version": "6.0.0.1",
   "Author": "Cameron Fuller",
   "IsFree": true,
+  "Description": "How to automate defragmentation using OpsMgr",
   "Tags": [
     "MVP",
     "PowerShell"

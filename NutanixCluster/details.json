@@ -4,7 +4,7 @@
     "URL":  "http://www.netwatch.me/2015/07/08/nutanix-scom-management-pack-monitor-your-nutanix-infrastructure/",
     "Version":  "1.2.0.0",
     "Author":  "Nutanix",
-    "Description":  null,
+    "Description":  "The management packs collect information about software (cluster) elements through SNMP and hardware elements through ipmiutil (Intelligent Platform Management Interface Utility) and REST API calls and then package that information for SCOM to digest.",
     "IsFree":  false,
     "Tags":  [
                  "Infrastructure",
