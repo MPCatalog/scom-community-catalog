@@ -32,7 +32,7 @@
     "version": "2.0.0",
     "presentation": {
         "echo": false,
-        "reveal": "silent",
+        "reveal": "always",
         "focus": false,
         "panel": "dedicated"
     },
@@ -58,7 +58,27 @@
             }
         },
         {
-            "taskName": "Test Current file",
+            "taskName": "Update test files",
+            "type": "process",
+            "identifier": "updateTestFiles",
+            "command": "powershell.exe",
+            "args": [
+                "-NoProfile",
+                "-ExecutionPolicy",
+                "Bypass",
+                ".\\Update-Tests.ps1"
+            ],
+            "group": "none",
+            "problemMatcher": [],
+            "presentation": {
+                "echo": false,
+                "reveal": "never",
+                "focus": false,
+                "panel": "shared"
+            }
+        },
+        {
+            "taskName": "Test current file",
             "type": "process",
             "problemMatcher": "$pester",
             "command": "powershell.exe",
@@ -66,7 +86,7 @@
                 "-NoProfile",
                 "-ExecutionPolicy",
                 "Bypass",
-                "Invoke-Pester -PesterOption @{IncludeVSCodeMarker=$true} -TestName 'index.json','${fileDirname}'"
+                ".\\Update-Tests.ps1 -Path '${fileDirname}' ; Invoke-Pester -Script '${fileDirname}' -Tag '${fileDirname}' -PesterOption @{IncludeVSCodeMarker=$true}"
             ],
             "group": {
                 "kind": "test",
@@ -75,6 +95,7 @@
         },
         {
             "taskName": "Test repository",
+            "dependsOn": "updateTestFiles",
             "type": "process",
             "problemMatcher": "$pester",
             "command": "powershell.exe",
@@ -82,9 +103,12 @@
                 "-NoProfile",
                 "-ExecutionPolicy",
                 "Bypass",
-                "Invoke-Pester -PesterOption @{IncludeVSCodeMarker=$true};"
+                "Invoke-Pester -PesterOption @{IncludeVSCodeMarker=$true} -Show Fails"
             ],
-            "group": "test"
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
         }
     ]
 }
