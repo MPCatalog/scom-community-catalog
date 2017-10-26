@@ -78,7 +78,7 @@
             }
         },
         {
-            "taskName": "Test current file",
+            "taskName": "Test current folder",
             "type": "process",
             "problemMatcher": "$pester",
             "command": "powershell.exe",
