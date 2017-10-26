@@ -1,0 +1,9 @@
+### Overview
+
+The URL Genie Management Pack provides a fast and easy way to implement monitoring for a large numbers of URL instances from only a few instances up to many thousands! In addition there are some special features which allow monitoring sites which require client certificates in addition to pages that use forms-based authentication. With URLGenie you can easily configure monitoring for thousands of standard URL instances in less than a minute. 
+
+The URL instances and their respective monitoring criteria get instantiated on any number of "watcher" nodes from one or more XML configuration files. Any managed Windows computer can be activated as a watcher node with a simple Console task during which the watcher nodes get configured with a path to where it should look for configuration files. There can exist any number of configuration files, each with any number of requests defined within. Typically the configuration files will be centrally located in a single shared network folder. A decent place for the shared configuration folder is on management server or the data warehouse server with all watcher nodes configured with the same shared folder path. This is the most simple and scalable configuration.
+
+There are standard monitors which target the http and https class types. Each individual monitor will alert with plenty of alert specific context information. This is significantly different than the Operations Manager standard Web Availability or Synthetic Transaction monitoring which will only alert on the rollup and contain no specific or useful alert context information.
+
+The standard monitors all support the various types of http authentication: *None*, *Basic*, *NTLM*, *Digest*, and*Negotiate*. In addition, there are special monitor types which can be enabled for URLs that require a client certificate or even for web sites that use forms-based authentication, a first for SCOM (to my knowledge)!
