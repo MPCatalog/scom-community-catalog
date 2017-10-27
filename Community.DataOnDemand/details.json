@@ -5,6 +5,7 @@
   "Version": "1.2.4.36",
   "Author": "Squared Up Ltd.",
   "IsFree": true,
+  "Description": "Provides On Demand data used for Visual Application Discovery & Analysis (VADA)",
   "Tags": [
     "Agent Task",
 	"Discovery",
