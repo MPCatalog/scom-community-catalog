@@ -65,11 +65,13 @@ Describe "Index.json" -Tag $location {
             }
 
             It "Pack $name has valid IsActive" {
-                $isActive = $pack.IsActive
+                $isActive = $null
                 
                 # Treat as true if not specified, as the catalog does
                 if (($pack.PSObject.Properties | Select-Object -ExpandProperty Name) -notcontains 'IsActive') {
                     $isActive = $true
+                } else {
+                    $isActive = $pack.IsActive
                 }
 
                 $isActive | Should BeOfType System.Boolean
