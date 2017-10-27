@@ -84,7 +84,13 @@ foreach ($packFile in $packFiles) {
             }
     
             It "Has IsFree" {
-                $json.IsFree | Should BeOfType System.Boolean
+                $IsFree = $json.IsFree
+                
+                # Treat as false if not specified, as the catalog does
+                if (($json.PSObject.Properties | Select-Object -ExpandProperty Name) -notcontains 'IsFree') {
+                    $IsFree = $false
+                }
+                $IsFree | Should BeOfType System.Boolean
             }
     
             It "Has an array of Tags" {
