@@ -54,6 +54,11 @@ Describe "Index.json" -Tag $location {
         
         foreach ($pack in $json) {
             $name = $pack.ManagementPackSystemName
+            
+            It "Pack $name has valid ManagementPackSystemName" {
+                $pack.ManagementPackSystemName | Should Match '^[A-Za-z_][A-Za-z0-9_\.]{0,255}$'
+            }
+
             It "Pack $name matches folder name" {
                 $path = Join-Path $pwd $name
                 $path | Should Exist

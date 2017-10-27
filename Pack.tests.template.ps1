@@ -51,8 +51,9 @@ foreach ($packFile in $packFiles) {
                 $contents | Should Not BeNullOrEmpty
             }
 
-            It "Has a ManagementPackSystemName" {
+            It "Has a valid ManagementPackSystemName" {
                 $json.ManagementPackSystemName | Should Not BeNullOrEmpty
+                $json.ManagementPackSystemName | Should Match '^[A-Za-z_][A-Za-z0-9_\.]{0,255}$'
             }
 
             It "ManagementPackSystemName matches folder name" {
