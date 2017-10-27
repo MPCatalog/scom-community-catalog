@@ -63,6 +63,17 @@ Describe "Index.json" -Tag $location {
                 $path = Join-Path $pwd $name
                 $path | Should Exist
             }
+
+            It "Pack $name has valid IsActive" {
+                $isActive = $pack.IsActive
+                
+                # Treat as true if not specified, as the catalog does
+                if (($pack.PSObject.Properties | Select-Object -ExpandProperty Name) -notcontains 'IsActive') {
+                    $isActive = $true
+                }
+
+                $isActive | Should BeOfType System.Boolean
+            }
         }
     }
 }
