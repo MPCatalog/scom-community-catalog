@@ -51,8 +51,9 @@ foreach ($packFile in $packFiles) {
                 $contents | Should Not BeNullOrEmpty
             }
 
-            It "Has a ManagementPackSystemName" {
+            It "Has a valid ManagementPackSystemName" {
                 $json.ManagementPackSystemName | Should Not BeNullOrEmpty
+                $json.ManagementPackSystemName | Should Match '^[A-Za-z_][A-Za-z0-9_\.]{0,255}$'
             }
 
             It "ManagementPackSystemName matches folder name" {
@@ -83,7 +84,16 @@ foreach ($packFile in $packFiles) {
             }
     
             It "Has IsFree" {
-                $json.IsFree | Should BeOfType System.Boolean
+                $IsFree = $null
+                
+                # Treat as false if not specified, as the catalog does
+                if (($json.PSObject.Properties | Select-Object -ExpandProperty Name) -notcontains 'IsFree') {
+                    $IsFree = $false
+                } else {
+                    $IsFree = $json.IsFree
+                }
+                
+                $IsFree | Should BeOfType System.Boolean
             }
     
             It "Has an array of Tags" {
