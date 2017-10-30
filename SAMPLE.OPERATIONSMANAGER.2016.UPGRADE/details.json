@@ -5,8 +5,10 @@
   "Version": "1.0.2.38",
   "Author": "Wei H Lim",
   "IsFree": true,
+  "Description": "This is a sample upgrade helper management pack for System Center Operations Manager 2012 R2 to System Center 2016 Operations Manager.",
   "Tags": [
     "Upgrade",
-    "2016"
+    "2016",
+	"Sample"
   ]
 }

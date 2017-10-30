@@ -5,6 +5,7 @@
   "Version": "1.0.0.0",
   "Author": "Nathan Foreman",
   "IsFree": true,
+  "Description": "Take control over what data gets sent to OMS, as well as controlling when configuration changes are applied to your SCOM environment.",
   "Tags": [
     "OMS",
 	"UI Controls",

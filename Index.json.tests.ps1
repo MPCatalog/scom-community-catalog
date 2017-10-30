@@ -42,8 +42,8 @@ Describe "Index.json" -Tag $location {
             }
         }
 
-        It 'Is alphabetically sorted' {
-            $sortedJson = $json | Sort-Object -Property ManagementPackSystemName
+        It 'Is alphabetically sorted and unique' {
+            $sortedJson = $json | Sort-Object -Property ManagementPackSystemName -Unique
             for ($i = 0; $i -lt $json.Count; $i++) {                
                 $json[$i].ManagementPackSystemName | Should Be $sortedJson[$i].ManagementPackSystemName
             }
@@ -54,9 +54,27 @@ Describe "Index.json" -Tag $location {
         
         foreach ($pack in $json) {
             $name = $pack.ManagementPackSystemName
+            
+            It "Pack $name has valid ManagementPackSystemName" {
+                $pack.ManagementPackSystemName | Should Match '^[A-Za-z_][A-Za-z0-9_\.]{0,255}$'
+            }
+
             It "Pack $name matches folder name" {
                 $path = Join-Path $pwd $name
                 $path | Should Exist
+            }
+
+            It "Pack $name has valid IsActive" {
+                $isActive = $null
+                
+                # Treat as true if not specified, as the catalog does
+                if (($pack.PSObject.Properties | Select-Object -ExpandProperty Name) -notcontains 'IsActive') {
+                    $isActive = $true
+                } else {
+                    $isActive = $pack.IsActive
+                }
+
+                $isActive | Should BeOfType System.Boolean
             }
         }
     }

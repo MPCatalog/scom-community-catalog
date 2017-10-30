@@ -5,6 +5,7 @@
   "Version": "1.0.0.11",
   "Author": "Ruben Zimmerman",
   "IsFree": true,
+  "Description": "Integrate SolarWinds NPM into OpsMgr",
   "Tags": [
     "Solarwinds",
     "NPM",
