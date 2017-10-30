@@ -20,7 +20,10 @@ foreach ($packFile in $packFiles) {
     $folderName = (Split-Path $packFile.psparentpath -Leaf)
     $folderPath = split-path $packFile.FullName 
     $contents = Get-Content $packFile.FullName -Raw -ErrorAction SilentlyContinue
-    $json = $contents | ConvertFrom-Json -ErrorAction SilentlyContinue
+    
+    # Even with ErrorAction Silent, this could still throw terminating exceptions
+    $json = $null
+    try { $json = $contents | ConvertFrom-Json -ErrorAction SilentlyContinue } catch {}
 
     Describe "$folderName" -Tag "$folderPath" {
 
@@ -31,20 +34,23 @@ foreach ($packFile in $packFiles) {
                 $index -match $regex | Should Be True
             }
 
-            It "Has a details.json" {
+            It "Has a details.json (case-sensitive)" {
                 $packFile.FullName | Should Exist
+                $packFile.Name | Should BeExactly "details.json"
             }
 
-            It "Has a Readme.md" {
-                $readme = $packFile.FullName -replace $packFileName, 'README.md'
+            It "Has a ReadMe.md (case-sensitive)" {
+                $readme = $packFile.FullName -replace $packFileName, 'ReadMe.md'
                 $readme | Should Exist
+                # Get-ChildItem is used as Get-Item returns the same case it is passed.
+                (Get-ChildItem -Path $packFile.DirectoryName -Filter "readme.md").Name  | Should BeExactly "ReadMe.md"
             }
         }
 
         Context 'details.json' {
             
             It "details.json is valid json" {
-                { $contents | ConvertFrom-Json } | Should Not Throw 
+                {$contents | ConvertFrom-Json } | Should Not Throw 
             }
 
             It "details.json has content" {
