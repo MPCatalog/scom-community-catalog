@@ -66,6 +66,9 @@
         "ManagementPackSystemName":  "P2P.OMSAdministration"
     },
     {
+        "ManagementPackSystemName":  "Progel.Windows.ScheduledTasks.Library"
+    },
+    {
         "ManagementPackSystemName":  "QND.Hyperv2012R2"
     },
     {
