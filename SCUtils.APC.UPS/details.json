@@ -1,0 +1,17 @@
+{
+    "ManagementPackSystemName": "SCUtils.APC.UPS",
+    "ManagementPackDisplayName": "SCUtils APC UPS",
+    "URL": "https://www.scutils.com/products/apcupsmonitoring",
+    "Version": "1.6.0.1",
+    "Author": "SCUtils",
+    "IsFree": true,
+    "Description": "SCUtils team have created a solution that helps managing APC Smart-UPSTM series uninterruptible power supplies made by Schneider Electric in their server rooms.",
+    "Tags": [
+        "UPS",
+        "EMU",
+        "APC",
+        "SCUtils",
+        "Schneider Electric",
+        "SNMP"
+    ]
+}
