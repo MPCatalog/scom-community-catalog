@@ -87,6 +87,9 @@
         "ManagementPackSystemName":  "SCOM.Task.Collection.SCOMfaq"
     },
     {
+        "ManagementPackSystemName": "SCUtils.APC.UPS"
+    },
+    {
         "ManagementPackSystemName":  "Security.Monitoring"
     },
     {
