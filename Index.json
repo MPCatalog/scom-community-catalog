@@ -1,0 +1,131 @@
+[
+    {
+        "ManagementPackSystemName":  "ABC.F5.BIGIP"
+    },
+    {
+        "ManagementPackSystemName":  "ABC.Network.SolarWinds.NPM"
+    },
+    {
+        "ManagementPackSystemName":  "Amazon.AmazonWebServices"
+    },
+    {
+        "ManagementPackSystemName":  "Aquilaweb.Support.PendingReboot"
+    },
+    {
+        "ManagementPackSystemName":  "Autodefragment"
+    },
+    {
+        "ManagementPackSystemName":  "Community.Citrix.LogonSimulator"
+    },
+    {
+        "ManagementPackSystemName":  "Community.DataOnDemand"
+    },
+    {
+        "ManagementPackSystemName":  "Community.DataOnDemand.Unix"
+    },
+    {
+        "ManagementPackSystemName":  "Community.ManagementPackCatalog"
+    },
+    {
+        "ManagementPackSystemName":  "Community.PowershellMonitoring"
+    },
+    {
+        "ManagementPackSystemName":  "ConfigMgr.2012.Client.Monitoring"
+    },
+    {
+        "ManagementPackSystemName":  "Eaton.UPS.Monitoring"
+    },
+    {
+        "ManagementPackSystemName":  "HealthServiceStore.Monitoring"
+    },
+    {
+        "ManagementPackSystemName":  "Microsoft.SystemCenter.Internal.Addendum"
+    },
+    {
+        "ManagementPackSystemName":  "MultiHome.ManagementGroup.Automator"
+    },
+    {
+        "ManagementPackSystemName":  "NiCE.LogFile.Library"
+    },
+    {
+        "ManagementPackSystemName":  "NutanixCluster"
+    },
+    {
+        "ManagementPackSystemName":  "OpsLogix.IMP.Ping"
+    },
+    {
+        "ManagementPackSystemName":  "OpsMgr.2012.Self.Maintenance"
+    },
+    {
+        "ManagementPackSystemName":  "OpsMgr.Group.Health.Rollup.Task"
+    },
+    {
+        "ManagementPackSystemName":  "OpsMgr.HealthSync.Library"
+    },
+    {
+        "ManagementPackSystemName":  "P2P.OMSAdministration"
+    },
+    {
+        "ManagementPackSystemName":  "Progel.Windows.ScheduledTasks.Library"
+    },
+    {
+        "ManagementPackSystemName":  "QND.Hyperv2012R2"
+    },
+    {
+        "ManagementPackSystemName":  "QND.Network.Kemp"
+    },
+    {
+        "ManagementPackSystemName":  "QND.OMS.LogAnalytics"
+    },
+    {
+        "ManagementPackSystemName":  "QueryOleDbMonitor"
+    },
+    {
+        "ManagementPackSystemName":  "SAMPLE.OPERATIONSMANAGER.2016.UPGRADE"
+    },
+    {
+        "ManagementPackSystemName":  "SCOM.Management"
+    },
+    {
+        "ManagementPackSystemName":  "SCOM.Task.Collection.SCOMfaq"
+    },
+    {
+        "ManagementPackSystemName": "SCUtils.APC.UPS"
+    },
+    {
+        "ManagementPackSystemName":  "Security.Monitoring"
+    },
+    {
+        "ManagementPackSystemName":  "SQL.RunAs.Addendum"
+    },
+    {
+        "ManagementPackSystemName":  "SRDNSCheck"
+    },
+    {
+        "ManagementPackSystemName":  "System.Center.Operations.Manager.Health.Check.Reports"
+    },
+    {
+        "ManagementPackSystemName":  "SystemCenterCentral.Utilities.Certificates"
+    },
+    {
+        "ManagementPackSystemName":  "TCPPortMonitoring.ManagementPack"
+    },
+    {
+        "ManagementPackSystemName":  "UptimeRobot.ManagementPack"
+    },
+    {
+        "ManagementPackSystemName":  "URLGenie"
+    },
+    {
+        "ManagementPackSystemName":  "Veeam.Report.Library"
+    },
+    {
+        "ManagementPackSystemName":  "Veeam.Virt.Extensions.HyperV.Library"
+    },
+    {
+        "ManagementPackSystemName":  "Veeam.Virt.Extensions.VMware.Library"
+    },
+    {
+        "ManagementPackSystemName":  "WindowsAzurePack.ManagementPack.Monitoring"
+    }
+]
