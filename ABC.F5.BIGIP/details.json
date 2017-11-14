@@ -2,7 +2,7 @@
   "ManagementPackSystemName": "ABC.F5.BIGIP",
   "ManagementPackDisplayName": "ABC F5 BIGIP ",
   "URL": "https://github.com/Juanito99/F5_BIGIP_OpsMgr",
-  "Version": "1.0.0.40",
+  "Version": "1.0.0.77",
   "Author": "Ruben Zimmerman",
   "Description": "A management pack to monitor F5 BIGIP with OpsMgr",
   "IsFree": true,
