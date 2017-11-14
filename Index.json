@@ -6,6 +6,9 @@
         "ManagementPackSystemName":  "ABC.Network.SolarWinds.NPM"
     },
     {
+        "ManagementPackSystemName":  "Addon.SMS"
+    },
+    {
         "ManagementPackSystemName":  "Amazon.AmazonWebServices"
     },
     {
