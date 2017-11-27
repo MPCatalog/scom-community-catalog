@@ -1,4 +1,4 @@
-[
+﻿[
     {
         "ManagementPackSystemName":  "ABC.F5.BIGIP"
     },
@@ -40,6 +40,15 @@
     },
     {
         "ManagementPackSystemName":  "HealthServiceStore.Monitoring"
+    },
+    {
+        "ManagementPackSystemName":  "Inside.Technologies.Veeam.Agents"
+    },
+    {
+        "ManagementPackSystemName":  "InsideTechnologies.Detect.CryptoLocker"
+    },
+    {
+        "ManagementPackSystemName":  "InsideTechnologies.QNAP"
     },
     {
         "ManagementPackSystemName":  "Microsoft.SystemCenter.Internal.Addendum"
@@ -93,7 +102,7 @@
         "ManagementPackSystemName":  "SCOM.Task.Collection.SCOMfaq"
     },
     {
-        "ManagementPackSystemName": "SCUtils.APC.UPS"
+        "ManagementPackSystemName":  "SCUtils.APC.UPS"
     },
     {
         "ManagementPackSystemName":  "Security.Monitoring"
