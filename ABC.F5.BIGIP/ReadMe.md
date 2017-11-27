@@ -1,5 +1,10 @@
 ﻿**Monitor F5 BIGIP with OpsMgr**:
 
-More information on:
+Basic Management Pack which provides general health state and alerting for the following components:
 
-Url: http://www.rjz.de/F5BIGIPWithOpsMgr or https://github.com/Juanito99/F5_BIGIP_OpsMgr
+    CPU, Disk and Memory
+    SyncStatus, PoolStatus, NodeAddress and TrafficGroups
+
+
+More information on:
+Url: https://github.com/Juanito99/F5_BIGIP_OpsMgr

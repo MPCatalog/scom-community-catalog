@@ -1,0 +1,14 @@
+{
+    "ManagementPackSystemName":  "Eaton.UPS.Monitoring",
+    "ManagementPackDisplayName":  "Eaton UPS Monitoring",
+    "URL":  "https://powerquality.eaton.com/Products-services/Power-Management/Software-Drivers/MS-SCOM-Management-Pack.asp",
+    "Version":  "1.0.1.15",
+    "Author":  "Eaton",
+    "Description":  "Allows for discovery and monitoring of Eaton UPS devices via SNMP.",
+    "IsFree":  true,
+    "Tags":  [
+                 "SNMP",
+                 "UPS",
+                 "Eaton"
+             ]
+}
