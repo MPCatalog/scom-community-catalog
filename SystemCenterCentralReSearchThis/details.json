@@ -1,0 +1,13 @@
+﻿{
+    "ManagementPackSystemName":  "SystemCenterCentralReSearchThis",
+    "ManagementPackDisplayName":  "SystemCenterCentral.ReSearch.This!",
+    "URL":  "http://www.systemcentercentral.com/research-this-management-pack-updated-for-opsmgr-2012-scom/",
+    "Version":  "6.5.0.8",
+    "Author":  "Cameron Fuller",
+    "Description":  " MP adds Tasks that allow operators to highlight an alert and submit a search to the SystemCenterForum knowledge base for answers, as well as share their own solutions with the community.",
+    "IsFree":  true,
+    "Tags":  [
+                 "KB",
+                 "Documentation"
+             ]
+}

@@ -120,6 +120,9 @@
         "ManagementPackSystemName":  "SystemCenterCentral.Utilities.Certificates"
     },
     {
+        "ManagementPackSystemName":  "SystemCenterCentralReSearchThis"
+    },
+    {
         "ManagementPackSystemName":  "TCPPortMonitoring.ManagementPack"
     },
     {
