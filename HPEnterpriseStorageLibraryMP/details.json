@@ -1,0 +1,19 @@
+﻿{
+    "ManagementPackSystemName":  "HPEnterpriseStorageLibraryMP",
+    "ManagementPackDisplayName":  "HPE Storage Library Management Pack for System Center",
+    "URL":  "https://h20392.www2.hpe.com/portal/swdepot/displayProductInfo.do?productNumber=System_Center",
+    "Version":  "4.5.0.0",
+    "Author":  "Hewlett-Packard",
+    "Description":  "HPE Storage Managementpack (StorEasy,Storeserv,3PAR)",
+    "IsFree":  true,
+    "Tags":  [
+                 "storage",
+                 "HP",
+                 "HPE",
+                 "Hewlett-Packard",
+                 "3PAR",
+                 "StoreOnce",
+                 "Storeserv",
+                 "MSA"
+             ]
+}
