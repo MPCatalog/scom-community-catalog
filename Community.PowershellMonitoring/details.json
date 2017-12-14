@@ -1,5 +1,5 @@
 {
-  "ManagementPackSystemName": "Community.PowershellMonitoring",
+  "ManagementPackSystemName": "Community.PowerShellMonitoring",
   "ManagementPackDisplayName": "PowerShell Monitoring - Community Management Pack",
   "URL": "https://download.squaredup.com/management-packs/powershell-monitoring-management-pack/",
   "Version": "1.1.1.2",
