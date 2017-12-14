@@ -42,6 +42,9 @@
         "ManagementPackSystemName":  "HealthServiceStore.Monitoring"
     },
     {
+        "ManagementPackSystemName":  "HewlettPackard.ProLiant.Monitored.Library"
+    },
+    {
         "ManagementPackSystemName":  "Inside.Technologies.Veeam.Agents"
     },
     {
