@@ -36,6 +36,9 @@
         "ManagementPackSystemName":  "ConfigMgr.2012.Client.Monitoring"
     },
     {
+        "ManagementPackSystemName":  "DataCore.SANsymphonyV.Library"
+    },
+    {
         "ManagementPackSystemName":  "Eaton.UPS.Monitoring"
     },
     {
