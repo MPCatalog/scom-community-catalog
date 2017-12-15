@@ -1,6 +1,5 @@
 ﻿### Hewlett-Packard ProLiant Monitored Library Management Pack
 
-Select
 Overview
 HPE Management Packs for SCOM
 
