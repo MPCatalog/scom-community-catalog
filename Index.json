@@ -48,6 +48,9 @@
         "ManagementPackSystemName":  "HewlettPackard.ProLiant.Monitored.Library"
     },
     {
+        "ManagementPackSystemName":  "HPEnterpriseStorageLibraryMP"
+    },
+    {
         "ManagementPackSystemName":  "Inside.Technologies.Veeam.Agents"
     },
     {
