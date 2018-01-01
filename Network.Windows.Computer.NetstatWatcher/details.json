@@ -1,0 +1,15 @@
+﻿{
+    "ManagementPackSystemName":  "Network.Windows.Computer.NetstatWatcher",
+    "ManagementPackDisplayName":  "Network Windows Computer NetstatWatcher",
+    "URL":  "https://github.com/Juanito99/Network.Windows.Computer.NetstatWatcher/blob/master/Network.Windows.Computer.NetstatWatcher/Network.Windows.Computer.NetstatWatcher/bin/Release/Network.Windows.Computer.NetstatWatcher.mpb",
+    "Version":  "1.0.0.176",
+    "Author":  "Ruben Zimmermann (Juanito99)",
+    "Description":  "Monitor any network-connection or listening port with SCOM",
+    "IsFree":  true,
+    "Tags":  [
+                 "netstat",
+                 "tcp port",
+                 "udp port",
+                 "network connection"
+             ]
+}

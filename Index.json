@@ -66,6 +66,9 @@
         "ManagementPackSystemName":  "MultiHome.ManagementGroup.Automator"
     },
     {
+        "ManagementPackSystemName":  "Network.Windows.Computer.NetstatWatcher"
+    },
+    {
         "ManagementPackSystemName":  "NiCE.LogFile.Library"
     },
     {
