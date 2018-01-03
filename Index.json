@@ -105,6 +105,9 @@
         "ManagementPackSystemName":  "QueryOleDbMonitor"
     },
     {
+        "ManagementPackSystemName":  "Realdolmen.FileCount.ManagementPack"
+    },
+    {
         "ManagementPackSystemName":  "SAMPLE.OPERATIONSMANAGER.2016.UPGRADE"
     },
     {
