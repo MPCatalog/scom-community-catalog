@@ -1,0 +1,14 @@
+﻿{
+    "ManagementPackSystemName":  "Realdolmen.FileCount.ManagementPack",
+    "ManagementPackDisplayName":  "File Count MP",
+    "URL":  "https://github.com/bpinoy/ManagementPacks/tree/master/File%20Count%20MP",
+    "Version":  "1.0.0.47",
+    "Author":  "Bert Pinoy",
+    "Description":  "Remotly monitor the count of files in a folder via UNC path and simple csv configuration",
+    "IsFree":  true,
+    "Tags":  [
+                 "file",
+                 "folder",
+                 "san"
+             ]
+}
