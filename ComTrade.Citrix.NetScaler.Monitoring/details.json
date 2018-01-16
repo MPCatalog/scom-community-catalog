@@ -1,0 +1,16 @@
+﻿{
+    "ManagementPackSystemName":  "ComTrade.Citrix.NetScaler.Monitoring",
+    "ManagementPackDisplayName":  "Citrix NetScaler Monitoring Library",
+    "URL":  "https://docs.citrix.com/en-us/scom-management-packs/netscaler/1-17.html",
+    "Version":  "1.17.93.0",
+    "Author":  "Citrix",
+    "Description":  "Citrix SCOM Management Pack for NetScaler is an availability and performance management solution that extends end-to-end service monitoring capabilities of Microsoft System Center Operations Manager (SCOM) to include the Citrix NetScaler (NetScaler) infrastructure. It fully integrates topology, health, and performance data into SCOM, providing an end‐to‐end operations overview across the entire NetScaler estate and enabling delivery of effective business service management. Active supportcontract needed for download",
+    "IsFree":  false,
+    "Tags":  [
+                 "netscaler",
+                 "citrix",
+                 "loadbalancer",
+                 "vpn",
+                 "reverseproxy"
+             ]
+}

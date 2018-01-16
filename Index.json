@@ -33,6 +33,9 @@
         "ManagementPackSystemName":  "Community.PowershellMonitoring"
     },
     {
+        "ManagementPackSystemName":  "ComTrade.Citrix.NetScaler.Monitoring"
+    },
+    {
         "ManagementPackSystemName":  "ConfigMgr.2012.Client.Monitoring"
     },
     {
