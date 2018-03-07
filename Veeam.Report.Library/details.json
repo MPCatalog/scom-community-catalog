@@ -2,7 +2,7 @@
     "ManagementPackSystemName":  "Veeam.Report.Library",
     "ManagementPackDisplayName":  "Veeam Report Library",
     "URL":  "https://www.veeam.com/report-library-system-center.html",
-    "Version":  "8.0.0.2372",
+    "Version":  "8.0.0.2451",
     "Author":  "Veeam",
     "Description":  "Enhanced Microsoft System Center reporting from Veeam",
     "IsFree":  true,
