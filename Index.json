@@ -156,6 +156,9 @@
         "ManagementPackSystemName":  "Veeam.Virt.Extensions.VMware.Library"
     },
     {
+        "ManagementPackSystemName":  "Windows.Server.Webservice.LogdirectoryWatcher"
+    },
+    {
         "ManagementPackSystemName":  "WindowsAzurePack.ManagementPack.Monitoring"
     }
 ]
