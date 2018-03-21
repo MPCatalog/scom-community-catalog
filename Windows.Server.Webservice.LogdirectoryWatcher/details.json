@@ -2,7 +2,7 @@
     "ManagementPackSystemName":  "Windows.Server.Webservice.LogdirectoryWatcher",
     "ManagementPackDisplayName":  "Windows Server Webservice LogdirectoryWatcher",
     "URL":  "https://github.com/Juanito99/Windows.Server.Webservice.LogdirectoryWatcher",
-    "Version":  "1.0.0.114",
+    "Version":  "1.0.0.120",
     "Author":  "Ruben Zimmermann",
     "Description":  "Simple Management Pack which monitors the webserver\u0027s log directory size. Covers IIS, Apache and ApacheTomcat on Windows Server.",
     "IsFree":  true,
