@@ -1,0 +1,15 @@
+﻿{
+    "ManagementPackSystemName":  "Microsoft.Windows.Server.AD.2016.Monitoring.Addendum",
+    "ManagementPackDisplayName":  "SCOM AD Directory Services Addendum",
+    "URL":  "https://gallery.technet.microsoft.com/SCOM-AD-Directory-Addendum-22d0473a",
+    "Version":  "1.0.0.1",
+    "Author":  "kjustin1996",
+    "Description":  "This Addendum MP will add Recovery tasks to AD DS Service Monitors.  The recovery tasks verify service state, start \u0027not running\u0027 services, and recalculates health. This will avoid common rework if/when services go down.",
+    "IsFree":  true,
+    "Tags":  [
+                 "SCOM 2012 R2",
+                 "SCOM 2016",
+                 "Directory Services",
+                 "AD DS"
+             ]
+}
