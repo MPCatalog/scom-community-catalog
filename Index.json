@@ -63,6 +63,9 @@
         "ManagementPackSystemName":  "Microsoft.SystemCenter.Internal.Addendum"
     },
     {
+        "ManagementPackSystemName":  "Microsoft.Windows.Server.AD.2016.Monitoring.Addendum"
+    },
+    {
         "ManagementPackSystemName":  "MultiHome.ManagementGroup.Automator"
     },
     {
