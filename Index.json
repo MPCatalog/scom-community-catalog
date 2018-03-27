@@ -105,7 +105,7 @@
         "ManagementPackSystemName":  "QND.OMS.LogAnalytics"
     },
     {
-        "ManagementPackSystemName":  "QueryOleDbMonitor"
+        "ManagementPackSystemName":  "QueryOleDbMonitorLibrary"
     },
     {
         "ManagementPackSystemName":  "Realdolmen.FileCount.ManagementPack"
