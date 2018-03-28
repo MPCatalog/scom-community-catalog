@@ -1,0 +1,15 @@
+{
+  "ManagementPackSystemName": "QueryOleDbMonitorLibrary",
+  "ManagementPackDisplayName": "QueryOleDbMonitorLibrary",
+  "URL": "https://github.com/UretzkyZvi/Monitor-Applications-Using-SQL-Queries",
+  "Version": "2.2.0.2",
+  "Author": "Zvi Uretzky",
+  "IsFree": true,
+  "Description": "Adds templates to simplify creating new SQL monitoring queries",
+  "Tags": [
+    "SQL",
+	  "Extension",
+	  "Authoring",
+	  "Templates"
+	]
+}
