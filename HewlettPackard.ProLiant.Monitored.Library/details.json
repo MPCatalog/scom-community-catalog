@@ -1,0 +1,15 @@
+﻿{
+    "ManagementPackSystemName":  "HewlettPackard.ProLiant.Monitored.Library",
+    "ManagementPackDisplayName":  "Hewlett-Packard ProLiant Monitored Library Management Pack",
+    "URL":  "https://h20392.www2.hpe.com/portal/swdepot/displayProductInfo.do?productNumber=HPSCOMMP-P",
+    "Version":  "3.1.0.0",
+    "Author":  "Hewlett-Packard",
+    "Description":  "HPE Management Packs for SCOM",
+    "IsFree":  true,
+    "Tags":  [
+                 "Hewlett Packard",
+                 "Proliant",
+                 "HP",
+                 "Blade"
+             ]
+}

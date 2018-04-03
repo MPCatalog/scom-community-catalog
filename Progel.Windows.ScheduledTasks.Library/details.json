@@ -1,0 +1,15 @@
+{
+    "ManagementPackSystemName": "Progel.Windows.ScheduledTasks.Library",
+    "ManagementPackDisplayName": "Windows Scheduled Tasks Library",
+    "URL": "https://www.progel.it/prodotti/Pagine/Windows-Scheduled-Tasks-Management-Pack.aspx",
+    "Version": "6.1.7221.25",
+    "Author": "Progel SpA",
+    "IsFree": true,
+    "Description": "Progel Windows Scheduled Tasks Management Pack is the tool for monitoring performance, status, and availability of scheduled tasks in Windows Server.",
+    "Tags": [
+      "Progel",
+      "Task",
+      "Scheduled Tasks",
+      "Task Scheduler"
+    ]
+}

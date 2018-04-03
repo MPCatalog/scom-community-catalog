@@ -1,0 +1,13 @@
+{
+  "ManagementPackSystemName": "Community.ManagementPackCatalog",
+  "ManagementPackDisplayName": "Community Management Pack Catalog",
+  "URL": "https://github.com/squaredup/scom-community-catalog-ui/wiki",
+  "Version": "1.0.2.0",
+  "Author": "Squared Up Ltd.",
+  "IsFree": true,
+  "Description": "The Community Management Pack Catalog helps you discover new MPs and stay up-to-date with those that you already have.",
+  "Tags": [
+    "Essential",
+	"Open Source"
+  ]
+}

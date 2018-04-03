@@ -1,0 +1,14 @@
+﻿{
+    "ManagementPackSystemName":  "InsideTechnologies.QNAP",
+    "ManagementPackDisplayName":  "QNAP Storage Management Pack",
+    "URL":  "https://github.com/InsideTechnologies/MP-QNAP",
+    "Version":  "1.0.1.2017",
+    "Author":  "Inside Technologies",
+    "Description":  "This free Management Pack for System Center Operations Manager allows you to manage QNAP Storage devices.",
+    "IsFree":  true,
+    "Tags":  [
+                 "snmp",
+                 "storage",
+                 "hardware"
+             ]
+}

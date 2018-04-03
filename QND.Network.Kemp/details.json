@@ -2,9 +2,10 @@
   "ManagementPackSystemName": "QND.Network.Kemp",
   "ManagementPackDisplayName": "QND Kemp LoadMaster monitoring (community MP)",
   "URL": "https://github.com/QuaeNocentDocent/SCOMSNMP-MP",
-  "Version": "2.0.1.1",
+  "Version": "2.0.1.5",
   "Author": "Daniele Grandini",
   "IsFree": true,
+  "Description": "This Management Pack discovers LoadMaster Virtual Services and Real Servers and monitors their state.  Additionally performance data for Virtual Services and Real Servers is also collected.",
   "Tags": [
     "MVP",
     "SNMP",

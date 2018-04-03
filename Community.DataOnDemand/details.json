@@ -2,9 +2,10 @@
   "ManagementPackSystemName": "Community.DataOnDemand",
   "ManagementPackDisplayName": "Data on Demand (Community)",
   "URL": "https://download.squaredup.com/management-packs/data-on-demand-community/",
-  "Version": "1.2.4.0",
+  "Version": "1.2.4.36",
   "Author": "Squared Up Ltd.",
   "IsFree": true,
+  "Description": "The Data on Demand Management Pack contains a number of useful SCOM agent tasks, including the Netstat task required by Squared Up Visual Application Discovery & Analysis",
   "Tags": [
     "Agent Task",
 	"Discovery",

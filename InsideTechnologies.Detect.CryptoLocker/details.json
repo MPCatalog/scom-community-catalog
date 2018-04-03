@@ -1,0 +1,13 @@
+﻿{
+    "ManagementPackSystemName":  "InsideTechnologies.Detect.CryptoLocker",
+    "ManagementPackDisplayName":  "CryptoLocker Detect Management Pack",
+    "URL":  "https://github.com/InsideTechnologies/MP-Cryptolocker",
+    "Version":  "1.0.2.2017",
+    "Author":  "Inside Technologies",
+    "Description":  "Allows you to detect CryptoLocker virus from all Windows Server with the File Server role enabled into share folders.",
+    "IsFree":  true,
+    "Tags":  [
+                 "Security",
+                 "cryptolocker"
+             ]
+}

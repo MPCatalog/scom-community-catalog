@@ -1,10 +1,11 @@
 {
-  "ManagementPackSystemName": "Community.PowershellMonitoring",
-  "ManagementPackDisplayName": "PowerShell Monitoring Management Pack",
+  "ManagementPackSystemName": "Community.PowerShellMonitoring",
+  "ManagementPackDisplayName": "PowerShell Monitoring - Community Management Pack",
   "URL": "https://download.squaredup.com/management-packs/powershell-monitoring-management-pack/",
-  "Version": "1.1.1.0",
+  "Version": "1.1.1.2",
   "Author": "Squared Up Ltd.",
   "IsFree": true,
+  "Description": "The PowerShell Monitoring Management Pack adds support for PowerShell everywhere that you would expect to see it within the authoring pane of the SCOM console (i.e. everywhere there is currently VBScript).",
   "Tags": [
     "PowerShell",
     "Templates",

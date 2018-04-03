@@ -1,0 +1,14 @@
+﻿{
+    "ManagementPackSystemName":  "DataCore.SANsymphonyV.Library",
+    "ManagementPackDisplayName":  "DataCore SANsymphony-V Library",
+    "URL":  "https://www.datacore.com/solutions/by-virtualization-platform/Microsoft/system-center-monitoring-pack.aspx",
+    "Version":  "1.3.0.13123",
+    "Author":  "Datacore",
+    "Description":  "MP for Datacore SANSymphony-V",
+    "IsFree":  true,
+    "Tags":  [
+                 "datacore",
+                 "san",
+                 "sansymphony-v"
+             ]
+}
