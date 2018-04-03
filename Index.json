@@ -1,4 +1,4 @@
-﻿[
+[
     {
         "ManagementPackSystemName":  "ABC.F5.BIGIP"
     },
@@ -118,6 +118,9 @@
     },
     {
         "ManagementPackSystemName":  "SCOM.Task.Collection.SCOMfaq"
+    },
+    {
+        "ManagementPackSystemName":  "SCOM.UnsealedMPBackup"
     },
     {
         "ManagementPackSystemName":  "SCUtils.APC.UPS"
