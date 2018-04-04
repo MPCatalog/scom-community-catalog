@@ -2,7 +2,7 @@
     "ManagementPackSystemName":  "Inside.Technologies.Veeam.Agents",
     "ManagementPackDisplayName":  "Veeam Agent Management Pack",
     "URL":  "https://github.com/InsideTechnologies/MP-VeeamEndpoint",
-    "Version":  "0.0.28.2017",
+    "Version":  "1.0.9.2017",
     "Author":  "Inside Technologies",
     "Description":  "Management pack for Veeam Agent for Windows/Linux plus Veeam Endpoint Backup.",
     "IsFree":  true,
