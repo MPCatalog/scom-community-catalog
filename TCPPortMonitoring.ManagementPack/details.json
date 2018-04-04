@@ -1,8 +1,8 @@
 {
     "ManagementPackSystemName":  "TCPPortMonitoring.ManagementPack",
     "ManagementPackDisplayName":  "TCP Port Monitoring MP",
-    "URL":  "https://squaredup.com/blog/how-to-create-100-s-of-tcp-monitors-in-minutes-with-scom/",
-    "Version":  "1.0.0.0",
+    "URL":  "https://noalertleftbehind.blog/2017/06/06/first-blog-post/",
+    "Version":  "1.0.0.34",
     "Author":  "Jasper Van Damme",
     "Description":  "Simplifies monitoring multiple TCP endpoints through SCOM",
     "IsFree":  true,
