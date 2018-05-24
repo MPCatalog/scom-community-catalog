@@ -1,4 +1,4 @@
-[
+﻿[
     {
         "ManagementPackSystemName":  "ABC.F5.BIGIP"
     },
@@ -160,6 +160,9 @@
     },
     {
         "ManagementPackSystemName":  "Veeam.Virt.Extensions.VMware.Library"
+    },
+    {
+        "ManagementPackSystemName":  "Windows.Computer.AgentTasks.CreateLogDeletionJob"
     },
     {
         "ManagementPackSystemName":  "Windows.Server.Webservice.LogdirectoryWatcher"

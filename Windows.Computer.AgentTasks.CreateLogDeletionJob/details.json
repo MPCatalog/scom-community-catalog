@@ -1,0 +1,14 @@
+﻿{
+    "ManagementPackSystemName":  "Windows.Computer.AgentTasks.CreateLogDeletionJob",
+    "ManagementPackDisplayName":  "Windows Computer AgentTasks CreateLogDeletionJob",
+    "URL":  "https://github.com/Juanito99/Windows.Computer.AgentTasks.CreateLogDeletionJob",
+    "Version":  "1.0.0.15",
+    "Author":  "Ruben Zimmermann",
+    "Description":  "Create Log Deletion Job is a SCOM – Agent Task which offers the creation of a scheduled task that deletes log files older than N days on the monitored computer. It works on SCOM 2012 R2 and later.",
+    "IsFree":  true,
+    "Tags":  [
+                 "Log Rotation",
+                 "Agent Task",
+                 "Administration"
+             ]
+}
