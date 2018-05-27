@@ -39,6 +39,9 @@
         "ManagementPackSystemName":  "DataCore.SANsymphonyV.Library"
     },
     {
+        "ManagementPackSystemName":  "Docker.Unix.Monitoring"
+    },
+    {
         "ManagementPackSystemName":  "Eaton.UPS.Monitoring"
     },
     {
