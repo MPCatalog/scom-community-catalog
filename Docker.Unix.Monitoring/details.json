@@ -1,0 +1,14 @@
+﻿{
+    "ManagementPackSystemName":  "Docker.Unix.Monitoring",
+    "ManagementPackDisplayName":  "UNIX/Linux Docker Monitoring",
+    "URL":  "https://gallery.technet.microsoft.com/UNIXLinux-Docker-ecc6d024",
+    "Version":  "1.0.0.0",
+    "Author":  "bobgreen84",
+    "Description":  "This management pack allows you to monitor on-premise  Docker containers hosted on UNIX/Linux computers. It has basic functionality: Daemon state monitoring Container state monitoring Collects container CPU usage Collects container memory usage For montitoring your Docker environment",
+    "IsFree":  true,
+    "Tags":  [
+                 "Docker",
+                 "Unix",
+                 "Linux"
+             ]
+}
