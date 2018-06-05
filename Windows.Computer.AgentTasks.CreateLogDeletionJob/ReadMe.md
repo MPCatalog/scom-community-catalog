@@ -1,7 +1,9 @@
 ## SCOM Agent Task - Create Log Deletion Job
 
-Create Log Deletion Job is a SCOM – Agent Task which offers the creation of a scheduled task that deletes log files older than N days on the monitored computer. It works on SCOM 2012 R2
-and later.
+‘Create Log Deletion Job’ is a Management Pack that contains two SCOM – Agent Tasks to tame logfile growth.
+* Create Log Deletion Job creates a scheduled task that deletes log files older than N days on the monitored computer. 
+* Create Log Compress ( + Deletion ) Job creates a scheduled task that compresses files older than N days and optionally also deletes the compressed files older than M days on the monitored computer.
+It works on SCOM 2012 R2 and later.
 
 
 ### Introduction:
@@ -11,13 +13,14 @@ scheduled script to do so. This Management Pack provides a convenient way to cre
 
 
 ### Pictures:
-Task in the SCOM Console:
+Log Compress Task in the SCOM Console:
+![Task_In_the_Console](https://raw.githubusercontent.com/Juanito99/Windows.Computer.AgentTasks.CreateLogDeletionJob/master/PicturesForGitWebSite/MonitoringPaneShowTaskCompress.png)
+
+Log Deletion Task in the SCOM Console:
 ![Task_In_the_Console](https://raw.githubusercontent.com/Juanito99/Windows.Computer.AgentTasks.CreateLogDeletionJob/master/PicturesForGitWebSite/MonitoringPaneShowTask.png)
 
-Scheduled Task and PowerShell script on the monitored computer:
-![Task_On_the_Client](https://raw.githubusercontent.com/Juanito99/Windows.Computer.AgentTasks.CreateLogDeletionJob/master/PicturesForGitWebSite/ScheduledTaskAndScript.png)
 
 
 
 ### More information on:
-[Documentation](https://github.com/Juanito99/Windows.Computer.AgentTasks.CreateLogDeletionJob/blob/master/Documentation/SCOM%20-%20Agent%20Tasks%20-%20Create%20Log%20Deletion%20Job.pdf)
+[Documentation](https://github.com/Juanito99/Windows.Computer.AgentTasks.CreateLogDeletionJob/blob/master/Documentation/SCOM%20-%20Agent%20Tasks%20-%20Create%20Log%20Compress%20(%20+%20Deletion%20)%20Job.pdf)
