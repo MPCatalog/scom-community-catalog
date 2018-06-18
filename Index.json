@@ -114,6 +114,9 @@
         "ManagementPackSystemName":  "Realdolmen.FileCount.ManagementPack"
     },
     {
+        "ManagementPackSystemName":  "s2.OperationsManager.Trace.Helper"
+    },
+    {
         "ManagementPackSystemName":  "SAMPLE.OPERATIONSMANAGER.2016.UPGRADE"
     },
     {
