@@ -1,20 +1,16 @@
 ## Monitor Webservers Log directories
 
-Simple Management Pack which monitors the webserver's log directory size.
+Management Pack which monitors the webserver's log directory size and rotates the logs on demand.
 
 
 ### Introduction:
-IIS, Apache and Tomcat can write log files. It happens not seldom that a webservice log directory occupies large space or even causes disk filling up.
-
-In the default configuration a warning state occurs once 2.5 GB disk space is used by logs. An error state plus a message is thrown once more than 5 GB is taken.
-Thresholds and alert behaviour can be overridden as usual.
+IIS, Apache and Tomcat can write log files. Often, these files occupy large space cause a disk filling up.
+This Management Pack discovers log-folders and raises alerts based on thresholds. - Thresholds and alert behavior can be overridden as usual.
 
 
 
 ### State Views:
-![StateView_WebSites](https://raw.githubusercontent.com/Juanito99/Windows.Server.Webservice.LogdirectoryWatcher/master/PicturesForGitWebSite/WebSites.png)
-
-![StateView_Computers](https://raw.githubusercontent.com/Juanito99/Windows.Server.Webservice.LogdirectoryWatcher/master/PicturesForGitWebSite/Computers.png)
+![StateView_WebSites](https://raw.githubusercontent.com/Juanito99/Windows.Server.Webservice.LogdirectoryWatcher/master/PicturesForGitWebSite/StateView.png)
 
 
 
@@ -22,15 +18,19 @@ Thresholds and alert behaviour can be overridden as usual.
 ![AlertView_WebSites](https://raw.githubusercontent.com/Juanito99/Windows.Server.Webservice.LogdirectoryWatcher/master/PicturesForGitWebSite/Alerts.png)
 
 
+### Recoveries:
+![Recoveries](https://raw.githubusercontent.com/Juanito99/Windows.Server.Webservice.LogdirectoryWatcher/master/PicturesForGitWebSite/Recoveries.png)
+
+
 
 ### More information on:
-[Documentation](https://github.com/Juanito99/Windows.Server.Webservice.LogdirectoryWatcher/blob/master/Documentation/Monitoring-Webservers-Log_directory_%20size-with-SCOM.pdf)
+[Documentation](https://github.com/Juanito99/Windows.Server.Webservice.LogdirectoryWatcher/blob/master/Documentation/MonitoringWebserversLogdirectorySizeWithSCOM.pdf)
 
 
 ### Downloads:
-[ManagementPack-Sealed](https://github.com/Juanito99/Windows.Server.Webservice.LogdirectoryWatcher/blob/master/Windows.Server.Webservice.LogdirectoryWatcher/Windows.Server.Webservice.LogdirectoryWatcher/bin/Release/Windows.Server.Webservice.LogdirectoryWatcher.xml) 
+[ManagementPack-Sealed](https://github.com/Juanito99/Windows.Server.Webservice.LogdirectoryWatcher/blob/master/Windows.Server.Webservice.LogdirectoryWatcher/bin/Release/Windows.Server.Webservice.LogdirectoryWatcher.mpb) 
 
-[ManagementPack-UnSealed](https://github.com/Juanito99/Windows.Server.Webservice.LogdirectoryWatcher/blob/master/Windows.Server.Webservice.LogdirectoryWatcher/Windows.Server.Webservice.LogdirectoryWatcher/bin/Debug/Windows.Server.Webservice.LogdirectoryWatcher.xml) 
+[ManagementPack-UnSealed](https://github.com/Juanito99/Windows.Server.Webservice.LogdirectoryWatcher/blob/master/Windows.Server.Webservice.LogdirectoryWatcher/bin/Release/Windows.Server.Webservice.LogdirectoryWatcher.xml) 
 
 [Source for VSAE 2017](https://github.com/Juanito99/Windows.Server.Webservice.LogdirectoryWatcher/tree/master/Windows.Server.Webservice.LogdirectoryWatcher/Windows.Server.Webservice.LogdirectoryWatcher)
 
