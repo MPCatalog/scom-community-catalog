@@ -4,9 +4,9 @@
     "URL":  "http://armiev.com/2018/05/30/scom-wildcard-service/",
     "Version":  "1.0.0.102",
     "Author":  "Lior Armiev",
-    "Description":  "Using SCOM – Microsoft System Center Operations Manager?",
-    "IsFree":  false,
+    "Description":  "Monitor services using wildcards",
+    "IsFree":  true,
     "Tags":  [
-                 "Probably you encountered the Service monitoring request from the client."
+                 "service,wildcard,monitor"
              ]
 }
