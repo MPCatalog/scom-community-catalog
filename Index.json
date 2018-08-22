@@ -168,6 +168,9 @@
         "ManagementPackSystemName":  "Veeam.Virt.Extensions.VMware.Library"
     },
     {
+        "ManagementPackSystemName":  "WildCardTemplate"
+    },
+    {
         "ManagementPackSystemName":  "Windows.Computer.AgentTasks.CreateLogDeletionJob"
     },
     {
