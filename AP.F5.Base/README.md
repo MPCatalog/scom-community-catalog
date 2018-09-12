@@ -1,17 +1,6 @@
 # AP.F5
 F5 SCOM Management Pack - A free alternative F5 Management Pack for System Center Operations Manager.
 
-## Background
-I was surprised to find that F5 themselves don't support/maintain a SCOM management pack anymore, and the commercial offerings were eye-poppingly expensive.
-I started to look into the feasibility of writing my own MP, which seemed quite daunting with the lack of documentation/examples there was around.
-Then I found the MPAuthor video series by Brian Wren, if you haven't seen it I highly recommend it.
-
-[2012 R2 MVA Management Pack Series](https://mva.microsoft.com/en-US/training-courses/system-center-2012-r2-operations-manager-management-pack-8829?l=Xok6lsx2_2304984382)
-
-
-I started with the intention of making this management pack utilizing SNMP but hit an issue where I couldn't discover/monitor certificates via SNMP and the expiration state of certificates was one of the main things we wanted to monitor, so I had to look at an alternative approach.  
-So now most SCOM Discovery is handled by a Console Applications which discover:-
-
 ## AP.F5.Base.Discovery (Console Application)
 * **F5 Devices**
 * **F5 Device Hardware** - CPU, Memory, Fans, Temperature Sensors, Power Supplies.
