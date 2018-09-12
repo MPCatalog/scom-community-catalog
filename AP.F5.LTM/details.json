@@ -1,0 +1,15 @@
+{
+  "ManagementPackSystemName": "AP.F5.LTM",
+  "ManagementPackDisplayName": "AP F5 LTM Management Pack ",
+  "URL": "https://github.com/c22mort/AP.F5.LTM",
+  "Version": "18.8.0.316",
+  "Author": "Andi Patrick",
+  "Description": "F5 LTM Management Pack (requires AP.F5.Base)",
+  "IsFree": true,
+  "Tags": [
+    "F5",
+    "AP",
+    "Network",
+    "Load Balancer"
+	]
+}
