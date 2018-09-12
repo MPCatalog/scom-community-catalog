@@ -1,7 +1,7 @@
 {
   "ManagementPackSystemName": "AP.F5.LTM",
   "ManagementPackDisplayName": "AP F5 LTM Management Pack ",
-  "URL": "https://github.com/c22mort/AP.F5.LTM",
+  "URL": "https://c22mort.github.io",
   "Version": "18.8.0.316",
   "Author": "Andi Patrick",
   "Description": "F5 LTM Management Pack (requires AP.F5.Base)",
