@@ -1,0 +1,15 @@
+{
+  "ManagementPackSystemName": "AP.F5.Base",
+  "ManagementPackDisplayName": "AP F5 Base Management Pack ",
+  "URL": "https://github.com/c22mort/AP.F5.Base",
+  "Version": "8.7.0.13",
+  "Author": "Andi Patrick",
+  "Description": "F5 Device Management Pack (bassis for other F5 management Packs)",
+  "IsFree": true,
+  "Tags": [
+    "F5",
+    "AP",
+    "Network",
+    "Load Balancer"
+	]
+}
