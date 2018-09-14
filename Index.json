@@ -9,6 +9,12 @@
         "ManagementPackSystemName":  "Amazon.AmazonWebServices"
     },
     {
+        "ManagementPackSystemName":  "AP.F5.Base"
+    },
+    {
+        "ManagementPackSystemName":  "AP.F5.LTM"
+    },
+    {
         "ManagementPackSystemName":  "Aquilaweb.Support.PendingReboot"
     },
     {
