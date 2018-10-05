@@ -1,0 +1,16 @@
+{
+  "ManagementPackSystemName": "QND.Azure.Monitor",
+  "ManagementPackDisplayName": "QND Azure Monitor",
+  "URL": "https://github.com/QuaeNocentDocent/OMS-ManagementPack/releases",
+  "Version": "1808",
+  "Author": "Daniele Grandini",
+  "IsFree": true,
+  "Description": "Part of the addendum managment packs for Azure. This one supports pulling monitoring data from Azure monitor rather than defining monitoring in the Azure MP. Other MPs available from the same release.",
+  "Tags": [
+    "MVP",
+    "OMS",
+    "Log Analytics",
+    "Azure Monitor",
+	  "Open Source"
+  ]
+}
