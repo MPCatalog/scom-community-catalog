@@ -93,6 +93,9 @@
         "ManagementPackSystemName":  "OpsMgr.2012.Self.Maintenance"
     },
     {
+        "ManagementPackSystemName":  "OpsMgr.GenericServiceMonitoring"
+    },    
+    {
         "ManagementPackSystemName":  "OpsMgr.Group.Health.Rollup.Task"
     },
     {
