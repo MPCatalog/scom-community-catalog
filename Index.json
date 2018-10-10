@@ -108,6 +108,9 @@
         "ManagementPackSystemName":  "Progel.Windows.ScheduledTasks.Library"
     },
     {
+        "ManagementPackSystemName":  "QND.Azure.Monitor"
+    },
+    {
         "ManagementPackSystemName":  "QND.Hyperv2012R2"
     },
     {
