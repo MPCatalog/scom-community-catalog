@@ -21,6 +21,9 @@
         "ManagementPackSystemName":  "Autodefragment"
     },
     {
+        "ManagementPackSystemName":  "CO.Kemp"
+    },
+    {
         "ManagementPackSystemName":  "Community.Citrix.LogonSimulator"
     },
     {
@@ -94,7 +97,7 @@
     },
     {
         "ManagementPackSystemName":  "OpsMgr.GenericServiceMonitoring"
-    },    
+    },
     {
         "ManagementPackSystemName":  "OpsMgr.Group.Health.Rollup.Task"
     },
