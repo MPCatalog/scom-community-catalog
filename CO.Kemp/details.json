@@ -1,0 +1,14 @@
+﻿{
+    "ManagementPackSystemName":  "CO.Kemp",
+    "ManagementPackDisplayName":  "CO Kemp",
+    "URL":  "https://github.com/ClasOhlson/CO.Kemp",
+    "Version":  "1.0.0.0",
+    "Author":  "Samuel Tegenfeldt",
+    "Description":  "A System Center Operations Manager management pack for monitoring KEMP Loadmaster nodes and clusters.",
+    "IsFree":  true,
+    "Tags":  [
+                 "Kemp",
+                 "Load Balancer",
+                 "Open Source"
+             ]
+}
