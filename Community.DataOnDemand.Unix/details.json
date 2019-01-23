@@ -2,7 +2,7 @@
   "ManagementPackSystemName": "Community.DataOnDemand.Unix",
   "ManagementPackDisplayName": "Data on Demand - Unix (Community)",
   "URL": "https://download.squaredup.com/management-packs/data-on-demand-unix-community/",
-  "Version": "1.2.5.66",
+  "Version": "1.2.6.1011",
   "Author": "Squared Up Ltd.",
   "IsFree": true,
   "Description": "The Data on Demand Management Unix Pack contains a number of useful SCOM agent tasks (targeted at Unix/Linux systems supported by SCOM), including the Netstat task required by Squared Up Visual Application Discovery & Analysis.",
