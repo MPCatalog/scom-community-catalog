@@ -153,6 +153,9 @@
         "ManagementPackSystemName":  "SQL.RunAs.Addendum"
     },
     {
+        "ManagementPackSystemName":  "SquaredUp.EAM.Library"
+    },
+    {
         "ManagementPackSystemName":  "SRDNSCheck"
     },
     {
