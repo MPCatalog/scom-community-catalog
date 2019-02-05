@@ -1,6 +1,6 @@
 {
-    "ManagementPackSystemName":  "SQL.RunAs.Addendum",
-    "ManagementPackDisplayName":  "SQL RunAs Addendum",
+    "ManagementPackSystemName":  "Microsoft.SQLServer.RunAs.Addendum.Library",
+    "ManagementPackDisplayName":  "Microsoft SQL Server RunAs Addendum Library Management Pack",
     "URL":  "https://gallery.technet.microsoft.com/SQL-Server-RunAs-Addendum-0c183c32",
     "Version":  "7.0.0.0",
     "Author":  "Kevin Holman",
