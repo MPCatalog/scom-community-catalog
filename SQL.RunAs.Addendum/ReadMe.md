@@ -1,9 +1,10 @@
 ### SQL RunAs Addendum
 
-Updated 8-11-2017
+Updated 5-1-2018
 
 This is a SCOM management pack for Operations Manager 2012 and 2016, which will ease the burden of SQL RunAs Accounts. ?Instead of using a domain credential, we will use a service SID and a special login to SQL to provide secure access for monitoring.
-
+-   Version 7.0.0.0
+    -   Added support for SQL 2017+ and simplified monitor and task names.
 -   Version 6.7.31.0
     -   Disabled Monitor for SysAdmin role check by default
     -   Updated SQL Low Priv configuration tasks to be more reliable
