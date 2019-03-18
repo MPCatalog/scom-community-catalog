@@ -2,7 +2,7 @@
     "ManagementPackSystemName":  "OpsLogix.IMP.Ping",
     "ManagementPackDisplayName":  "OpsLogix Ping Management Pack",
     "URL":  "https://www.opslogix.com/download-ping-management-pack/",
-    "Version":  "3.0.12.0",
+    "Version":  "3.0.15.62",
     "Author":  "OpsLogix",
     "Description":  "Simplifies using ICMP to monitor your environment health",
     "IsFree":  true,
