@@ -72,6 +72,9 @@
         "ManagementPackSystemName":  "InsideTechnologies.QNAP"
     },
     {
+        "ManagementPackSystemName":  "Microsoft.SQLServer.RunAs.Addendum.Library"
+    },
+    {
         "ManagementPackSystemName":  "Microsoft.SystemCenter.Internal.Addendum"
     },
     {
@@ -151,9 +154,6 @@
     },
     {
         "ManagementPackSystemName":  "Server.Pending.Restart"
-    },
-    {
-        "ManagementPackSystemName":  "SQL.RunAs.Addendum"
     },
     {
         "ManagementPackSystemName":  "SquaredUp.EAM.Library"

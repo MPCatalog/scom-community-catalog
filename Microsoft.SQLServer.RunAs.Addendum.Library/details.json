@@ -1,0 +1,14 @@
+{
+    "ManagementPackSystemName":  "Microsoft.SQLServer.RunAs.Addendum.Library",
+    "ManagementPackDisplayName":  "Microsoft SQL Server RunAs Addendum Library Management Pack",
+    "URL":  "https://gallery.technet.microsoft.com/SQL-Server-RunAs-Addendum-0c183c32",
+    "Version":  "7.0.0.0",
+    "Author":  "Kevin Holman",
+    "Description":  "This is a SCOM management pack for Operations Manager 2012 and 2016, which will ease the burden of SQL RunAs Accounts.",
+    "IsFree":  true,
+    "Tags":  [
+                 "SQL",
+                 "Administration",
+                 "Security"
+             ]
+}
