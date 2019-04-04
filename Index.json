@@ -150,6 +150,9 @@
         "ManagementPackSystemName":  "Security.Monitoring"
     },
     {
+        "ManagementPackSystemName":  "Server.Pending.Restart"
+    },
+    {
         "ManagementPackSystemName":  "SQL.RunAs.Addendum"
     },
     {
