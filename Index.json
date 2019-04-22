@@ -6,6 +6,9 @@
         "ManagementPackSystemName":  "ABC.Network.SolarWinds.NPM"
     },
     {
+    	  "ManagementPackSystemName":  "ABC.Windows.Server.AdminInfo"
+    },
+    {
         "ManagementPackSystemName":  "Amazon.AmazonWebServices"
     },
     {

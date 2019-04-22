@@ -1,0 +1,14 @@
+{
+    "ManagementPackSystemName":  "ABC.Windows.Server.AdminInfo",
+    "ManagementPackDisplayName":  "ABC Windows Server AdminInfo",
+    "URL":  "https://4sysops.com/archives/use-powershell-and-scom-to-find-file-shares-with-weak-permissions/",
+    "Version":  "1.0.0.26",
+    "Author":  "Ruben Zimmermann",
+    "Description":  "Use PowerShell and SCOM to find file shares with weak permissions",
+    "IsFree":  true,
+    "Tags":  [
+                 "File Shares",
+                 "Security",
+                 "Permissions"
+             ]
+}
