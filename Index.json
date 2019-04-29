@@ -48,6 +48,9 @@
         "ManagementPackSystemName":  "ConfigMgr.2012.Client.Monitoring"
     },
     {
+        "ManagementPackSystemName":  "Custom.Windows.TaskScheduler.Library"
+    },
+    {
         "ManagementPackSystemName":  "DataCore.SANsymphonyV.Library"
     },
     {
