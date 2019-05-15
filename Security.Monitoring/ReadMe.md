@@ -1,6 +1,6 @@
 **Dependencies**:
 
-*   SQL Management Pack (needed for an override).
+*   SQL Management Pack (needed for an override).  Not needed as of v1.0.6.0.
 *   Most of the Server OS MPs (for overrides).
 *   [Windows Event Collector Discovery Management Pack](https://blogs.technet.microsoft.com/nathangau/2017/04/18/windows-event-collector-discovery-management-pack/).
 
