@@ -2,7 +2,7 @@
     "ManagementPackSystemName":  "OpsMgr.GenericServiceMonitoring",
     "ManagementPackDisplayName":  "OpsMgr.GenericServiceMonitoring",
     "URL":  "https://github.com/spa5603/OpsMgr.GenericServiceMonitoring",
-    "Version":  "1.0.0.0",
+    "Version":  "1.1.1.0",
     "Author":  "Sebastian Pabst",
     "Description":  "It is often necessary to monitor windows services across your entire SCOM environment. This MP gives you the ability to easily and quickly discover and monitor hundreds of services. The (*)wildcard notation allows great flexibility in discovering the services you are looking for.",
     "IsFree":  true,
