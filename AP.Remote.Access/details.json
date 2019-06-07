@@ -1,0 +1,14 @@
+﻿{
+    "ManagementPackSystemName":  "AP.Remote.Access",
+    "ManagementPackDisplayName":  "Microsoft Remote Access Management Pack",
+    "URL":  "https://c22mort.github.io/RemoteAccess.html",
+    "Version":  "19.5.5.0",
+    "Author":  "Andi Patrick",
+    "Description":  "a conversion of Microsofts Remote Access 2012R2 Management Pack to make it compatible with 2012/2012R2/2016/2019.",
+    "IsFree":  true,
+    "Tags":  [
+                 "Upgraded",
+                 "Conversion",
+                 "Remote Access"
+             ]
+}
