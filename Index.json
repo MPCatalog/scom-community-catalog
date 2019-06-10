@@ -159,6 +159,9 @@
         "ManagementPackSystemName":  "SCUtils.APC.UPS"
     },
     {
+        "ManagementPackSystemName":  "SCUtils.General.Printer.Management.Pack"
+    },
+    {
         "ManagementPackSystemName":  "Security.Monitoring"
     },
     {

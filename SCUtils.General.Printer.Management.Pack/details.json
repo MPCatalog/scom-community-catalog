@@ -1,0 +1,15 @@
+{
+    "ManagementPackSystemName": "SCUtils.General.Printer.Management.Pack",
+    "ManagementPackDisplayName": "SCUtils General Printer Management Pack",
+    "URL": "https://www.scutils.com/products/scutils-general-printer-management-pack",
+    "Version": "1.0.0.165",
+    "Author": "SCUtils",
+    "IsFree": false,
+    "Description": "A universal solution to monitor any network printer by SCOM.",
+    "Tags": [
+        "RFC 3805",
+        "Printer",
+        "SCUtils",
+        "SNMP"
+    ]
+}
