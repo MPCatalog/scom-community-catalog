@@ -51,6 +51,9 @@
         "ManagementPackSystemName":  "ConfigMgr.2012.Client.Monitoring"
     },
     {
+        "ManagementPackSystemName":  "Cookdown.EasyTune"
+    },
+    {
         "ManagementPackSystemName":  "Custom.Windows.TaskScheduler.Library"
     },
     {

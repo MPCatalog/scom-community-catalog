@@ -1,0 +1,15 @@
+{
+  "ManagementPackSystemName": "Cookdown.EasyTune",
+  "ManagementPackDisplayName": "Cookdown Easy Tune",
+  "URL": "https://cookdown.com/scom-essentials/easy-tune/",
+  "Version": "1.0.23.21",
+  "Author": "Cookdown",
+  "Description": "A fast, simple way to tune all of your management packs and solve the problem of alert noise.",
+  "IsFree": true,
+  "Tags": [
+    "Bulk",
+    "overrides",
+    "tuning",
+    "management packs"
+	]
+}
