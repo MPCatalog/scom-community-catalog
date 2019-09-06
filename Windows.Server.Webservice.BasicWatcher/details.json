@@ -1,0 +1,16 @@
+﻿{
+    "ManagementPackSystemName":  "Windows.Server.Webservice.BasicWatcher",
+    "ManagementPackDisplayName":  "Windows Server Webservice BasicWatcher",
+    "URL":  "https://github.com/Juanito99/Windows.Server.Webservice.BasicWatcher",
+    "Version":  "1.0.0.247",
+    "Author":  "Ruben Zimmermann",
+    "Description":  "Monitors common webservices (Apache, Tomcat, IIS) on Windows Server with SCOM ",
+    "IsFree":  true,
+    "Tags":  [
+                 "Apache",
+                 "Tomcat",
+                 "IIS",
+                 "FTP",
+                 "Serv-U"
+             ]
+}
