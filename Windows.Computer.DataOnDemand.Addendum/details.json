@@ -1,0 +1,18 @@
+﻿{
+    "ManagementPackSystemName":  "Windows.Computer.DataOnDemand.Addendum",
+    "ManagementPackDisplayName":  "Windows Computer DataOnDemand Addendum",
+    "URL":  "https://github.com/Juanito99/Windows.Computer.DataOnDemand.Addendum",
+    "Version":  "1.0.0.93",
+    "Author":  "Ruben Zimmermann",
+    "Description":  "Provides different kinds of Agent Tasks for direct use in the SCOM console or in a Dashboard Tool. ",
+    "IsFree":  true,
+    "Tags":  [
+                 "AgentTask",
+                 "LastChanges",
+                 "Description",
+                 "Subscription",
+                 "Notification",
+                 "SOAP",
+                 "WebService"
+             ]
+}
