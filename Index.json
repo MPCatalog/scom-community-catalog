@@ -210,6 +210,9 @@
         "ManagementPackSystemName":  "Windows.Computer.AgentTasks.CreateLogDeletionJob"
     },
     {
+        "ManagementPackSystemName":  "Windows.Computer.DataOnDemand.Addendum"
+    },
+    {
         "ManagementPackSystemName":  "Windows.Server.Webservice.BasicWatcher"
     },
     {
