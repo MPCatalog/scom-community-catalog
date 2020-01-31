@@ -111,9 +111,6 @@
         "ManagementPackSystemName":  "OpsLogix.IMP.Ping"
     },
     {
-        "ManagementPackSystemName":  "OpsMgr.Self.Maintenance"
-    },
-    {
         "ManagementPackSystemName":  "OpsMgr.GenericServiceMonitoring"
     },
     {
@@ -121,6 +118,9 @@
     },
     {
         "ManagementPackSystemName":  "OpsMgr.HealthSync.Library"
+    },
+    {
+        "ManagementPackSystemName":  "OpsMgr.Self.Maintenance"
     },
     {
         "ManagementPackSystemName":  "P2P.OMSAdministration"
