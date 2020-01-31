@@ -84,6 +84,9 @@
         "ManagementPackSystemName":  "InsideTechnologies.QNAP"
     },
     {
+        "ManagementPackSystemName":  "MartelloTech_Database_Query_Library"
+    },
+    {
         "ManagementPackSystemName":  "Microsoft.SQLServer.RunAs.Addendum.Library"
     },
     {
