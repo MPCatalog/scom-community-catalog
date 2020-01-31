@@ -111,7 +111,7 @@
         "ManagementPackSystemName":  "OpsLogix.IMP.Ping"
     },
     {
-        "ManagementPackSystemName":  "OpsMgr.2012.Self.Maintenance"
+        "ManagementPackSystemName":  "OpsMgr.Self.Maintenance"
     },
     {
         "ManagementPackSystemName":  "OpsMgr.GenericServiceMonitoring"
