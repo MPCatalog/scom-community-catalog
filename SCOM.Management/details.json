@@ -2,7 +2,7 @@
   "ManagementPackSystemName": "SCOM.Management",
   "ManagementPackDisplayName": "SCOM Management",
   "URL": "https://gallery.technet.microsoft.com/SCOM-Agent-Management-b96680d5",
-  "Version": "7.0.0.66",
+  "Version": "10.19.10311.0",
   "Author": "Kevin Holman",
   "IsFree": true,
   "Description": "Add agent and server role tasks to simply management",
