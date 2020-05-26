@@ -1,0 +1,14 @@
+﻿{
+    "ManagementPackSystemName":  "SCOM.Addons.MailIn",
+    "ManagementPackDisplayName":  "SCOM Addons MailIn",
+    "URL":  "https://github.com/Juanito99/SCOM.Addons.MailIn",
+    "Version":  "1.0.0.190",
+    "Author":  "Ruben Zimmermann",
+    "Description":  "This Management Pack enriches SCOM with an E-Mail interface. Alerts can be created either by a generic rule or via a monitor that reacts on your custom filter pattern. ",
+    "IsFree":  true,
+    "Tags":  [
+                 "smtp",
+                 "mail",
+                 "interface"
+             ]
+}

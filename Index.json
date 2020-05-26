@@ -153,6 +153,9 @@
         "ManagementPackSystemName":  "SAMPLE.OPERATIONSMANAGER.2016.UPGRADE"
     },
     {
+        "ManagementPackSystemName":  "SCOM.Addons.MailIn"
+    },
+    {
         "ManagementPackSystemName":  "SCOM.Management"
     },
     {
