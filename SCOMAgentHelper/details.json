@@ -1,0 +1,15 @@
+{
+  "ManagementPackSystemName": "SCOMAgentHelper",
+  "ManagementPackDisplayName": "SCOM Agent Helper",
+  "URL": "https://monitoringguys.com/2020/07/30/control-scom-maintenance-mode-from-the-agent-with-scomagenthelper-management-pack/",
+  "Version": "1.0.0.4",
+  "Author": "Tyson Paul",
+  "Description": "Control SCOM Maintenance Mode from the Agent.",
+  "IsFree": true,
+  "Tags": [
+    "Maintenance",
+    "Administration",
+    "SCOM",
+    "Agent"
+  ]
+}
