@@ -1,233 +1,233 @@
-[
-  {
-    "ManagementPackSystemName": "ABC.F5.BIGIP"
-  },
-  {
-    "ManagementPackSystemName": "ABC.Network.SolarWinds.NPM"
-  },
-  {
-    "ManagementPackSystemName": "ABC.Windows.Server.AdminInfo"
-  },
-  {
-    "ManagementPackSystemName": "Amazon.AmazonWebServices"
-  },
-  {
-    "ManagementPackSystemName": "AP.F5.Base"
-  },
-  {
-    "ManagementPackSystemName": "AP.F5.LTM"
-  },
-  {
-    "ManagementPackSystemName": "AP.Remote.Access"
-  },
-  {
-    "ManagementPackSystemName": "Aquilaweb.Support.PendingReboot"
-  },
-  {
-    "ManagementPackSystemName": "Autodefragment"
-  },
-  {
-    "ManagementPackSystemName": "CO.Kemp"
-  },
-  {
-    "ManagementPackSystemName": "Community.Citrix.LogonSimulator"
-  },
-  {
-    "ManagementPackSystemName": "Community.DataOnDemand"
-  },
-  {
-    "ManagementPackSystemName": "Community.DataOnDemand.Unix"
-  },
-  {
-    "ManagementPackSystemName": "Community.ManagementPackCatalog"
-  },
-  {
-    "ManagementPackSystemName": "Community.PowershellMonitoring"
-  },
-  {
-    "ManagementPackSystemName": "ComTrade.Citrix.NetScaler.Monitoring"
-  },
-  {
-    "ManagementPackSystemName": "ConfigMgr.2012.Client.Monitoring"
-  },
-  {
-    "ManagementPackSystemName": "Cookdown.EasyTune"
-  },
-  {
-    "ManagementPackSystemName": "Custom.Windows.TaskScheduler.Library"
-  },
-  {
-    "ManagementPackSystemName": "DataCore.SANsymphonyV.Library"
-  },
-  {
-    "ManagementPackSystemName": "Docker.Unix.Monitoring"
-  },
-  {
-    "ManagementPackSystemName": "Eaton.UPS.Monitoring"
-  },
-  {
-    "ManagementPackSystemName": "HealthServiceStore.Monitoring"
-  },
-  {
-    "ManagementPackSystemName": "HewlettPackard.ProLiant.Monitored.Library"
-  },
-  {
-    "ManagementPackSystemName": "HPEnterpriseStorageLibraryMP"
-  },
-  {
-    "ManagementPackSystemName": "Inside.Technologies.Veeam.Agents"
-  },
-  {
-    "ManagementPackSystemName": "InsideTechnologies.Detect.CryptoLocker"
-  },
-  {
-    "ManagementPackSystemName": "InsideTechnologies.QNAP"
-  },
-  {
-    "ManagementPackSystemName": "MartelloTech_Database_Query_Library"
-  },
-  {
-    "ManagementPackSystemName": "Microsoft.SQLServer.RunAs.Addendum.Library"
-  },
-  {
-    "ManagementPackSystemName": "Microsoft.SystemCenter.Internal.Addendum"
-  },
-  {
-    "ManagementPackSystemName": "Microsoft.Windows.Server.AD.2016.Monitoring.Addendum"
-  },
-  {
-    "ManagementPackSystemName": "MultiHome.ManagementGroup.Automator"
-  },
-  {
-    "ManagementPackSystemName": "Network.Windows.Computer.NetstatWatcher"
-  },
-  {
-    "ManagementPackSystemName": "NiCE.LogFile.Library"
-  },
-  {
-    "ManagementPackSystemName": "NutanixCluster"
-  },
-  {
-    "ManagementPackSystemName": "OpsLogix.IMP.Ping"
-  },
-  {
-    "ManagementPackSystemName": "OpsMgr.GenericServiceMonitoring"
-  },
-  {
-    "ManagementPackSystemName": "OpsMgr.Group.Health.Rollup.Task"
-  },
-  {
-    "ManagementPackSystemName": "OpsMgr.HealthSync.Library"
-  },
-  {
-    "ManagementPackSystemName": "OpsMgr.Self.Maintenance"
-  },
-  {
-    "ManagementPackSystemName": "P2P.OMSAdministration"
-  },
-  {
-    "ManagementPackSystemName": "Progel.Windows.ScheduledTasks.Library"
-  },
-  {
-    "ManagementPackSystemName": "QND.Azure.Monitor"
-  },
-  {
-    "ManagementPackSystemName": "QND.Hyperv2012R2"
-  },
-  {
-    "ManagementPackSystemName": "QND.Network.Kemp"
-  },
-  {
-    "ManagementPackSystemName": "QND.OMS.LogAnalytics"
-  },
-  {
-    "ManagementPackSystemName": "QueryOleDbMonitorLibrary"
-  },
-  {
-    "ManagementPackSystemName": "Realdolmen.FileCount.ManagementPack"
-  },
-  {
-    "ManagementPackSystemName": "s2.OperationsManager.Trace.Helper"
-  },
-  {
-    "ManagementPackSystemName": "SAMPLE.OPERATIONSMANAGER.2016.UPGRADE"
-  },
-  {
-    "ManagementPackSystemName": "SCOM.Addons.MailIn"
-  },
-  {
-    "ManagementPackSystemName": "SCOM.Management"
-  },
-  {
-    "ManagementPackSystemName": "SCOM.Task.Collection.SCOMfaq"
-  },
-  {
-    "ManagementPackSystemName": "SCOM.UnsealedMPBackup"
-  },
-  {
-    "ManagementPackSystemName": "SCOMAgentHelper"
-  },
-  {
-    "ManagementPackSystemName": "SCUtils.APC.UPS"
-  },
-  {
-    "ManagementPackSystemName": "SCUtils.General.Printer.Management.Pack"
-  },
-  {
-    "ManagementPackSystemName": "Security.Monitoring"
-  },
-  {
-    "ManagementPackSystemName": "Server.Pending.Restart"
-  },
-  {
-    "ManagementPackSystemName": "SquaredUp.EAM.Library"
-  },
-  {
-    "ManagementPackSystemName": "SRDNSCheck"
-  },
-  {
-    "ManagementPackSystemName": "System.Center.Operations.Manager.Health.Check.Reports"
-  },
-  {
-    "ManagementPackSystemName": "SystemCenterCentral.Utilities.Certificates"
-  },
-  {
-    "ManagementPackSystemName": "SystemCenterCentralReSearchThis"
-  },
-  {
-    "ManagementPackSystemName": "TCPPortMonitoring.ManagementPack"
-  },
-  {
-    "ManagementPackSystemName": "UptimeRobot.ManagementPack"
-  },
-  {
-    "ManagementPackSystemName": "URLGenie"
-  },
-  {
-    "ManagementPackSystemName": "Veeam.Report.Library"
-  },
-  {
-    "ManagementPackSystemName": "Veeam.Virt.Extensions.HyperV.Library"
-  },
-  {
-    "ManagementPackSystemName": "Veeam.Virt.Extensions.VMware.Library"
-  },
-  {
-    "ManagementPackSystemName": "WildCardTemplate"
-  },
-  {
-    "ManagementPackSystemName": "Windows.Computer.AgentTasks.CreateLogDeletionJob"
-  },
-  {
-    "ManagementPackSystemName": "Windows.Computer.DataOnDemand.Addendum"
-  },
-  {
-    "ManagementPackSystemName": "Windows.Server.Webservice.BasicWatcher"
-  },
-  {
-    "ManagementPackSystemName": "Windows.Server.Webservice.LogdirectoryWatcher"
-  },
-  {
-    "ManagementPackSystemName": "WindowsAzurePack.ManagementPack.Monitoring"
-  }
+﻿[
+    {
+        "ManagementPackSystemName":  "ABC.F5.BIGIP"
+    },
+    {
+        "ManagementPackSystemName":  "ABC.Network.SolarWinds.NPM"
+    },
+    {
+        "ManagementPackSystemName":  "ABC.Windows.Server.AdminInfo"
+    },
+    {
+        "ManagementPackSystemName":  "Amazon.AmazonWebServices"
+    },
+    {
+        "ManagementPackSystemName":  "AP.F5.Base"
+    },
+    {
+        "ManagementPackSystemName":  "AP.F5.LTM"
+    },
+    {
+        "ManagementPackSystemName":  "AP.Remote.Access"
+    },
+    {
+        "ManagementPackSystemName":  "Aquilaweb.Support.PendingReboot"
+    },
+    {
+        "ManagementPackSystemName":  "Autodefragment"
+    },
+    {
+        "ManagementPackSystemName":  "CO.Kemp"
+    },
+    {
+        "ManagementPackSystemName":  "Community.Citrix.LogonSimulator"
+    },
+    {
+        "ManagementPackSystemName":  "Community.DataOnDemand"
+    },
+    {
+        "ManagementPackSystemName":  "Community.DataOnDemand.Unix"
+    },
+    {
+        "ManagementPackSystemName":  "Community.ManagementPackCatalog"
+    },
+    {
+        "ManagementPackSystemName":  "Community.PowershellMonitoring"
+    },
+    {
+        "ManagementPackSystemName":  "ComTrade.Citrix.NetScaler.Monitoring"
+    },
+    {
+        "ManagementPackSystemName":  "ConfigMgr.2012.Client.Monitoring"
+    },
+    {
+        "ManagementPackSystemName":  "Cookdown.EasyTune"
+    },
+    {
+        "ManagementPackSystemName":  "Custom.Windows.TaskScheduler.Library"
+    },
+    {
+        "ManagementPackSystemName":  "DataCore.SANsymphonyV.Library"
+    },
+    {
+        "ManagementPackSystemName":  "Docker.Unix.Monitoring"
+    },
+    {
+        "ManagementPackSystemName":  "Eaton.UPS.Monitoring"
+    },
+    {
+        "ManagementPackSystemName":  "HealthServiceStore.Monitoring"
+    },
+    {
+        "ManagementPackSystemName":  "HewlettPackard.ProLiant.Monitored.Library"
+    },
+    {
+        "ManagementPackSystemName":  "HPEnterpriseStorageLibraryMP"
+    },
+    {
+        "ManagementPackSystemName":  "Inside.Technologies.Veeam.Agents"
+    },
+    {
+        "ManagementPackSystemName":  "InsideTechnologies.Detect.CryptoLocker"
+    },
+    {
+        "ManagementPackSystemName":  "InsideTechnologies.QNAP"
+    },
+    {
+        "ManagementPackSystemName":  "MartelloTech_Database_Query_Library"
+    },
+    {
+        "ManagementPackSystemName":  "Microsoft.SQLServer.RunAs.Addendum.Library"
+    },
+    {
+        "ManagementPackSystemName":  "Microsoft.SystemCenter.Internal.Addendum"
+    },
+    {
+        "ManagementPackSystemName":  "Microsoft.Windows.Server.AD.2016.Monitoring.Addendum"
+    },
+    {
+        "ManagementPackSystemName":  "MultiHome.ManagementGroup.Automator"
+    },
+    {
+        "ManagementPackSystemName":  "Network.Windows.Computer.NetstatWatcher"
+    },
+    {
+        "ManagementPackSystemName":  "NiCE.LogFile.Library"
+    },
+    {
+        "ManagementPackSystemName":  "NutanixCluster"
+    },
+    {
+        "ManagementPackSystemName":  "OpsLogix.IMP.Ping"
+    },
+    {
+        "ManagementPackSystemName":  "OpsMgr.GenericServiceMonitoring"
+    },
+    {
+        "ManagementPackSystemName":  "OpsMgr.Group.Health.Rollup.Task"
+    },
+    {
+        "ManagementPackSystemName":  "OpsMgr.HealthSync.Library"
+    },
+    {
+        "ManagementPackSystemName":  "OpsMgr.Self.Maintenance"
+    },
+    {
+        "ManagementPackSystemName":  "P2P.OMSAdministration"
+    },
+    {
+        "ManagementPackSystemName":  "Progel.Windows.ScheduledTasks.Library"
+    },
+    {
+        "ManagementPackSystemName":  "QND.Azure.Monitor"
+    },
+    {
+        "ManagementPackSystemName":  "QND.Hyperv2012R2"
+    },
+    {
+        "ManagementPackSystemName":  "QND.Network.Kemp"
+    },
+    {
+        "ManagementPackSystemName":  "QND.OMS.LogAnalytics"
+    },
+    {
+        "ManagementPackSystemName":  "QueryOleDbMonitorLibrary"
+    },
+    {
+        "ManagementPackSystemName":  "Realdolmen.FileCount.ManagementPack"
+    },
+    {
+        "ManagementPackSystemName":  "s2.OperationsManager.Trace.Helper"
+    },
+    {
+        "ManagementPackSystemName":  "SAMPLE.OPERATIONSMANAGER.2016.UPGRADE"
+    },
+    {
+        "ManagementPackSystemName":  "SCOM.Addons.MailIn"
+    },
+    {
+        "ManagementPackSystemName":  "SCOM.Management"
+    },
+    {
+        "ManagementPackSystemName":  "SCOM.Task.Collection.SCOMfaq"
+    },
+    {
+        "ManagementPackSystemName":  "SCOM.UnsealedMPBackup"
+    },
+    {
+        "ManagementPackSystemName":  "SCOMAgentHelper"
+    },
+    {
+        "ManagementPackSystemName":  "SCUtils.APC.UPS"
+    },
+    {
+        "ManagementPackSystemName":  "SCUtils.General.Printer.Management.Pack"
+    },
+    {
+        "ManagementPackSystemName":  "Security.Monitoring"
+    },
+    {
+        "ManagementPackSystemName":  "Server.Pending.Restart"
+    },
+    {
+        "ManagementPackSystemName":  "SquaredUp.EAM.Library"
+    },
+    {
+        "ManagementPackSystemName":  "SRDNSCheck"
+    },
+    {
+        "ManagementPackSystemName":  "System.Center.Operations.Manager.Health.Check.Reports"
+    },
+    {
+        "ManagementPackSystemName":  "SystemCenterCentral.Utilities.Certificates"
+    },
+    {
+        "ManagementPackSystemName":  "SystemCenterCentralReSearchThis"
+    },
+    {
+        "ManagementPackSystemName":  "TCPPortMonitoring.ManagementPack"
+    },
+    {
+        "ManagementPackSystemName":  "UptimeRobot.ManagementPack"
+    },
+    {
+        "ManagementPackSystemName":  "URLGenie"
+    },
+    {
+        "ManagementPackSystemName":  "Veeam.Report.Library"
+    },
+    {
+        "ManagementPackSystemName":  "Veeam.Virt.Extensions.HyperV.Library"
+    },
+    {
+        "ManagementPackSystemName":  "Veeam.Virt.Extensions.VMware.Library"
+    },
+    {
+        "ManagementPackSystemName":  "WildCardTemplate"
+    },
+    {
+        "ManagementPackSystemName":  "Windows.Computer.AgentTasks.CreateLogDeletionJob"
+    },
+    {
+        "ManagementPackSystemName":  "Windows.Computer.DataOnDemand.Addendum"
+    },
+    {
+        "ManagementPackSystemName":  "Windows.Server.Webservice.BasicWatcher"
+    },
+    {
+        "ManagementPackSystemName":  "Windows.Server.Webservice.LogdirectoryWatcher"
+    },
+    {
+        "ManagementPackSystemName":  "WindowsAzurePack.ManagementPack.Monitoring"
+    }
 ]
