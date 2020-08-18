@@ -34,6 +34,12 @@ Queries Microsoft’s Graph API by extending given OData functions
 ![Get-MSGraphData](https://raw.githubusercontent.com/Juanito99/Windows.Computer.DataOnDemand.Addendum/master/PicturesForGitWebSite/Get-MSGraphBetaData.png)
 
 
+### Get-MSO365MgmtData
+Queries Microsoft’s O365 Management API by extending given OData functions
+
+![Get-MSO365MgmtData](https://raw.githubusercontent.com/Juanito99/Windows.Computer.DataOnDemand.Addendum/master/PicturesForGitWebSite/Get-MSO365MgmtData.png)
+
+
 
 ### More information on:
 [Documentation](https://raw.githubusercontent.com/Juanito99/Windows.Computer.DataOnDemand.Addendum/master/Documentation/DataOnDemandAddendum_ManagementPack_for_WindowsComputers.pdf)
