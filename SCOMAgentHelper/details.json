@@ -1,0 +1,16 @@
+﻿{
+    "ManagementPackSystemName":  "SCOMAgentHelper",
+    "ManagementPackDisplayName":  "SCOMAgentHelper",
+    "URL":  "https://monitoringguys.com/2020/07/30/control-scom-maintenance-mode-from-the-agent-with-scomagenthelper-management-pack/",
+    "Version":  "1.0.0.10",
+    "Author":  "Tyson Paul",
+    "Description":  "This management pack will provide every agent-managed computer with a set of PowerShell commands to control and verify maintenance mode for the Windows Computer object.",
+    "IsFree":  true,
+    "Tags":  [
+                 "agent",
+                 "maintenance",
+                 "SCOM",
+                 "powershell",
+                 "administration"
+             ]
+}
