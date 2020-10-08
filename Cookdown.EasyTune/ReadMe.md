@@ -13,4 +13,4 @@ Key benefits
 - Avoids the sprawl of overrides across multiple management packs
 
 More information on:
-Url: https://cookdown.com/scom-essentials/easy-tune/
+Url: https://go.cookdown.com/get-easy-tune
