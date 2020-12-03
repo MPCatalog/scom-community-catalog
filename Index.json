@@ -54,6 +54,9 @@
         "ManagementPackSystemName":  "Cookdown.EasyTune"
     },
     {
+        "ManagementPackSystemName":  "Cookdown.SNOW.Connector"
+    },
+    {
         "ManagementPackSystemName":  "Custom.Windows.TaskScheduler.Library"
     },
     {
