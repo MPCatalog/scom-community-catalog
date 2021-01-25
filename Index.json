@@ -78,6 +78,12 @@
         "ManagementPackSystemName":  "HPEnterpriseStorageLibraryMP"
     },
     {
+        "ManagementPackSystemName":  "HyperV.MPE.2016.Library"
+    },
+    {
+        "ManagementPackSystemName":  "HyperV.MPE.2019.Library"
+    },
+    {
         "ManagementPackSystemName":  "Inside.Technologies.Veeam.Agents"
     },
     {
