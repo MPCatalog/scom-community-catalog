@@ -96,6 +96,12 @@
         "ManagementPackSystemName":  "MartelloTech_Database_Query_Library"
     },
     {
+        "ManagementPackSystemName":  "Maximus.Base.Library"
+    },
+    {
+        "ManagementPackSystemName":  "Maximus.Connectivity.Monitoring"
+    },
+    {
         "ManagementPackSystemName":  "Microsoft.SQLServer.RunAs.Addendum.Library"
     },
     {
