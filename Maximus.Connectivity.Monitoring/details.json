@@ -1,0 +1,17 @@
+{
+  "ManagementPackSystemName": "Maximus.Connectivity.Monitoring",
+  "ManagementPackDisplayName": "Maximus Connectivity Monitoring",
+  "URL": "https://github.com/MaxxVolk/Maximus.Connectivity.Monitoring",
+  "Version": "1.0.0.232",
+  "Author": "Max Volkov",
+  "IsFree": true,
+  "Description": "Multi-protocol connectivity testing, including ping, HTTP, SSL/TLS, TCP, etc.",
+  "Tags": [
+    "Network",
+    "ping",
+    "TCP",
+    "SSL",
+    "TLS",
+    "connectivity"
+  ]
+}
