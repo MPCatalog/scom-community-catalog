@@ -1,0 +1,14 @@
+﻿{
+    "ManagementPackSystemName":  "Cookdown.SNOW.Connector",
+    "ManagementPackDisplayName":  "Cookdown SNOW Connector",
+    "URL":  "https://www.cookdown.com/alert-sync",
+    "Version":  "2.0.0.0",
+    "Author":  "Cookdown",
+    "Description":  "Easily send your SCOM Alerts to ServiceNow",
+    "IsFree":  true,
+    "Tags":  [
+                 "ServiceNow",
+                 "Alerts",
+                 "Integration"
+             ]
+}

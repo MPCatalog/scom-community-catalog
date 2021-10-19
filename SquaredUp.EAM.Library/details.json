@@ -2,13 +2,13 @@
   "ManagementPackSystemName": "SquaredUp.EAM.Library",
   "ManagementPackDisplayName": "Squared Up Enterprise Application Monitoring Library",
   "URL": "https://download.squaredup.com/management-packs/enterpise-application-monitoring-library/",
-  "Version": "1.2.3.126",
+  "Version": "1.2.5.128",
   "Author": "Squared Up",
   "IsFree": true,
   "Description": "Provides the underlying classes used by the Squared Up Enterprise Application Monitoring (EAM) functionality.",
   "Tags": [
     "Squared Up",
-	  "Application Model",
-	  "Distributed Application"
-	]
+    "Application Model",
+    "Distributed Application"
+]
 }

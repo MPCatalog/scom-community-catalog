@@ -54,6 +54,9 @@
         "ManagementPackSystemName":  "Cookdown.EasyTune"
     },
     {
+        "ManagementPackSystemName":  "Cookdown.SNOW.Connector"
+    },
+    {
         "ManagementPackSystemName":  "Custom.Windows.TaskScheduler.Library"
     },
     {
@@ -75,6 +78,12 @@
         "ManagementPackSystemName":  "HPEnterpriseStorageLibraryMP"
     },
     {
+        "ManagementPackSystemName":  "HyperV.MPE.2016.Library"
+    },
+    {
+        "ManagementPackSystemName":  "HyperV.MPE.2019.Library"
+    },
+    {
         "ManagementPackSystemName":  "Inside.Technologies.Veeam.Agents"
     },
     {
@@ -85,6 +94,12 @@
     },
     {
         "ManagementPackSystemName":  "MartelloTech_Database_Query_Library"
+    },
+    {
+        "ManagementPackSystemName":  "Maximus.Base.Library"
+    },
+    {
+        "ManagementPackSystemName":  "Maximus.Connectivity.Monitoring"
     },
     {
         "ManagementPackSystemName":  "Microsoft.SQLServer.RunAs.Addendum.Library"
