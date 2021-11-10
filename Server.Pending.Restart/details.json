@@ -1,7 +1,7 @@
 {
     "ManagementPackSystemName":  "Server.Pending.Restart",
     "ManagementPackDisplayName":  "Server Pending Restart Monitoring",
-    "URL":  "https://gallery.technet.microsoft.com/Server-Pending-Restart-New-2457a729",
+    "URL":  "https://github.com/gavspeed/ServerPendingRestart",
     "Version":  "1.0.1.11",
     "Author":  "Apajove",
     "Description":  "New Server Pending Restart Monitoring management pack for System Center Operations Manager",
