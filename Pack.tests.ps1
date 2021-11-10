@@ -22,6 +22,7 @@ $testCases = @(
         file = $_
         directory =  $_.directory
         directoryName = $_.directory.name
+        index = $index
     }})
 )
 
