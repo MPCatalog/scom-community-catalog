@@ -1,4 +1,4 @@
-#Requires -Version 5.0 -Module @{ModuleName = 'Pester'; ModuleVersion = '5.0.0'}
+#Requires -Module @{ModuleName = 'Pester'; ModuleVersion = '5.0.0'}
 <#
 .SYNOPSIS
     Test file for Pester that will verify that the catalog files are in a valid state and meet all defined guidelines. Pull requests that have failing tests are unlikely to be accepted.
