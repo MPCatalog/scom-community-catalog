@@ -1,0 +1,36 @@
+﻿<ManagementPackFragment SchemaVersion="2.0" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Presentation>
+    <Views>
+      <View ID="Docker.Unix.Daemon.Alert.View" Accessibility="Internal" Enabled="true" Target="Docker.Unix.Daemon" TypeID="SC!Microsoft.SystemCenter.AlertViewType" Visible="true">
+        <Category>Custom</Category>
+        <Criteria>
+          <ResolutionState>
+            <StateRange Operator="NotEquals">255</StateRange>
+          </ResolutionState>
+        </Criteria>
+      </View>
+      <View ID="Docker.Unix.Daemon.State.View" Accessibility="Internal" Enabled="true" Target="Docker.Unix.Daemon" TypeID="SC!Microsoft.SystemCenter.StateViewType" Visible="true">
+        <Category>Custom</Category>
+        <Criteria />
+      </View>
+    </Views>
+    <FolderItems>
+      <FolderItem ElementID="Docker.Unix.Daemon.Alert.View" ID="Docker.Unix.Daemon.Alert.View.FolderItem" Folder="Docker.Root.Folder" />
+      <FolderItem ElementID="Docker.Unix.Daemon.State.View" ID="Docker.Unix.Daemon.State.View.FolderItem" Folder="Docker.Root.Folder" />
+    </FolderItems>
+  </Presentation>
+  <LanguagePacks>
+    <LanguagePack ID="ENU" IsDefault="true">
+      <DisplayStrings>
+        <DisplayString ElementID="Docker.Unix.Daemon.Alert.View">
+          <Name>Active Alerts</Name>
+          <Description />
+        </DisplayString>
+        <DisplayString ElementID="Docker.Unix.Daemon.State.View">
+          <Name>States</Name>
+          <Description />
+        </DisplayString>
+      </DisplayStrings>
+    </LanguagePack>
+  </LanguagePacks>
+</ManagementPackFragment>

@@ -1,0 +1,37 @@
+﻿<ManagementPackFragment SchemaVersion="2.0" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Monitoring>
+    <Rules>
+      <Rule ID="Docker.Unix.Container.MemUsedMB.CollectionRule" Target="Docker.Unix.Container" Enabled="true" ConfirmDelivery="false" Remotable="true" Priority="Normal" DiscardLevel="100">
+        <Category>PerformanceCollection</Category>
+        <DataSources>
+          <DataSource ID="DS" TypeID="Unix!Microsoft.Unix.WSMan.PerfCounterProvider.Filtered">
+            <TargetSystem>$Target/Host/Host/Property[Type="Unix!Microsoft.Unix.Computer"]/NetworkName$</TargetSystem>
+            <Uri>http://schemas.microsoft.com/wbem/wscim/1/cim-schema/2/Container_ContainerStatistics?__cimnamespace=root/cimv2</Uri>
+            <SplitItems>true</SplitItems>
+            <Interval>300</Interval>
+            <ObjectName>Container</ObjectName>
+            <CounterName>Memory Used (Mb)</CounterName>
+            <InstanceName>$Target/Property[Type="Docker.Unix.Object"]/Name$</InstanceName>
+            <InstanceProperty>/DataItem/WsManData/*[local-name(.)='Container_ContainerStatistics']/*[local-name(.)='ElementName']</InstanceProperty>
+            <Value>$Data///DataItem/WsManData/*[local-name(.)='Container_ContainerStatistics']/*[local-name(.)='MemUsedMB']$</Value>
+          </DataSource>
+        </DataSources>
+        <WriteActions>
+          <WriteAction ID="WriteToDB" TypeID="SC!Microsoft.SystemCenter.CollectPerformanceData" />
+          <WriteAction ID="WriteToDW" TypeID="DW!Microsoft.SystemCenter.DataWarehouse.PublishPerformanceData" />
+        </WriteActions>
+      </Rule>
+    </Rules>
+  </Monitoring>
+
+  <LanguagePacks>
+    <LanguagePack ID="ENU" IsDefault="true">
+      <DisplayStrings>
+        <DisplayString ElementID="Docker.Unix.Container.MemUsedMB.CollectionRule">
+          <Name>Collect Container\Memory Usage</Name>
+          <Description>Collect Container\Memory Usage</Description>
+        </DisplayString>
+      </DisplayStrings>
+    </LanguagePack>
+  </LanguagePacks>
+</ManagementPackFragment>

@@ -1,0 +1,107 @@
+﻿<ManagementPackFragment SchemaVersion="2.0" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Monitoring>
+    <Monitors>
+      <UnitMonitor ID="Docker.Unix.Daemon.State.Monitor" Accessibility="Public" Enabled="false" Target="Docker.Unix.Daemon" ParentMonitorID="Health!System.Health.AvailabilityState" Remotable="true" Priority="Normal" TypeID="Unix!Microsoft.Unix.WSMan.Process.Status.MonitorType" ConfirmDelivery="false">
+        <Category>AvailabilityHealth</Category>
+        <AlertSettings AlertMessage="Docker.Unix.Daemon.State.Monitor.AlertMessage">
+          <AlertOnState>Error</AlertOnState>
+          <AutoResolve>true</AutoResolve>
+          <AlertPriority>Normal</AlertPriority>
+          <AlertSeverity>MatchMonitorHealth</AlertSeverity>
+          <AlertParameters>
+            <AlertParameter1>$Target/Host/Property[Type="Unix!Microsoft.Unix.Computer"]/PrincipalName$</AlertParameter1>
+          </AlertParameters>
+        </AlertSettings>
+        <OperationalStates>
+          <OperationalState ID="Running" MonitorTypeStateID="Running" HealthState="Success" />
+          <OperationalState ID="NotRunning" MonitorTypeStateID="NotRunning" HealthState="Error" />
+        </OperationalStates>
+        <Configuration>
+          <TargetSystem>$Target/Host/Property[Type="Unix!Microsoft.Unix.Computer"]/NetworkName$</TargetSystem>
+          <ProcessName>dockerd</ProcessName>
+          <Interval>60</Interval>
+        </Configuration>
+      </UnitMonitor>
+      <DependencyMonitor ID="Docker.Unix.Daemon.Object.AvailabilityRollup" Accessibility="Public" Enabled="true" Target="Docker.Unix.Daemon" ParentMonitorID="Health!System.Health.AvailabilityState" Remotable="true" Priority="Normal" RelationshipType="Docker.Unix.Daemon.Hosts.Object" MemberMonitor="Health!System.Health.AvailabilityState">
+        <Category>AvailabilityHealth</Category>
+        <Algorithm>WorstOf</Algorithm>
+      </DependencyMonitor>
+      <DependencyMonitor ID="Docker.Unix.Daemon.Object.PerformanceRollup" Accessibility="Public" Enabled="true" Target="Docker.Unix.Daemon" ParentMonitorID="Health!System.Health.PerformanceState" Remotable="true" Priority="Normal" RelationshipType="Docker.Unix.Daemon.Hosts.Object" MemberMonitor="Health!System.Health.PerformanceState">
+        <Category>PerformanceHealth</Category>
+        <Algorithm>WorstOf</Algorithm>
+      </DependencyMonitor>
+    </Monitors>
+  </Monitoring>
+  <Presentation>
+    <StringResources>
+      <StringResource ID="Docker.Unix.Daemon.State.Monitor.AlertMessage" />
+    </StringResources>
+  </Presentation>
+  <LanguagePacks>
+    <LanguagePack ID="ENU" IsDefault="true">
+      <DisplayStrings>
+        <DisplayString ElementID="Docker.Unix.Daemon.Object.AvailabilityRollup">
+          <Name>Docker Object Availability Rollup</Name>
+          <Description>Docker Object Availability Rollup Monitor</Description>
+        </DisplayString>
+        <DisplayString ElementID="Docker.Unix.Daemon.Object.PerformanceRollup">
+          <Name>Docker Object Performance Rollup</Name>
+          <Description>Docker Object Performance Rollup Monitor</Description>
+        </DisplayString>
+        <DisplayString ElementID="Docker.Unix.Daemon.State.Monitor">
+          <Name>Daemon State</Name>
+          <Description>This monitor checks Docker daemon state.</Description>
+        </DisplayString>
+        <DisplayString ElementID="Docker.Unix.Daemon.State.Monitor.AlertMessage">
+          <Name>Docker daemon is not running.</Name>
+          <Description>The Docker daemon (dockerd) is not running on the computer {0}.</Description>
+        </DisplayString>
+        <DisplayString ElementID="Docker.Unix.Daemon.State.Monitor" SubElementID="Running">
+          <Name>Running</Name>
+          <Description>Running</Description>
+        </DisplayString>
+        <DisplayString ElementID="Docker.Unix.Daemon.State.Monitor" SubElementID="NotRunning">
+          <Name>Not Running</Name>
+          <Description>Not Running</Description>
+        </DisplayString>
+      </DisplayStrings>
+      <KnowledgeArticles>
+        <KnowledgeArticle ElementID="Docker.Unix.Daemon.State.Monitor">
+          <MamlContent>
+            <maml:section xmlns:maml="http://schemas.microsoft.com/maml/2004/10">
+              <maml:title>Summary</maml:title>
+              <maml:para>This process monitor watches for a Docker Daemon process to be running.</maml:para>
+            </maml:section>
+            <maml:section xmlns:maml="http://schemas.microsoft.com/maml/2004/10">
+              <maml:title>Causes</maml:title>
+              <maml:para>A failure indicates that the service is down.  A service can stop for many reasons, including:</maml:para>
+              <maml:list>
+                <maml:listItem>
+                  <maml:para>The service was stopped by an administrator.</maml:para>
+                </maml:listItem>
+                <maml:listItem>
+                  <maml:para>The service was prevented from starting because the user account could not be authenticated.</maml:para>
+                </maml:listItem>
+                <maml:listItem>
+                  <maml:para>The service encountered an exception that stopped the service.</maml:para>
+                </maml:listItem>
+                <maml:listItem>
+                  <maml:para>The service was improperly configured, which prevented it from starting.</maml:para>
+                </maml:listItem>
+                <maml:listItem>
+                  <maml:para>Another service that this service is dependent on was stopped.</maml:para>
+                </maml:listItem>
+              </maml:list>
+              <maml:para />
+            </maml:section>
+            <maml:section xmlns:maml="http://schemas.microsoft.com/maml/2004/10">
+              <maml:title>Resolutions</maml:title>
+              <maml:para>Check the service on the system by running ps -ef | grep dockerd.</maml:para>
+              <maml:para />
+            </maml:section>
+          </MamlContent>
+        </KnowledgeArticle>
+      </KnowledgeArticles>
+    </LanguagePack>
+  </LanguagePacks>
+</ManagementPackFragment>

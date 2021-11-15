@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ManagementPackFragment SchemaVersion="2.0" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <TypeDefinitions>
+    <EntityTypes>
+      <ClassTypes>
+        <ClassType ID="Docker.Unix.Daemon" Base="Unix!Microsoft.Unix.LocalApplication" Accessibility="Public" Abstract="false" Hosted="true" Singleton="false">
+          <Property ID="ServerVersion" Type="string" />
+          <Property ID="OperatingSystem" Type="string" />
+        </ClassType>
+        <ClassType ID="Docker.Unix.Image" Base="Docker.Unix.Object" Accessibility="Public" Abstract="false" Hosted="true" Singleton="false">
+          <Property ID="Repository" Key="false" Type="string" />
+          <Property ID="Tag" Key="false" Type="string" />
+        </ClassType>
+      </ClassTypes>
+    </EntityTypes>
+  </TypeDefinitions>
+  <Categories>
+    <Category ID="Docker.Daemon.Diagram" Target="Docker.Daemon.80x80Image" Value="System!System.Internal.ManagementPack.Images.DiagramIcon" />
+    <Category ID="Docker.Daemon.Icon" Target="Docker.Daemon.16x16Image" Value="System!System.Internal.ManagementPack.Images.u16x16Icon" />
+  </Categories>
+  <Monitoring>
+    <Discoveries>
+       <Discovery ID="Docker.Unix.Daemon.Discovery" Target="Unix!Microsoft.Unix.Computer" Enabled="true" ConfirmDelivery="false" Remotable="true" Priority="Normal">
+        <Category>Discovery</Category>
+        <DiscoveryTypes>
+          <DiscoveryClass TypeID="Docker.Unix.Daemon">
+            <Property TypeID="Docker.Unix.Daemon" PropertyID="ServerVersion" />
+            <Property TypeID="Docker.Unix.Daemon" PropertyID="OperatingSystem" />
+            <Property TypeID="System!System.Entity" PropertyID="DisplayName" />
+          </DiscoveryClass>
+        </DiscoveryTypes>
+        <DataSource ID="DS" TypeID="Unix!Microsoft.Unix.WSMan.TimedEnumerate.DiscoveryData">
+          <TargetSystem>$Target/Property[Type="Unix!Microsoft.Unix.Computer"]/NetworkName$</TargetSystem>
+          <Uri>http://schemas.microsoft.com/wbem/wscim/1/cim-schema/2/Container_HostInventory?__cimnamespace=root/cimv2</Uri>
+          <SplitItems>false</SplitItems>
+          <Interval>14400</Interval>
+          <ClassId>$MPElement[Name="Docker.Unix.Daemon"]$</ClassId>
+          <InstanceSettings>
+            <Settings>
+              <Setting>
+                <Name>$MPElement[Name="Unix!Microsoft.Unix.Computer"]/PrincipalName$</Name>
+                <Value>$Target/Property[Type="Unix!Microsoft.Unix.Computer"]/PrincipalName$</Value>
+              </Setting>
+              <Setting>
+                <Name>$MPElement[Name="System!System.Entity"]/DisplayName$</Name>
+                <Value>$Data///DataItem/WsManData/*[local-name(.)='Container_HostInventory']/*[local-name(.)='Computer']$</Value>
+              </Setting>
+              <Setting>
+                <Name>$MPElement[Name="Docker.Unix.Daemon"]/ServerVersion$</Name>
+                <Value>$Data///DataItem/WsManData/*[local-name(.)='Container_HostInventory']/*[local-name(.)='DockerVersion']$</Value>
+              </Setting>
+              <Setting>
+                <Name>$MPElement[Name="Docker.Unix.Daemon"]/OperatingSystem$</Name>
+                <Value>$Data///DataItem/WsManData/*[local-name(.)='Container_HostInventory']/*[local-name(.)='OperatingSystem']$</Value>
+              </Setting>
+            </Settings>
+          </InstanceSettings>
+          <OutputErrorIfAny>true</OutputErrorIfAny>
+        </DataSource>
+      </Discovery>
+      <Discovery ID="Docker.Unix.Image.Discovery" Target="Docker.Unix.Daemon" Enabled="true" ConfirmDelivery="false" Remotable="true" Priority="Normal">
+        <Category>Discovery</Category>
+        <DiscoveryTypes>
+          <DiscoveryClass TypeID="Docker.Unix.Container">
+            <Property TypeID="Docker.Unix.Container" PropertyID="CreatedTime" />
+            <Property TypeID="Docker.Unix.Container" PropertyID="Image" />
+            <Property TypeID="Docker.Unix.Container" PropertyID="HostName" />
+            <Property TypeID="Docker.Unix.Object" PropertyID="Id" />
+            <Property TypeID="Docker.Unix.Object" PropertyID="Name" />
+            <Property TypeID="System!System.Entity" PropertyID="DisplayName" />
+          </DiscoveryClass>
+        </DiscoveryTypes>
+        <DataSource ID="DS" TypeID="Unix!Microsoft.Unix.WSMan.TimedEnumerate.DiscoveryData">
+          <TargetSystem>$Target/Host/Property[Type="Unix!Microsoft.Unix.Computer"]/NetworkName$</TargetSystem>
+          <Uri>http://schemas.microsoft.com/wbem/wscim/1/cim-schema/2/Container_ImageInventory?__cimnamespace=root/cimv2</Uri>
+          <SplitItems>true</SplitItems>
+          <Interval>14400</Interval>
+          <ClassId>$MPElement[Name="Docker.Unix.Image"]$</ClassId>
+          <InstanceSettings>
+            <Settings>
+              <Setting>
+                <Name>$MPElement[Name="Unix!Microsoft.Unix.Computer"]/PrincipalName$</Name>
+                <Value>$Target/Host/Property[Type="Unix!Microsoft.Unix.Computer"]/PrincipalName$</Value>
+              </Setting>
+              <Setting>
+                <Name>$MPElement[Name="System!System.Entity"]/DisplayName$</Name>
+                <Value>$Data///DataItem/WsManData/*[local-name(.)='Container_ImageInventory']/*[local-name(.)='Repository']$/$Data///DataItem/WsManData/*[local-name(.)='Container_ImageInventory']/*[local-name(.)='Image']$:$Data///DataItem/WsManData/*[local-name(.)='Container_ImageInventory']/*[local-name(.)='ImageTag']$</Value>
+              </Setting>
+              <Setting>
+                <Name>$MPElement[Name="Docker.Unix.Object"]/Id$</Name>
+                <Value>$Data///DataItem/WsManData/*[local-name(.)='Container_ImageInventory']/*[local-name(.)='InstanceID']$</Value>
+              </Setting>
+              <Setting>
+                <Name>$MPElement[Name="Docker.Unix.Object"]/Name$</Name>
+                <Value>$Data///DataItem/WsManData/*[local-name(.)='Container_ImageInventory']/*[local-name(.)='Image']$</Value>
+              </Setting>
+              <Setting>
+                <Name>$MPElement[Name="Docker.Unix.Image"]/Repository$</Name>
+                <Value>$Data///DataItem/WsManData/*[local-name(.)='Container_ImageInventory']/*[local-name(.)='Repository']$</Value>
+              </Setting>
+              <Setting>
+                <Name>$MPElement[Name="Docker.Unix.Image"]/Tag$</Name>
+                <Value>$Data///DataItem/WsManData/*[local-name(.)='Container_ImageInventory']/*[local-name(.)='ImageTag']$</Value>
+              </Setting>
+            </Settings>
+          </InstanceSettings>
+          <OutputErrorIfAny>false</OutputErrorIfAny>
+        </DataSource>
+      </Discovery>
+    </Discoveries>
+  </Monitoring>
+  <Presentation>
+    <ImageReferences>
+      <ImageReference ElementID="Docker.Unix.Daemon" ImageID="Docker.Daemon.16x16Image" />
+      <ImageReference ElementID="Docker.Unix.Daemon" ImageID="Docker.Daemon.80x80Image" />
+    </ImageReferences>
+  </Presentation>
+  <LanguagePacks>
+    <LanguagePack ID="ENU" IsDefault="true">
+      <DisplayStrings>
+        <DisplayString ElementID="Docker.Unix.Daemon.Discovery">
+          <Name>Discover Docker Daemon</Name>
+          <Description></Description>
+        </DisplayString>
+        <DisplayString ElementID="Docker.Unix.Image.Discovery">
+          <Name>Discover Docker Image</Name>
+          <Description></Description>
+        </DisplayString>
+        <DisplayString ElementID="Docker.Unix.Daemon">
+          <Name>Docker Daemon</Name>
+          <Description></Description>
+        </DisplayString>
+        <DisplayString ElementID="Docker.Unix.Daemon" SubElementID="ServerVersion">
+          <Name>Docker Server Version</Name>
+          <Description></Description>
+        </DisplayString>
+        <DisplayString ElementID="Docker.Unix.Daemon" SubElementID="OperatingSystem">
+          <Name>Operating System</Name>
+          <Description></Description>
+        </DisplayString>
+        <DisplayString ElementID="Docker.Unix.Image">
+          <Name>Image</Name>
+          <Description></Description>
+        </DisplayString>
+        <DisplayString ElementID="Docker.Unix.Container">
+          <Name>Container</Name>
+          <Description></Description>
+        </DisplayString>
+        <DisplayString ElementID="Docker.Unix.Container" SubElementID="HostName">
+          <Name>Host Name</Name>
+          <Description></Description>
+        </DisplayString>
+        <DisplayString ElementID="Docker.Unix.Container" SubElementID="CreatedTime">
+          <Name>Created Time</Name>
+          <Description></Description>
+        </DisplayString>
+        <DisplayString ElementID="Docker.Unix.Container" SubElementID="Image">
+          <Name>Image</Name>
+          <Description></Description>
+        </DisplayString>
+        <DisplayString ElementID="Docker.Unix.Image" SubElementID="Repository">
+          <Name>Repository</Name>
+          <Description></Description>
+        </DisplayString>
+        <DisplayString ElementID="Docker.Unix.Image" SubElementID="Tag">
+          <Name>Tag</Name>
+          <Description></Description>
+        </DisplayString>
+        <DisplayString ElementID="Docker.Unix.Object">
+          <Name>Docker Object</Name>
+          <Description></Description>
+        </DisplayString>
+        <DisplayString ElementID="Docker.Unix.Object" SubElementID="Id">
+          <Name>ID</Name>
+          <Description></Description>
+        </DisplayString>
+        <DisplayString ElementID="Docker.Unix.Object" SubElementID="Name">
+          <Name>Name</Name>
+          <Description></Description>
+        </DisplayString>
+        <DisplayString ElementID="Docker.Unix.Container.References.Image">
+          <Name>Container References Image</Name>
+          <Description></Description>
+        </DisplayString>
+        <DisplayString ElementID="Docker.Unix.Daemon.Hosts.Object">
+          <Name>Daemon Hosts Object</Name>
+          <Description></Description>
+        </DisplayString>
+      </DisplayStrings>
+    </LanguagePack>
+  </LanguagePacks>
+  <Resources>
+    <Image ID="Docker.Daemon.80x80Image" FileName="Docker.Daemon.80x80Image.png" Accessibility="Public" HasNullStream="false" />
+    <Image ID="Docker.Container.80x80Image" FileName="Docker.Container.80x80Image.png" Accessibility="Public" HasNullStream="false" />
+    <Image ID="Docker.Daemon.16x16Image" FileName="Docker.Daemon.16x16Image.png" Accessibility="Public" HasNullStream="false" />
+    <Image ID="Docker.Container.16x16Image" FileName="Docker.Container.16x16Image.png" Accessibility="Public" HasNullStream="false" />
+  </Resources>  
+</ManagementPackFragment>

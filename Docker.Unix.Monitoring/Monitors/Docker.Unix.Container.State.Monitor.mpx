@@ -1,0 +1,63 @@
+﻿<ManagementPackFragment SchemaVersion="2.0" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Monitoring>
+    <Monitors>
+      <UnitMonitor ID="Docker.Unix.Container.State.Monitor" Accessibility="Public" Enabled="false" Target="Docker.Unix.Container" ParentMonitorID="Health!System.Health.AvailabilityState" Remotable="true" Priority="Normal" TypeID="Unix!Microsoft.Unix.WSMan.Status.Filtered.MonitorType" ConfirmDelivery="false">
+        <Category>AvailabilityHealth</Category>
+        <AlertSettings AlertMessage="Docker.Unix.Container.State.Monitor.AlertMessage">
+          <AlertOnState>Error</AlertOnState>
+          <AutoResolve>true</AutoResolve>
+          <AlertPriority>Normal</AlertPriority>
+          <AlertSeverity>MatchMonitorHealth</AlertSeverity>
+          <AlertParameters>
+            <AlertParameter1>$Target/Property[Type="System!System.Entity"]/DisplayName$</AlertParameter1>
+            <AlertParameter2>$Data/Context/DataItem/WsManData/*[local-name(.)='Container_ContainerInventory']/*[local-name(.)='State']$</AlertParameter2>
+            <AlertParameter3>$Data/Context/DataItem/WsManData/*[local-name(.)='Container_ContainerInventory']/*[local-name(.)='ExitCode']$</AlertParameter3>
+            <AlertParameter4>$Data/Context/DataItem/WsManData/*[local-name(.)='Container_ContainerInventory']/*[local-name(.)='FinishedTime']$</AlertParameter4>
+            <AlertParameter5>$Data/Context/DataItem/WsManData/*[local-name(.)='Container_ContainerInventory']/*[local-name(.)='Computer']$</AlertParameter5>
+          </AlertParameters>
+        </AlertSettings>
+        <OperationalStates>
+          <OperationalState ID="StatusOK" MonitorTypeStateID="StatusOK" HealthState="Success" />
+          <OperationalState ID="StatusFailed" MonitorTypeStateID="StatusFailed" HealthState="Error" />
+        </OperationalStates>
+        <Configuration>
+          <TargetSystem>$Target/Host/Host/Property[Type="Unix!Microsoft.Unix.Computer"]/NetworkName$</TargetSystem>
+          <Uri>http://schemas.microsoft.com/wbem/wscim/1/cim-schema/2/Container_ContainerInventory?__cimnamespace=root/cimv2</Uri>
+          <SplitItems>true</SplitItems>
+          <Interval>60</Interval>
+          <InstanceName>$Target/Property[Type="Docker.Unix.Object"]/Name$</InstanceName>
+          <InstanceProperty>/DataItem/WsManData/*[local-name(.)='Container_ContainerInventory']/*[local-name(.)='ElementName']</InstanceProperty>
+          <Status>/DataItem/WsManData/*[local-name(.)='Container_ContainerInventory']/*[local-name(.)='State']</Status>
+          <ExpectedStatus>Running</ExpectedStatus>
+        </Configuration>
+      </UnitMonitor>
+    </Monitors>
+  </Monitoring>
+  <Presentation>
+    <StringResources>
+      <StringResource ID="Docker.Unix.Container.State.Monitor.AlertMessage" />
+    </StringResources>
+  </Presentation>
+  <LanguagePacks>
+    <LanguagePack ID="ENU" IsDefault="true">
+      <DisplayStrings>
+        <DisplayString ElementID="Docker.Unix.Container.State.Monitor">
+          <Name>Container State</Name>
+          <Description>This monitor checks Container state.</Description>
+        </DisplayString>
+        <DisplayString ElementID="Docker.Unix.Container.State.Monitor.AlertMessage">
+          <Name>Container is not running</Name>
+          <Description>The сontainer {0} has been {1} with exit code {2} at {3} on the computer {4}.</Description>
+        </DisplayString>
+        <DisplayString ElementID="Docker.Unix.Container.State.Monitor" SubElementID="StatusOK">
+          <Name>Running</Name>
+          <Description>Running</Description>
+        </DisplayString>
+        <DisplayString ElementID="Docker.Unix.Container.State.Monitor" SubElementID="StatusFailed">
+          <Name>Not Runnin</Name>
+          <Description>Not Runnin</Description>
+        </DisplayString>
+      </DisplayStrings>
+    </LanguagePack>
+  </LanguagePacks>
+</ManagementPackFragment>

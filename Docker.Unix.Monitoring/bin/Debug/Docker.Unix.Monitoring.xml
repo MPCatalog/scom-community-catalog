@@ -1,0 +1,766 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ManagementPack SchemaVersion="2.0" ContentReadable="true" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Manifest>
+    <Identity>
+      <ID>Docker.Unix.Monitoring</ID>
+      <Version>1.0.0.96</Version>
+    </Identity>
+    <Name>Docker.Unix.Monitoring</Name>
+    <References>
+      <Reference Alias="DW">
+        <ID>Microsoft.SystemCenter.DataWarehouse.Library</ID>
+        <Version>7.0.8427.0</Version>
+        <PublicKeyToken>31bf3856ad364e35</PublicKeyToken>
+      </Reference>
+      <Reference Alias="SC">
+        <ID>Microsoft.SystemCenter.Library</ID>
+        <Version>7.0.8427.0</Version>
+        <PublicKeyToken>31bf3856ad364e35</PublicKeyToken>
+      </Reference>
+      <Reference Alias="WSM">
+        <ID>Microsoft.SystemCenter.WSManagement.Library</ID>
+        <Version>7.0.8560.0</Version>
+        <PublicKeyToken>31bf3856ad364e35</PublicKeyToken>
+      </Reference>
+      <Reference Alias="Unix">
+        <ID>Microsoft.Unix.Library</ID>
+        <Version>10.19.1082.0</Version>
+        <PublicKeyToken>31bf3856ad364e35</PublicKeyToken>
+      </Reference>
+      <Reference Alias="Health">
+        <ID>System.Health.Library</ID>
+        <Version>7.0.8427.0</Version>
+        <PublicKeyToken>31bf3856ad364e35</PublicKeyToken>
+      </Reference>
+      <Reference Alias="System">
+        <ID>System.Library</ID>
+        <Version>7.5.8501.0</Version>
+        <PublicKeyToken>31bf3856ad364e35</PublicKeyToken>
+      </Reference>
+    </References>
+  </Manifest>
+  <TypeDefinitions>
+    <EntityTypes>
+      <ClassTypes>
+        <ClassType ID="Docker.Unix.Container" Base="Docker.Unix.Object" Accessibility="Public" Abstract="false" Hosted="true" Singleton="false">
+          <Property ID="HostName" Key="false" Type="string" />
+          <Property ID="CreatedTime" Key="false" Type="datetime" />
+          <Property ID="Image" Key="false" Type="string" />
+        </ClassType>
+        <ClassType ID="Docker.Unix.Object" Base="Unix!Microsoft.Unix.ApplicationComponent" Accessibility="Public" Abstract="true" Hosted="true" Singleton="false">
+          <Property ID="Id" Key="true" Type="string" />
+          <Property ID="Name" Key="false" Type="string" />
+        </ClassType>
+        <ClassType ID="Docker.Unix.Daemon" Base="Unix!Microsoft.Unix.LocalApplication" Accessibility="Public" Abstract="false" Hosted="true" Singleton="false">
+          <Property ID="ServerVersion" Type="string" />
+          <Property ID="OperatingSystem" Type="string" />
+        </ClassType>
+        <ClassType ID="Docker.Unix.Image" Base="Docker.Unix.Object" Accessibility="Public" Abstract="false" Hosted="true" Singleton="false">
+          <Property ID="Repository" Key="false" Type="string" />
+          <Property ID="Tag" Key="false" Type="string" />
+        </ClassType>
+      </ClassTypes>
+      <RelationshipTypes>
+        <RelationshipType ID="Docker.Unix.Daemon.Hosts.Object" Base="System!System.Hosting" Abstract="false" Accessibility="Public">
+          <Source ID="Daemon" Type="Docker.Unix.Daemon" />
+          <Target ID="Object" Type="Docker.Unix.Object" />
+        </RelationshipType>
+        <RelationshipType ID="Docker.Unix.Container.References.Image" Base="System!System.Reference" Abstract="false" Accessibility="Public">
+          <Source ID="Container" Type="Docker.Unix.Container" />
+          <Target ID="Image" Type="Docker.Unix.Image" />
+        </RelationshipType>
+      </RelationshipTypes>
+    </EntityTypes>
+    <ModuleTypes>
+      <DataSourceModuleType ID="Docker.Unix.WSMan.TimedEnumerate.DiscoveryData" Accessibility="Public">
+        <Configuration>
+          <IncludeSchemaTypes>
+            <SchemaType>System!System.Discovery.MapperSchema</SchemaType>
+            <SchemaType>System!System.ExpressionEvaluatorSchema</SchemaType>
+          </IncludeSchemaTypes>
+          <xsd:element name="TargetSystem" type="xsd:string" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
+          <xsd:element name="Uri" type="xsd:string" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
+          <xsd:element name="Filter" type="xsd:string" minOccurs="0" maxOccurs="1" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
+          <xsd:element name="SplitItems" type="xsd:boolean" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
+          <xsd:element name="Interval" type="xsd:unsignedInt" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
+          <xsd:element name="SyncTime" type="xsd:string" minOccurs="0" maxOccurs="1" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
+          <xsd:element name="ClassId" type="xsd:string" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
+          <xsd:element name="ClassInstanceSettings" type="SettingsType" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
+          <xsd:element name="RelationshipId" type="xsd:string" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
+          <xsd:element name="RelationshipInstanceSettings" minOccurs="0" maxOccurs="1" type="SettingsType" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
+          <xsd:element name="SourceTypeId" type="xsd:string" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
+          <xsd:element name="SourceRoleSettings" minOccurs="0" maxOccurs="1" type="SettingsType" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
+          <xsd:element name="TargetTypeId" type="xsd:string" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
+          <xsd:element name="TargetRoleSettings" minOccurs="0" maxOccurs="1" type="SettingsType" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
+          <xsd:element name="OutputErrorIfAny" type="xsd:boolean" minOccurs="0" maxOccurs="1" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
+          <xsd:element minOccurs="0" name="Expression" type="ExpressionType" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
+        </Configuration>
+        <OverrideableParameters>
+          <OverrideableParameter ID="Interval" ParameterType="int" Selector="$Config/Interval$" />
+          <OverrideableParameter ID="SyncTime" ParameterType="string" Selector="$Config/SyncTime$" />
+          <OverrideableParameter ID="OutputErrorIfAny" ParameterType="string" Selector="$Config/OutputErrorIfAny$" />
+        </OverrideableParameters>
+        <ModuleImplementation>
+          <Composite>
+            <MemberModules>
+              <DataSource ID="Scheduler" TypeID="System!System.Discovery.Scheduler">
+                <!-- Params to the scheduler part -->
+                <Scheduler>
+                  <SimpleReccuringSchedule>
+                    <Interval Unit="Seconds">$Config/Interval$</Interval>
+                    <SyncTime>$Config/SyncTime$</SyncTime>
+                  </SimpleReccuringSchedule>
+                  <ExcludeDates />
+                </Scheduler>
+              </DataSource>
+              <!-- WSMan enumeration -->
+              <ProbeAction ID="Enum" TypeID="Docker.Unix.WSMan.Enumerate.ProbeAction">
+                <TargetSystem>$Config/TargetSystem$</TargetSystem>
+                <Uri>$Config/Uri$</Uri>
+                <Filter>$Config/Filter$</Filter>
+                <OutputErrorIfAny>$Config/OutputErrorIfAny$</OutputErrorIfAny>
+                <SplitItems>$Config/SplitItems$</SplitItems>
+              </ProbeAction>
+              <ConditionDetection ID="Filter" TypeID="System!System.ExpressionFilter">
+                <Expression>
+                  <And>
+                    <Expression>
+                      <Not>
+                        <Expression>
+                          <Exists>
+                            <ValueExpression>
+                              <XPathQuery Type="String">WsManData/ErrorCode</XPathQuery>
+                            </ValueExpression>
+                          </Exists>
+                        </Expression>
+                      </Not>
+                    </Expression>
+                    <Expression>$Config/Expression$</Expression>
+                  </And>
+                </Expression>
+              </ConditionDetection>
+              <ConditionDetection ID="Mapper" TypeID="System!System.Discovery.ClassAndRelationshipSnapshotDataMapper">
+                <ClassId>$Config/ClassId$</ClassId>
+                <ClassInstanceSettings>$Config/ClassInstanceSettings$</ClassInstanceSettings>
+                <RelationshipId>$Config/RelationshipId$</RelationshipId>
+                <RelationshipInstanceSettings>$Config/RelationshipInstanceSettings$</RelationshipInstanceSettings>
+                <SourceTypeId>$Config/SourceTypeId$</SourceTypeId>
+                <SourceRoleSettings>$Config/SourceRoleSettings$</SourceRoleSettings>
+                <TargetTypeId>$Config/TargetTypeId$</TargetTypeId>
+                <TargetRoleSettings>$Config/TargetRoleSettings$</TargetRoleSettings>
+              </ConditionDetection>
+            </MemberModules>
+            <Composition>
+              <Node ID="Mapper">
+                <Node ID="Filter">
+                  <Node ID="Enum">
+                    <Node ID="Scheduler" />
+                  </Node>
+                </Node>
+              </Node>
+            </Composition>
+          </Composite>
+        </ModuleImplementation>
+        <OutputType>System!System.Discovery.Data</OutputType>
+      </DataSourceModuleType>
+      <ProbeActionModuleType ID="Docker.Unix.WSMan.Enumerate.VarPriv.ProbeAction" Accessibility="Internal" Batching="true">
+        <Configuration>
+          <xsd:element name="TargetSystem" type="xsd:string" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
+          <xsd:element name="UserName" type="xsd:string" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
+          <xsd:element name="Password" type="xsd:string" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
+          <xsd:element name="Uri" type="xsd:string" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
+          <xsd:element name="Filter" type="xsd:string" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
+          <xsd:element name="OutputErrorIfAny" type="xsd:boolean" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
+          <xsd:element name="SplitItems" type="xsd:boolean" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
+          <xsd:element name="TimeOutInMS" type="xsd:int" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
+        </Configuration>
+        <OverrideableParameters />
+        <ModuleImplementation>
+          <Composite>
+            <MemberModules>
+              <ProbeAction ID="Payload" TypeID="Docker.Unix.WSMan.Native.ProbeAction">
+                <UserName>$Config/UserName$</UserName>
+                <Password>$Config/Password$</Password>
+              </ProbeAction>
+              <ProbeAction ID="Enum" TypeID="WSM!Microsoft.SystemCenter.WSManagement.Enumerator">
+                <Enumerate>
+                  <Protocol>https</Protocol>
+                  <TargetSystem>$Config/TargetSystem$</TargetSystem>
+                  <Port>1270</Port>
+                  <Authentication>basic</Authentication>
+                  <UserName>$Data/WSManPayloadData/UserName$</UserName>
+                  <Password>$Config/Password$</Password>
+                  <SkipCACheck>false</SkipCACheck>
+                  <SkipCNCheck>false</SkipCNCheck>
+                  <OutputErrorIfAny>$Config/OutputErrorIfAny$</OutputErrorIfAny>
+                  <UTF>utf-8</UTF>
+                  <Uri>$Config/Uri$</Uri>
+                  <Filter>$Config/Filter$</Filter>
+                  <TimeOutInMS>$Config/TimeOutInMS$</TimeOutInMS>
+                  <SplitItems>$Config/SplitItems$</SplitItems>
+                  <EventPolicy>
+                    <EventOnConnectionErrors>false</EventOnConnectionErrors>
+                  </EventPolicy>
+                </Enumerate>
+              </ProbeAction>
+            </MemberModules>
+            <Composition>
+              <Node ID="Enum">
+                <Node ID="Payload" />
+              </Node>
+            </Composition>
+          </Composite>
+        </ModuleImplementation>
+        <OutputType>WSM!Microsoft.SystemCenter.WSManagement.WSManData</OutputType>
+        <InputType>System!System.BaseData</InputType>
+      </ProbeActionModuleType>
+      <ProbeActionModuleType ID="Docker.Unix.WSMan.Native.ProbeAction" Accessibility="Internal" Batching="true">
+        <Configuration>
+          <xsd:element name="UserName" type="xsd:string" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
+          <xsd:element name="Password" type="xsd:string" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
+          <xsd:element name="InvokeAction" type="xsd:string" minOccurs="0" maxOccurs="1" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
+          <xsd:element name="Input" type="xsd:string" minOccurs="0" maxOccurs="1" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
+        </Configuration>
+        <ModuleImplementation>
+          <Native>
+            <ClassID>BC26F256-D513-4DDF-8C27-98ED18DBCCD8</ClassID>
+          </Native>
+        </ModuleImplementation>
+        <OutputType>Unix!Microsoft.SCX.WSManPayloadData</OutputType>
+        <TriggerOnly>true</TriggerOnly>
+      </ProbeActionModuleType>
+      <ProbeActionModuleType ID="Docker.Unix.WSMan.Enumerate.ProbeAction" Accessibility="Internal" Batching="true">
+        <Configuration>
+          <xsd:element name="TargetSystem" type="xsd:string" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
+          <xsd:element name="Uri" type="xsd:string" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
+          <xsd:element name="Filter" type="xsd:string" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
+          <xsd:element name="OutputErrorIfAny" type="xsd:boolean" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
+          <xsd:element name="SplitItems" type="xsd:boolean" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
+        </Configuration>
+        <OverrideableParameters />
+        <ModuleImplementation>
+          <Composite>
+            <MemberModules>
+              <ProbeAction ID="Enum" TypeID="Docker.Unix.WSMan.Enumerate.VarPriv.ProbeAction">
+                <TargetSystem>$Config/TargetSystem$</TargetSystem>
+                <UserName>$RunAs[Name="Unix!Microsoft.Unix.ActionAccount"]/UserName$</UserName>
+                <Password>$RunAs[Name="Unix!Microsoft.Unix.ActionAccount"]/Password$</Password>
+                <Uri>$Config/Uri$</Uri>
+                <Filter>$Config/Filter$</Filter>
+                <OutputErrorIfAny>$Config/OutputErrorIfAny$</OutputErrorIfAny>
+                <SplitItems>$Config/SplitItems$</SplitItems>
+                <TimeOutInMS>120000</TimeOutInMS>
+              </ProbeAction>
+            </MemberModules>
+            <Composition>
+              <Node ID="Enum" />
+            </Composition>
+          </Composite>
+        </ModuleImplementation>
+        <OutputType>WSM!Microsoft.SystemCenter.WSManagement.WSManData</OutputType>
+        <InputType>System!System.BaseData</InputType>
+      </ProbeActionModuleType>
+    </ModuleTypes>
+  </TypeDefinitions>
+  <Categories>
+    <Category ID="Docker.Container.Diagram" Target="Docker.Container.80x80Image" Value="System!System.Internal.ManagementPack.Images.DiagramIcon" />
+    <Category ID="Docker.Container.Icon" Target="Docker.Container.16x16Image" Value="System!System.Internal.ManagementPack.Images.u16x16Icon" />
+    <Category ID="Docker.Daemon.Diagram" Target="Docker.Daemon.80x80Image" Value="System!System.Internal.ManagementPack.Images.DiagramIcon" />
+    <Category ID="Docker.Daemon.Icon" Target="Docker.Daemon.16x16Image" Value="System!System.Internal.ManagementPack.Images.u16x16Icon" />
+  </Categories>
+  <Monitoring>
+    <Discoveries>
+      <Discovery ID="Docker.Unix.Container.Discovery" Target="Docker.Unix.Daemon" Enabled="true" ConfirmDelivery="false" Remotable="true" Priority="Normal">
+        <Category>Discovery</Category>
+        <DiscoveryTypes>
+          <DiscoveryClass TypeID="Docker.Unix.Container">
+            <Property TypeID="Docker.Unix.Container" PropertyID="CreatedTime" />
+            <Property TypeID="Docker.Unix.Container" PropertyID="Image" />
+            <Property TypeID="Docker.Unix.Container" PropertyID="HostName" />
+            <Property TypeID="Docker.Unix.Object" PropertyID="Id" />
+            <Property TypeID="Docker.Unix.Object" PropertyID="Name" />
+            <Property TypeID="System!System.Entity" PropertyID="DisplayName" />
+          </DiscoveryClass>
+          <DiscoveryClass TypeID="Docker.Unix.Image">
+            <Property TypeID="Docker.Unix.Object" PropertyID="Id" />
+          </DiscoveryClass>
+        </DiscoveryTypes>
+        <DataSource ID="DS" TypeID="Docker.Unix.WSMan.TimedEnumerate.DiscoveryData">
+          <TargetSystem>$Target/Host/Property[Type="Unix!Microsoft.Unix.Computer"]/NetworkName$</TargetSystem>
+          <Uri>http://schemas.microsoft.com/wbem/wscim/1/cim-schema/2/Container_ContainerInventory?__cimnamespace=root/cimv2</Uri>
+          <SplitItems>true</SplitItems>
+          <Interval>14400</Interval>
+          <ClassId>$MPElement[Name="Docker.Unix.Container"]$</ClassId>
+          <ClassInstanceSettings>
+            <Settings>
+              <Setting>
+                <Name>$MPElement[Name="Unix!Microsoft.Unix.Computer"]/PrincipalName$</Name>
+                <Value>$Target/Host/Property[Type="Unix!Microsoft.Unix.Computer"]/PrincipalName$</Value>
+              </Setting>
+              <Setting>
+                <Name>$MPElement[Name="System!System.Entity"]/DisplayName$</Name>
+                <Value>$Data///DataItem/WsManData/*[local-name(.)='Container_ContainerInventory']/*[local-name(.)='ElementName']$</Value>
+              </Setting>
+              <Setting>
+                <Name>$MPElement[Name="Docker.Unix.Object"]/Id$</Name>
+                <Value>$Data///DataItem/WsManData/*[local-name(.)='Container_ContainerInventory']/*[local-name(.)='InstanceID']$</Value>
+              </Setting>
+              <Setting>
+                <Name>$MPElement[Name="Docker.Unix.Object"]/Name$</Name>
+                <Value>$Data///DataItem/WsManData/*[local-name(.)='Container_ContainerInventory']/*[local-name(.)='ElementName']$</Value>
+              </Setting>
+              <Setting>
+                <Name>$MPElement[Name="Docker.Unix.Container"]/HostName$</Name>
+                <Value>$Data///DataItem/WsManData/*[local-name(.)='Container_ContainerInventory']/*[local-name(.)='ContainerHostname']$</Value>
+              </Setting>
+              <Setting>
+                <Name>$MPElement[Name="Docker.Unix.Container"]/CreatedTime$</Name>
+                <Value>$Data///DataItem/WsManData/*[local-name(.)='Container_ContainerInventory']/*[local-name(.)='CreatedTime']$</Value>
+              </Setting>
+              <Setting>
+                <Name>$MPElement[Name="Docker.Unix.Container"]/Image$</Name>
+                <Value>$Data///DataItem/WsManData/*[local-name(.)='Container_ContainerInventory']/*[local-name(.)='Image']$</Value>
+              </Setting>
+            </Settings>
+          </ClassInstanceSettings>
+          <RelationshipId>$MPElement[Name="Docker.Unix.Container.References.Image"]$</RelationshipId>
+          <SourceTypeId>$MPElement[Name="Docker.Unix.Container"]$</SourceTypeId>
+          <SourceRoleSettings>
+            <Settings>
+              <Setting>
+                <Name>$MPElement[Name="Unix!Microsoft.Unix.Computer"]/PrincipalName$</Name>
+                <Value>$Target/Host/Property[Type="Unix!Microsoft.Unix.Computer"]/PrincipalName$</Value>
+              </Setting>
+              <Setting>
+                <Name>$MPElement[Name="Docker.Unix.Object"]/Id$</Name>
+                <Value>$Data///DataItem/WsManData/*[local-name(.)='Container_ContainerInventory']/*[local-name(.)='InstanceID']$</Value>
+              </Setting>
+            </Settings>
+          </SourceRoleSettings>
+          <TargetTypeId>$MPElement[Name="Docker.Unix.Image"]$</TargetTypeId>
+          <TargetRoleSettings>
+            <Settings>
+              <Setting>
+                <Name>$MPElement[Name="Unix!Microsoft.Unix.Computer"]/PrincipalName$</Name>
+                <Value>$Target/Host/Property[Type="Unix!Microsoft.Unix.Computer"]/PrincipalName$</Value>
+              </Setting>
+              <Setting>
+                <Name>$MPElement[Name="Docker.Unix.Object"]/Id$</Name>
+                <Value>$Data///DataItem/WsManData/*[local-name(.)='Container_ContainerInventory']/*[local-name(.)='ImageId']$</Value>
+              </Setting>
+            </Settings>
+          </TargetRoleSettings>
+          <OutputErrorIfAny>false</OutputErrorIfAny>
+        </DataSource>
+      </Discovery>
+      <Discovery ID="Docker.Unix.Daemon.Discovery" Target="Unix!Microsoft.Unix.Computer" Enabled="true" ConfirmDelivery="false" Remotable="true" Priority="Normal">
+        <Category>Discovery</Category>
+        <DiscoveryTypes>
+          <DiscoveryClass TypeID="Docker.Unix.Daemon">
+            <Property TypeID="Docker.Unix.Daemon" PropertyID="ServerVersion" />
+            <Property TypeID="Docker.Unix.Daemon" PropertyID="OperatingSystem" />
+            <Property TypeID="System!System.Entity" PropertyID="DisplayName" />
+          </DiscoveryClass>
+        </DiscoveryTypes>
+        <DataSource ID="DS" TypeID="Unix!Microsoft.Unix.WSMan.TimedEnumerate.DiscoveryData">
+          <TargetSystem>$Target/Property[Type="Unix!Microsoft.Unix.Computer"]/NetworkName$</TargetSystem>
+          <Uri>http://schemas.microsoft.com/wbem/wscim/1/cim-schema/2/Container_HostInventory?__cimnamespace=root/cimv2</Uri>
+          <SplitItems>false</SplitItems>
+          <Interval>14400</Interval>
+          <ClassId>$MPElement[Name="Docker.Unix.Daemon"]$</ClassId>
+          <InstanceSettings>
+            <Settings>
+              <Setting>
+                <Name>$MPElement[Name="Unix!Microsoft.Unix.Computer"]/PrincipalName$</Name>
+                <Value>$Target/Property[Type="Unix!Microsoft.Unix.Computer"]/PrincipalName$</Value>
+              </Setting>
+              <Setting>
+                <Name>$MPElement[Name="System!System.Entity"]/DisplayName$</Name>
+                <Value>$Data///DataItem/WsManData/*[local-name(.)='Container_HostInventory']/*[local-name(.)='Computer']$</Value>
+              </Setting>
+              <Setting>
+                <Name>$MPElement[Name="Docker.Unix.Daemon"]/ServerVersion$</Name>
+                <Value>$Data///DataItem/WsManData/*[local-name(.)='Container_HostInventory']/*[local-name(.)='DockerVersion']$</Value>
+              </Setting>
+              <Setting>
+                <Name>$MPElement[Name="Docker.Unix.Daemon"]/OperatingSystem$</Name>
+                <Value>$Data///DataItem/WsManData/*[local-name(.)='Container_HostInventory']/*[local-name(.)='OperatingSystem']$</Value>
+              </Setting>
+            </Settings>
+          </InstanceSettings>
+          <OutputErrorIfAny>true</OutputErrorIfAny>
+        </DataSource>
+      </Discovery>
+      <Discovery ID="Docker.Unix.Image.Discovery" Target="Docker.Unix.Daemon" Enabled="true" ConfirmDelivery="false" Remotable="true" Priority="Normal">
+        <Category>Discovery</Category>
+        <DiscoveryTypes>
+          <DiscoveryClass TypeID="Docker.Unix.Container">
+            <Property TypeID="Docker.Unix.Container" PropertyID="CreatedTime" />
+            <Property TypeID="Docker.Unix.Container" PropertyID="Image" />
+            <Property TypeID="Docker.Unix.Container" PropertyID="HostName" />
+            <Property TypeID="Docker.Unix.Object" PropertyID="Id" />
+            <Property TypeID="Docker.Unix.Object" PropertyID="Name" />
+            <Property TypeID="System!System.Entity" PropertyID="DisplayName" />
+          </DiscoveryClass>
+        </DiscoveryTypes>
+        <DataSource ID="DS" TypeID="Unix!Microsoft.Unix.WSMan.TimedEnumerate.DiscoveryData">
+          <TargetSystem>$Target/Host/Property[Type="Unix!Microsoft.Unix.Computer"]/NetworkName$</TargetSystem>
+          <Uri>http://schemas.microsoft.com/wbem/wscim/1/cim-schema/2/Container_ImageInventory?__cimnamespace=root/cimv2</Uri>
+          <SplitItems>true</SplitItems>
+          <Interval>14400</Interval>
+          <ClassId>$MPElement[Name="Docker.Unix.Image"]$</ClassId>
+          <InstanceSettings>
+            <Settings>
+              <Setting>
+                <Name>$MPElement[Name="Unix!Microsoft.Unix.Computer"]/PrincipalName$</Name>
+                <Value>$Target/Host/Property[Type="Unix!Microsoft.Unix.Computer"]/PrincipalName$</Value>
+              </Setting>
+              <Setting>
+                <Name>$MPElement[Name="System!System.Entity"]/DisplayName$</Name>
+                <Value>$Data///DataItem/WsManData/*[local-name(.)='Container_ImageInventory']/*[local-name(.)='Repository']$/$Data///DataItem/WsManData/*[local-name(.)='Container_ImageInventory']/*[local-name(.)='Image']$:$Data///DataItem/WsManData/*[local-name(.)='Container_ImageInventory']/*[local-name(.)='ImageTag']$</Value>
+              </Setting>
+              <Setting>
+                <Name>$MPElement[Name="Docker.Unix.Object"]/Id$</Name>
+                <Value>$Data///DataItem/WsManData/*[local-name(.)='Container_ImageInventory']/*[local-name(.)='InstanceID']$</Value>
+              </Setting>
+              <Setting>
+                <Name>$MPElement[Name="Docker.Unix.Object"]/Name$</Name>
+                <Value>$Data///DataItem/WsManData/*[local-name(.)='Container_ImageInventory']/*[local-name(.)='Image']$</Value>
+              </Setting>
+              <Setting>
+                <Name>$MPElement[Name="Docker.Unix.Image"]/Repository$</Name>
+                <Value>$Data///DataItem/WsManData/*[local-name(.)='Container_ImageInventory']/*[local-name(.)='Repository']$</Value>
+              </Setting>
+              <Setting>
+                <Name>$MPElement[Name="Docker.Unix.Image"]/Tag$</Name>
+                <Value>$Data///DataItem/WsManData/*[local-name(.)='Container_ImageInventory']/*[local-name(.)='ImageTag']$</Value>
+              </Setting>
+            </Settings>
+          </InstanceSettings>
+          <OutputErrorIfAny>false</OutputErrorIfAny>
+        </DataSource>
+      </Discovery>
+    </Discoveries>
+    <Rules>
+      <Rule ID="Docker.Unix.Container.CPUTotalPct.CollectionRule" Target="Docker.Unix.Container" Enabled="true" ConfirmDelivery="false" Remotable="true" Priority="Normal" DiscardLevel="100">
+        <Category>PerformanceCollection</Category>
+        <DataSources>
+          <DataSource ID="DS" TypeID="Unix!Microsoft.Unix.WSMan.PerfCounterProvider.Filtered">
+            <TargetSystem>$Target/Host/Host/Property[Type="Unix!Microsoft.Unix.Computer"]/NetworkName$</TargetSystem>
+            <Uri>http://schemas.microsoft.com/wbem/wscim/1/cim-schema/2/Container_ContainerStatistics?__cimnamespace=root/cimv2</Uri>
+            <SplitItems>true</SplitItems>
+            <Interval>300</Interval>
+            <ObjectName>Container</ObjectName>
+            <CounterName>% Processor Time</CounterName>
+            <InstanceName>$Target/Property[Type="Docker.Unix.Object"]/Name$</InstanceName>
+            <InstanceProperty>/DataItem/WsManData/*[local-name(.)='Container_ContainerStatistics']/*[local-name(.)='ElementName']</InstanceProperty>
+            <Value>$Data///DataItem/WsManData/*[local-name(.)='Container_ContainerStatistics']/*[local-name(.)='CPUTotalPct']$</Value>
+          </DataSource>
+        </DataSources>
+        <WriteActions>
+          <WriteAction ID="WriteToDB" TypeID="SC!Microsoft.SystemCenter.CollectPerformanceData" />
+          <WriteAction ID="WriteToDW" TypeID="DW!Microsoft.SystemCenter.DataWarehouse.PublishPerformanceData" />
+        </WriteActions>
+      </Rule>
+      <Rule ID="Docker.Unix.Container.MemUsedMB.CollectionRule" Target="Docker.Unix.Container" Enabled="true" ConfirmDelivery="false" Remotable="true" Priority="Normal" DiscardLevel="100">
+        <Category>PerformanceCollection</Category>
+        <DataSources>
+          <DataSource ID="DS" TypeID="Unix!Microsoft.Unix.WSMan.PerfCounterProvider.Filtered">
+            <TargetSystem>$Target/Host/Host/Property[Type="Unix!Microsoft.Unix.Computer"]/NetworkName$</TargetSystem>
+            <Uri>http://schemas.microsoft.com/wbem/wscim/1/cim-schema/2/Container_ContainerStatistics?__cimnamespace=root/cimv2</Uri>
+            <SplitItems>true</SplitItems>
+            <Interval>300</Interval>
+            <ObjectName>Container</ObjectName>
+            <CounterName>Memory Used (Mb)</CounterName>
+            <InstanceName>$Target/Property[Type="Docker.Unix.Object"]/Name$</InstanceName>
+            <InstanceProperty>/DataItem/WsManData/*[local-name(.)='Container_ContainerStatistics']/*[local-name(.)='ElementName']</InstanceProperty>
+            <Value>$Data///DataItem/WsManData/*[local-name(.)='Container_ContainerStatistics']/*[local-name(.)='MemUsedMB']$</Value>
+          </DataSource>
+        </DataSources>
+        <WriteActions>
+          <WriteAction ID="WriteToDB" TypeID="SC!Microsoft.SystemCenter.CollectPerformanceData" />
+          <WriteAction ID="WriteToDW" TypeID="DW!Microsoft.SystemCenter.DataWarehouse.PublishPerformanceData" />
+        </WriteActions>
+      </Rule>
+    </Rules>
+    <Monitors>
+      <UnitMonitor ID="Docker.Unix.Container.State.Monitor" Accessibility="Public" Enabled="false" Target="Docker.Unix.Container" ParentMonitorID="Health!System.Health.AvailabilityState" Remotable="true" Priority="Normal" TypeID="Unix!Microsoft.Unix.WSMan.Status.Filtered.MonitorType" ConfirmDelivery="false">
+        <Category>AvailabilityHealth</Category>
+        <AlertSettings AlertMessage="Docker.Unix.Container.State.Monitor.AlertMessage">
+          <AlertOnState>Error</AlertOnState>
+          <AutoResolve>true</AutoResolve>
+          <AlertPriority>Normal</AlertPriority>
+          <AlertSeverity>MatchMonitorHealth</AlertSeverity>
+          <AlertParameters>
+            <AlertParameter1>$Target/Property[Type="System!System.Entity"]/DisplayName$</AlertParameter1>
+            <AlertParameter2>$Data/Context/DataItem/WsManData/*[local-name(.)='Container_ContainerInventory']/*[local-name(.)='State']$</AlertParameter2>
+            <AlertParameter3>$Data/Context/DataItem/WsManData/*[local-name(.)='Container_ContainerInventory']/*[local-name(.)='ExitCode']$</AlertParameter3>
+            <AlertParameter4>$Data/Context/DataItem/WsManData/*[local-name(.)='Container_ContainerInventory']/*[local-name(.)='FinishedTime']$</AlertParameter4>
+            <AlertParameter5>$Data/Context/DataItem/WsManData/*[local-name(.)='Container_ContainerInventory']/*[local-name(.)='Computer']$</AlertParameter5>
+          </AlertParameters>
+        </AlertSettings>
+        <OperationalStates>
+          <OperationalState ID="StatusOK" MonitorTypeStateID="StatusOK" HealthState="Success" />
+          <OperationalState ID="StatusFailed" MonitorTypeStateID="StatusFailed" HealthState="Error" />
+        </OperationalStates>
+        <Configuration>
+          <TargetSystem>$Target/Host/Host/Property[Type="Unix!Microsoft.Unix.Computer"]/NetworkName$</TargetSystem>
+          <Uri>http://schemas.microsoft.com/wbem/wscim/1/cim-schema/2/Container_ContainerInventory?__cimnamespace=root/cimv2</Uri>
+          <SplitItems>true</SplitItems>
+          <Interval>60</Interval>
+          <InstanceName>$Target/Property[Type="Docker.Unix.Object"]/Name$</InstanceName>
+          <InstanceProperty>/DataItem/WsManData/*[local-name(.)='Container_ContainerInventory']/*[local-name(.)='ElementName']</InstanceProperty>
+          <Status>/DataItem/WsManData/*[local-name(.)='Container_ContainerInventory']/*[local-name(.)='State']</Status>
+          <ExpectedStatus>Running</ExpectedStatus>
+        </Configuration>
+      </UnitMonitor>
+      <UnitMonitor ID="Docker.Unix.Daemon.State.Monitor" Accessibility="Public" Enabled="false" Target="Docker.Unix.Daemon" ParentMonitorID="Health!System.Health.AvailabilityState" Remotable="true" Priority="Normal" TypeID="Unix!Microsoft.Unix.WSMan.Process.Status.MonitorType" ConfirmDelivery="false">
+        <Category>AvailabilityHealth</Category>
+        <AlertSettings AlertMessage="Docker.Unix.Daemon.State.Monitor.AlertMessage">
+          <AlertOnState>Error</AlertOnState>
+          <AutoResolve>true</AutoResolve>
+          <AlertPriority>Normal</AlertPriority>
+          <AlertSeverity>MatchMonitorHealth</AlertSeverity>
+          <AlertParameters>
+            <AlertParameter1>$Target/Host/Property[Type="Unix!Microsoft.Unix.Computer"]/PrincipalName$</AlertParameter1>
+          </AlertParameters>
+        </AlertSettings>
+        <OperationalStates>
+          <OperationalState ID="Running" MonitorTypeStateID="Running" HealthState="Success" />
+          <OperationalState ID="NotRunning" MonitorTypeStateID="NotRunning" HealthState="Error" />
+        </OperationalStates>
+        <Configuration>
+          <TargetSystem>$Target/Host/Property[Type="Unix!Microsoft.Unix.Computer"]/NetworkName$</TargetSystem>
+          <ProcessName>dockerd</ProcessName>
+          <Interval>60</Interval>
+        </Configuration>
+      </UnitMonitor>
+      <DependencyMonitor ID="Docker.Unix.Daemon.Object.AvailabilityRollup" Accessibility="Public" Enabled="true" Target="Docker.Unix.Daemon" ParentMonitorID="Health!System.Health.AvailabilityState" Remotable="true" Priority="Normal" RelationshipType="Docker.Unix.Daemon.Hosts.Object" MemberMonitor="Health!System.Health.AvailabilityState">
+        <Category>AvailabilityHealth</Category>
+        <Algorithm>WorstOf</Algorithm>
+      </DependencyMonitor>
+      <DependencyMonitor ID="Docker.Unix.Daemon.Object.PerformanceRollup" Accessibility="Public" Enabled="true" Target="Docker.Unix.Daemon" ParentMonitorID="Health!System.Health.PerformanceState" Remotable="true" Priority="Normal" RelationshipType="Docker.Unix.Daemon.Hosts.Object" MemberMonitor="Health!System.Health.PerformanceState">
+        <Category>PerformanceHealth</Category>
+        <Algorithm>WorstOf</Algorithm>
+      </DependencyMonitor>
+    </Monitors>
+  </Monitoring>
+  <Presentation>
+    <Views>
+      <View ID="Docker.Unix.Daemon.Alert.View" Accessibility="Internal" Enabled="true" Target="Docker.Unix.Daemon" TypeID="SC!Microsoft.SystemCenter.AlertViewType" Visible="true">
+        <Category>Custom</Category>
+        <Criteria>
+          <ResolutionState>
+            <StateRange Operator="NotEquals">255</StateRange>
+          </ResolutionState>
+        </Criteria>
+      </View>
+      <View ID="Docker.Unix.Daemon.State.View" Accessibility="Internal" Enabled="true" Target="Docker.Unix.Daemon" TypeID="SC!Microsoft.SystemCenter.StateViewType" Visible="true">
+        <Category>Custom</Category>
+        <Criteria />
+      </View>
+    </Views>
+    <Folders>
+      <Folder ID="Docker.Root.Folder" Accessibility="Public" ParentFolder="SC!Microsoft.SystemCenter.Monitoring.ViewFolder.Root" />
+    </Folders>
+    <FolderItems>
+      <FolderItem ElementID="Docker.Unix.Daemon.Alert.View" ID="Docker.Unix.Daemon.Alert.View.FolderItem" Folder="Docker.Root.Folder" />
+      <FolderItem ElementID="Docker.Unix.Daemon.State.View" ID="Docker.Unix.Daemon.State.View.FolderItem" Folder="Docker.Root.Folder" />
+    </FolderItems>
+    <ImageReferences>
+      <ImageReference ElementID="Docker.Unix.Container" ImageID="Docker.Container.16x16Image" />
+      <ImageReference ElementID="Docker.Unix.Container" ImageID="Docker.Container.80x80Image" />
+      <ImageReference ElementID="Docker.Unix.Daemon" ImageID="Docker.Daemon.16x16Image" />
+      <ImageReference ElementID="Docker.Unix.Daemon" ImageID="Docker.Daemon.80x80Image" />
+    </ImageReferences>
+    <StringResources>
+      <StringResource ID="Docker.Unix.Container.State.Monitor.AlertMessage" />
+      <StringResource ID="Docker.Unix.Daemon.State.Monitor.AlertMessage" />
+    </StringResources>
+  </Presentation>
+  <LanguagePacks>
+    <LanguagePack ID="ENU" IsDefault="true">
+      <DisplayStrings>
+        <DisplayString ElementID="Docker.Unix.Container.Discovery">
+          <Name>Discover Docker Container</Name>
+          <Description></Description>
+        </DisplayString>
+        <DisplayString ElementID="Docker.Unix.Daemon.Discovery">
+          <Name>Discover Docker Daemon</Name>
+          <Description></Description>
+        </DisplayString>
+        <DisplayString ElementID="Docker.Unix.Image.Discovery">
+          <Name>Discover Docker Image</Name>
+          <Description></Description>
+        </DisplayString>
+        <DisplayString ElementID="Docker.Unix.Daemon">
+          <Name>Docker Daemon</Name>
+          <Description></Description>
+        </DisplayString>
+        <DisplayString ElementID="Docker.Unix.Daemon" SubElementID="ServerVersion">
+          <Name>Docker Server Version</Name>
+          <Description></Description>
+        </DisplayString>
+        <DisplayString ElementID="Docker.Unix.Daemon" SubElementID="OperatingSystem">
+          <Name>Operating System</Name>
+          <Description></Description>
+        </DisplayString>
+        <DisplayString ElementID="Docker.Unix.Image">
+          <Name>Image</Name>
+          <Description></Description>
+        </DisplayString>
+        <DisplayString ElementID="Docker.Unix.Container">
+          <Name>Container</Name>
+          <Description></Description>
+        </DisplayString>
+        <DisplayString ElementID="Docker.Unix.Container" SubElementID="HostName">
+          <Name>Host Name</Name>
+          <Description></Description>
+        </DisplayString>
+        <DisplayString ElementID="Docker.Unix.Container" SubElementID="CreatedTime">
+          <Name>Created Time</Name>
+          <Description></Description>
+        </DisplayString>
+        <DisplayString ElementID="Docker.Unix.Container" SubElementID="Image">
+          <Name>Image</Name>
+          <Description></Description>
+        </DisplayString>
+        <DisplayString ElementID="Docker.Unix.Image" SubElementID="Repository">
+          <Name>Repository</Name>
+          <Description></Description>
+        </DisplayString>
+        <DisplayString ElementID="Docker.Unix.Image" SubElementID="Tag">
+          <Name>Tag</Name>
+          <Description></Description>
+        </DisplayString>
+        <DisplayString ElementID="Docker.Unix.Object">
+          <Name>Docker Object</Name>
+          <Description></Description>
+        </DisplayString>
+        <DisplayString ElementID="Docker.Unix.Object" SubElementID="Id">
+          <Name>ID</Name>
+          <Description></Description>
+        </DisplayString>
+        <DisplayString ElementID="Docker.Unix.Object" SubElementID="Name">
+          <Name>Name</Name>
+          <Description></Description>
+        </DisplayString>
+        <DisplayString ElementID="Docker.Unix.Container.References.Image">
+          <Name>Container References Image</Name>
+          <Description></Description>
+        </DisplayString>
+        <DisplayString ElementID="Docker.Unix.Daemon.Hosts.Object">
+          <Name>Daemon Hosts Object</Name>
+          <Description></Description>
+        </DisplayString>
+        <DisplayString ElementID="Docker.Unix.Monitoring">
+          <Name>UNIX/Linux Container Monitoring</Name>
+          <Description></Description>
+        </DisplayString>
+        <DisplayString ElementID="Docker.Unix.Container.State.Monitor">
+          <Name>Container State</Name>
+          <Description>This monitor checks Container state.</Description>
+        </DisplayString>
+        <DisplayString ElementID="Docker.Unix.Container.State.Monitor.AlertMessage">
+          <Name>Container is not running</Name>
+          <Description>The сontainer {0} has been {1} with exit code {2} at {3} on the computer {4}.</Description>
+        </DisplayString>
+        <DisplayString ElementID="Docker.Unix.Container.State.Monitor" SubElementID="StatusOK">
+          <Name>Running</Name>
+          <Description>Running</Description>
+        </DisplayString>
+        <DisplayString ElementID="Docker.Unix.Container.State.Monitor" SubElementID="StatusFailed">
+          <Name>Not Runnin</Name>
+          <Description>Not Runnin</Description>
+        </DisplayString>
+        <DisplayString ElementID="Docker.Unix.Daemon.Object.AvailabilityRollup">
+          <Name>Docker Object Availability Rollup</Name>
+          <Description>Docker Object Availability Rollup Monitor</Description>
+        </DisplayString>
+        <DisplayString ElementID="Docker.Unix.Daemon.Object.PerformanceRollup">
+          <Name>Docker Object Performance Rollup</Name>
+          <Description>Docker Object Performance Rollup Monitor</Description>
+        </DisplayString>
+        <DisplayString ElementID="Docker.Unix.Daemon.State.Monitor">
+          <Name>Daemon State</Name>
+          <Description>This monitor checks Docker daemon state.</Description>
+        </DisplayString>
+        <DisplayString ElementID="Docker.Unix.Daemon.State.Monitor.AlertMessage">
+          <Name>Docker daemon is not running.</Name>
+          <Description>The Docker daemon (dockerd) is not running on the computer {0}.</Description>
+        </DisplayString>
+        <DisplayString ElementID="Docker.Unix.Daemon.State.Monitor" SubElementID="Running">
+          <Name>Running</Name>
+          <Description>Running</Description>
+        </DisplayString>
+        <DisplayString ElementID="Docker.Unix.Daemon.State.Monitor" SubElementID="NotRunning">
+          <Name>Not Running</Name>
+          <Description>Not Running</Description>
+        </DisplayString>
+        <DisplayString ElementID="Docker.Root.Folder">
+          <Name>Unix/Linux Docker</Name>
+          <Description />
+        </DisplayString>
+        <DisplayString ElementID="Docker.Unix.Daemon.Alert.View">
+          <Name>Active Alerts</Name>
+          <Description />
+        </DisplayString>
+        <DisplayString ElementID="Docker.Unix.Daemon.State.View">
+          <Name>States</Name>
+          <Description />
+        </DisplayString>
+        <DisplayString ElementID="Docker.Unix.Container.CPUTotalPct.CollectionRule">
+          <Name>Collect Container\% Processor Time</Name>
+          <Description>Collect Container\% Processor Time</Description>
+        </DisplayString>
+        <DisplayString ElementID="Docker.Unix.Container.MemUsedMB.CollectionRule">
+          <Name>Collect Container\Memory Usage</Name>
+          <Description>Collect Container\Memory Usage</Description>
+        </DisplayString>
+      </DisplayStrings>
+      <KnowledgeArticles>
+        <KnowledgeArticle ElementID="Docker.Unix.Daemon.State.Monitor">
+          <MamlContent>
+            <maml:section xmlns:maml="http://schemas.microsoft.com/maml/2004/10">
+              <maml:title>Summary</maml:title>
+              <maml:para>This process monitor watches for a Docker Daemon process to be running.</maml:para>
+            </maml:section>
+            <maml:section xmlns:maml="http://schemas.microsoft.com/maml/2004/10">
+              <maml:title>Causes</maml:title>
+              <maml:para>A failure indicates that the service is down.  A service can stop for many reasons, including:</maml:para>
+              <maml:list>
+                <maml:listItem>
+                  <maml:para>The service was stopped by an administrator.</maml:para>
+                </maml:listItem>
+                <maml:listItem>
+                  <maml:para>The service was prevented from starting because the user account could not be authenticated.</maml:para>
+                </maml:listItem>
+                <maml:listItem>
+                  <maml:para>The service encountered an exception that stopped the service.</maml:para>
+                </maml:listItem>
+                <maml:listItem>
+                  <maml:para>The service was improperly configured, which prevented it from starting.</maml:para>
+                </maml:listItem>
+                <maml:listItem>
+                  <maml:para>Another service that this service is dependent on was stopped.</maml:para>
+                </maml:listItem>
+              </maml:list>
+              <maml:para />
+            </maml:section>
+            <maml:section xmlns:maml="http://schemas.microsoft.com/maml/2004/10">
+              <maml:title>Resolutions</maml:title>
+              <maml:para>Check the service on the system by running ps -ef | grep dockerd.</maml:para>
+              <maml:para />
+            </maml:section>
+          </MamlContent>
+        </KnowledgeArticle>
+      </KnowledgeArticles>
+    </LanguagePack>
+  </LanguagePacks>
+  <Resources>
+    <Image ID="Docker.Daemon.80x80Image" FileName="Docker.Daemon.80x80Image.png" Accessibility="Public" HasNullStream="false" />
+    <Image ID="Docker.Container.80x80Image" FileName="Docker.Container.80x80Image.png" Accessibility="Public" HasNullStream="false" />
+    <Image ID="Docker.Daemon.16x16Image" FileName="Docker.Daemon.16x16Image.png" Accessibility="Public" HasNullStream="false" />
+    <Image ID="Docker.Container.16x16Image" FileName="Docker.Container.16x16Image.png" Accessibility="Public" HasNullStream="false" />
+  </Resources>
+</ManagementPack>
