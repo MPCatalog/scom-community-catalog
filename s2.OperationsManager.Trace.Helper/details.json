@@ -1,7 +1,7 @@
 {
   "ManagementPackSystemName": "s2.OperationsManager.Trace.Helper",
   "ManagementPackDisplayName": "s2.OperationsManager.Trace.Helper",
-  "URL": "https://gallery.technet.microsoft.com/MP-SCOM-Trace-Helper-Tasks-70380ca4",
+  "URL": "https://web.archive.org/web/20200318062142/https://gallery.technet.microsoft.com/MP-SCOM-Trace-Helper-Tasks-70380ca4",
   "Version": "1.0.0.21",
   "Author": "Patrick Seidl (s2)",
   "IsFree": true,
