@@ -22,5 +22,5 @@ The monitor is enabled by default and is configured to change the 'Configuration
 The rule, which is disabled by default has the exact same condition detection behaviour as the "Server Pending Restart Monitor". This rule can be enabled as an alternative to the "Server Pending Restart Monitor" when the presentation of health state changes is not required.
 
 ## Resources
-Management Pack guide: <https://web.archive.org/web/20200319004828/https://gallery.technet.microsoft.com/Server-Pending-Restart-New-2457a729/file/221038/1/Server%20Pending%20Restart%20MP%20Guide.pdf>
+Management Pack guide: <https://web.archive.org/web/20200319004828/https://gallery.technet.microsoft.com/Server-Pending-Restart-New-2457a729/file/221038/1/Server%20Pending%20Restart%20MP%20Guide.pdf>  
 ReadMe: <https://github.com/gavspeed/ServerPendingRestart>
