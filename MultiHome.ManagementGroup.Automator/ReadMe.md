@@ -14,4 +14,4 @@ This is provided AS-IS, as an example only, and contains no warranty. The MP sho
 
 Have fun!
 
-http://blogs.technet.com/b/cchamp/archive/2015/09/09/multi-home-management-group-automation-mp.aspx
+<https://docs.microsoft.com/en-us/archive/blogs/cchamp/multi-home-management-group-automation-mp>

@@ -1,7 +1,7 @@
 {
   "ManagementPackSystemName": "SCOM.UnsealedMPBackup",
   "ManagementPackDisplayName": "SCOM Unsealed MP Backup",
-  "URL": "https://gallery.technet.microsoft.com/SCOM-2012-and-2016-2ccc45c0",
+  "URL": "https://github.com/thekevinholman/UnsealedMPBackup",
   "Version": "1.0.0.1",
   "Author": "Kevin Holman",
   "IsFree": true,

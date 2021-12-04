@@ -1,7 +1,7 @@
 {
     "ManagementPackSystemName":  "Microsoft.SystemCenter.Internal.Addendum",
     "ManagementPackDisplayName":  "SCOM Agent Version Addendum Pack",
-    "URL":  "https://gallery.technet.microsoft.com/SCOM-Agent-Version-b0bbdfb3",
+    "URL":  "https://github.com/thekevinholman/SCOM.Agent.Version.Addendum.Management.Pack",
     "Version":  "1.0.0.0",
     "Author":  "Kevin Holman",
     "Description":  "This MP sample will change the HealthService version property to discover the actual agent version including UR level, so you can easily know which agents are up to date in the \"Administration\\Agent Managed\" view in the SCOM Console.",

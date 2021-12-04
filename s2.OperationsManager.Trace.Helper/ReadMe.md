@@ -17,10 +17,10 @@ The tasks are in the right order as they are supposed to be performed. That is w
 "Copy new Trace" expects a hidden share named "scom$" on the Management or Gateway Server the agent is managed from. You have to give "Domain Computers" write permissions to the share and the folder as well. If the agent is running with an user account, you have to give this user the permissions.
 
 **Updates:**
-14.06.2018: added workflow traces ([Requires override](https://blogs.technet.microsoft.com/momteam/2013/10/31/how-to-analyze-a-workflow-when-the-opsmgr-workflow-analyzer-doesnt-work/))
+14.06.2018: added workflow traces ([Requires override](https://techcommunity.microsoft.com/t5/system-center-blog/how-to-analyze-a-workflow-when-the-opsmgr-workflow-analyzer/ba-p/348590))
 
 
 ## Resources:
 
-*   https://gallery.technet.microsoft.com/MP-SCOM-Trace-Helper-Tasks-70380ca4
-*   https://blogs.technet.microsoft.com/momteam/2013/10/31/how-to-analyze-a-workflow-when-the-opsmgr-workflow-analyzer-doesnt-work/
+*   https://web.archive.org/web/20200318062142/https://gallery.technet.microsoft.com/MP-SCOM-Trace-Helper-Tasks-70380ca4
+*   https://techcommunity.microsoft.com/t5/system-center-blog/how-to-analyze-a-workflow-when-the-opsmgr-workflow-analyzer/ba-p/348590
