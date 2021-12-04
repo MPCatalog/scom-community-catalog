@@ -5,7 +5,7 @@ This is a Management Pack that eases the administrative burdens in SCOM.  It all
 ## Resources
 
 https://kevinholman.com/2017/05/09/scom-management-mp-making-a-scom-admins-life-a-little-easier/
-https://gallery.technet.microsoft.com/SCOM-Agent-Management-b96680d5
+https://github.com/thekevinholman/SCOM.Management
 
 ## SCOM.Management 10.19.10407.3
 
