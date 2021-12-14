@@ -8,7 +8,7 @@
     <LanguagePack ID="ENU" IsDefault="true">
       <DisplayStrings>
         <DisplayString ElementID="Docker.Unix.Monitoring">
-          <Name>UNIX/Linux Container Monitoring</Name>
+          <Name>UNIX/Linux Docker Monitoring</Name>
           <Description></Description>
         </DisplayString>        
         <DisplayString ElementID="Docker.Root.Folder">
