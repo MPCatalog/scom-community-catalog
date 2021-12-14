@@ -54,8 +54,8 @@
           <Description>Running</Description>
         </DisplayString>
         <DisplayString ElementID="Docker.Unix.Container.State.Monitor" SubElementID="StatusFailed">
-          <Name>Not Runnin</Name>
-          <Description>Not Runnin</Description>
+          <Name>Not Running</Name>
+          <Description>Not Running</Description>
         </DisplayString>
       </DisplayStrings>
     </LanguagePack>
