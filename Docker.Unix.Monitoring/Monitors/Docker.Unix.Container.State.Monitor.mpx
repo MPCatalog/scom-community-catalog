@@ -1,7 +1,7 @@
 ﻿<ManagementPackFragment SchemaVersion="2.0" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Monitoring>
     <Monitors>
-      <UnitMonitor ID="Docker.Unix.Container.State.Monitor" Accessibility="Public" Enabled="false" Target="Docker.Unix.Container" ParentMonitorID="Health!System.Health.AvailabilityState" Remotable="true" Priority="Normal" TypeID="Unix!Microsoft.Unix.WSMan.Status.Filtered.MonitorType" ConfirmDelivery="false">
+      <UnitMonitor ID="Docker.Unix.Container.State.Monitor" Accessibility="Public" Enabled="true" Target="Docker.Unix.Container" ParentMonitorID="Health!System.Health.AvailabilityState" Remotable="true" Priority="Normal" TypeID="Unix!Microsoft.Unix.WSMan.Status.Filtered.MonitorType" ConfirmDelivery="false">
         <Category>AvailabilityHealth</Category>
         <AlertSettings AlertMessage="Docker.Unix.Container.State.Monitor.AlertMessage">
           <AlertOnState>Error</AlertOnState>
