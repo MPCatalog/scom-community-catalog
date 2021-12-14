@@ -18,7 +18,7 @@
         </OperationalStates>
         <Configuration>
           <TargetSystem>$Target/Host/Property[Type="Unix!Microsoft.Unix.Computer"]/NetworkName$</TargetSystem>
-          <ProcessName>dockerd</ProcessName>
+          <ProcessName>dockerd-current</ProcessName>
           <Interval>60</Interval>
         </Configuration>
       </UnitMonitor>
