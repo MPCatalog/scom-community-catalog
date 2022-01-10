@@ -171,6 +171,9 @@
         "ManagementPackSystemName":  "SCOM.Addons.MailIn"
     },
     {
+        "ManagementPackSystemName":  "SCOM.GatewayMaintenanceMode"
+    },
+    {
         "ManagementPackSystemName":  "SCOM.Management"
     },
     {
