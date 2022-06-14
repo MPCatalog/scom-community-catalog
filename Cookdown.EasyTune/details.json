@@ -2,7 +2,7 @@
   "ManagementPackSystemName": "Cookdown.EasyTune",
   "ManagementPackDisplayName": "Cookdown Easy Tune",
   "URL": "https://go.cookdown.com/get-easy-tune",
-  "Version": "2.0.0.248",
+  "Version": "2.1.0.13",
   "Author": "Cookdown",
   "Description": "A fast, simple way to tune all of your management packs and solve the problem of alert noise.",
   "IsFree": true,
