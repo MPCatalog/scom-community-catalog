@@ -1,0 +1,16 @@
+﻿{
+    "ManagementPackSystemName":  "SCOM.GatewayMaintenanceMode",
+    "ManagementPackDisplayName":  "SCOM Gateway Maintenance Mode ",
+    "URL":  "https://github.com/thekevinholman/SCOM.GatewayMaintenanceMode",
+    "Version":  "1.0.0.0",
+    "Author":  "Kevin Holman",
+    "Description":  "Automatic maintenance mode for agents when their gateway is unavailable",
+    "IsFree":  true,
+    "Tags":  [
+                 "agent",
+                 "maintenance",
+                 "SCOM",
+                 "administration",
+                 "gateway"
+             ]
+}
