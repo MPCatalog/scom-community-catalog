@@ -102,7 +102,7 @@
         "ManagementPackSystemName":  "Maximus.Connectivity.Monitoring"
     },
     {
-        "ManagementPackSystemName":  "Microsoft.SQLServer.RunAs.Addendum.Library"
+        "ManagementPackSystemName":  "Microsoft.SQLServer.Windows.RunAs.Addendum"
     },
     {
         "ManagementPackSystemName":  "Microsoft.SystemCenter.Internal.Addendum"
