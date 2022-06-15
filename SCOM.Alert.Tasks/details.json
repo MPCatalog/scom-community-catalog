@@ -1,0 +1,13 @@
+﻿{
+  "ManagementPackSystemName": "SCOM.Alert.Tasks",
+  "ManagementPackDisplayName": "SCOM Alert Tasks",
+  "URL": "https://github.com/msalomoun/SCOM.Alert.Tasks",
+  "Version": "1.0.0.5",
+  "Author": "msalomoun",
+  "Description": "The SCOM Management pack to add some alert tasks to SCOM console to get information about monitor/rule overidable parameters, its settings and so on.",
+  "IsFree": true,
+  "Tags": [
+    "Alerts",
+    "Free"
+  ]
+}
