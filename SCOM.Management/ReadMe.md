@@ -48,3 +48,4 @@ Version History:
 * 10.19.10505.0 - Added support for SCOM 2019 UR3
 * 10.19.10552.0 - Added support for KB5006871 and KB5005527
 * 10.19.10552.1 - Added support for detection of KB5005527 on GW and Agents
+* 10.22.10118.2 - Added support for SCOM 2019 UR4
