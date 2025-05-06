@@ -2,7 +2,7 @@
   "ManagementPackSystemName": "ABC.Network.SolarWinds.NPM",
   "ManagementPackDisplayName": "ABC Network SolarWinds NPM ",
   "URL": "https://github.com/Juanito99/SolarWinds_NPM_OpsMgr",
-  "Version": "1.0.0.11",
+  "Version": "1.0.0.72",
   "Author": "Ruben Zimmerman",
   "IsFree": true,
   "Description": "Integrate SolarWinds NPM into OpsMgr",
