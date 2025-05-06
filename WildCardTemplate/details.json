@@ -1,7 +1,7 @@
 ﻿{
     "ManagementPackSystemName":  "WildCardTemplate",
     "ManagementPackDisplayName":  "WildCardTemplate",
-    "URL":  "http://armiev.com/2018/05/30/scom-wildcard-service/",
+    "URL":  "https://ds.squaredup.com/blog/introducing-lior-armievs-scom-wildcard-service/",
     "Version":  "1.0.0.102",
     "Author":  "Lior Armiev",
     "Description":  "Monitor services using wildcards",

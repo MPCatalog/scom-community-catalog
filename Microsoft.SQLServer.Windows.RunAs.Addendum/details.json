@@ -2,7 +2,7 @@
     "ManagementPackSystemName":  "Microsoft.SQLServer.Windows.RunAs.Addendum",
     "ManagementPackDisplayName":  "Microsoft SQL Server on Windows RunAs Addendum Management Pack",
     "URL":  "https://github.com/thekevinholman/SQLRunAsAddendum",
-    "Version":  "7.0.36.1",
+    "Version":  "7.0.42.0",
     "Author":  "Kevin Holman",
     "Description":  "This is a SCOM management pack for Operations Manager 2012 and 2016, which will ease the burden of SQL RunAs Accounts.",
     "IsFree":  true,

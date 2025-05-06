@@ -2,7 +2,7 @@
     "ManagementPackSystemName":  "HyperV.MPE.2019.Library",
     "ManagementPackDisplayName":  "Hyper-V MP Extensions 2019 Library",
     "URL":  "https://github.com/merijnovergaauw/Hyper-V-Management-Pack-Extensions-2019",
-    "Version":  "3.0.0.40",
+    "Version":  "3.0.0.41",
     "Author":  "GripMatrix",
     "Description":  "This Hyper-V Management Pack Extensions 2019 is intended to add performance monitoring to the existing Hyper-V Management Pack.",
     "IsFree":  true,

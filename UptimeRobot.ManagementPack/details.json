@@ -2,7 +2,7 @@
     "ManagementPackSystemName":  "UptimeRobot.ManagementPack",
     "ManagementPackDisplayName":  "Uptime Robot Management Pack",
     "URL":  "https://github.com/jaspervd86/Uptime-Robot-MP",
-    "Version":  "1.0.0.125",
+    "Version":  "1.0.2.8",
     "Author":  "Jasper Van Damme",
     "Description":  "External web site monitoring using UptimeRobot.com",
     "IsFree":  true,
