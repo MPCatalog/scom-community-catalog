@@ -2,7 +2,7 @@
   "ManagementPackSystemName": "Custom.Windows.TaskScheduler.Library",
   "ManagementPackDisplayName": "Windows Task Scheduler Library",
   "URL": "https://rburri.wordpress.com/2014/08/12/scheduled-task-and-ps-scheduled-job-management-pack-1-2-0-500/",
-  "Version": "1.2.0.500",
+  "Version": "1.2.2.8",
   "Author": "Raphael Burri",
   "Description": "The Windows Scheduled Task and PowerShell Scheduled Job management pack monitors tasks and PowerShell scheduled jobs on Windows Server 2008, 2008 R2, 2012 and 2012 R2. Support for Windows Server 2003 is limited.",
   "IsFree": true,
