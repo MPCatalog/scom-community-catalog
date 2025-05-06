@@ -2,7 +2,7 @@
   "ManagementPackSystemName": "URLGenie",
   "ManagementPackDisplayName": "URLGenie",
   "URL": "https://monitoringguys.com/2015/05/04/urlgenie-management-pack-for-scom-an-easy-powerful-solution-for-bulk-website-monitoring/",
-  "Version": "2.0.0.47",
+  "Version": "2.0.0.62",
   "Author": "Tyson Paul",
   "IsFree": true,
   "Description": "The URL Genie Management Pack provides a fast and easy way to implement monitoring for a large numbers of URL instances from only a few instances up to many thousands!",

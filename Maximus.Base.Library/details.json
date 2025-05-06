@@ -2,7 +2,7 @@
   "ManagementPackSystemName": "Maximus.Base.Library",
   "ManagementPackDisplayName": "Maximus Base Library",
   "URL": "https://github.com/MaxxVolk/Maximus.Base.Library",
-  "Version": "1.0.0.27",
+  "Version": "1.0.0.28",
   "Author": "Max Volkov",
   "IsFree": true,
   "Description": "Base library for all System Center Operations Manager (SCOM) Developers.",
