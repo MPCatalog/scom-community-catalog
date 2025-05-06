@@ -63,6 +63,9 @@
         "ManagementPackSystemName":  "DataCore.SANsymphonyV.Library"
     },
     {
+        "ManagementPackSystemName":  "Dell.OME.Server"
+    },
+    {
         "ManagementPackSystemName":  "Docker.Unix.Monitoring"
     },
     {
