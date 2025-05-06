@@ -1,0 +1,13 @@
+﻿{
+    "ManagementPackSystemName":  "Dell.OME.Server",
+    "ManagementPackDisplayName":  "Dell OME Server Management Pack",
+    "URL":  "https://www.dell.com/support/kbdoc/en-us/000207526/support-for-dell-openmanage-enterprise-integration-for-microsoft-system-center-operations-manager",
+    "Version":  "1.5.0.0",
+    "Author":  "Dell",
+    "Description":  "Management pack for Dell Openmanage integration in SCOM. License needed.",
+    "IsFree":  true,
+    "Tags":  [
+                 "dell",
+                 "idrac"
+             ]
+}
